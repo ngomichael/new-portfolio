@@ -2,14 +2,15 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './header.module.css'
+import resume from '../../images/resume.pdf'
 
 const ListLink = props => {
   return (
     <li
       className={
         window.location.href.slice(21) === props.wantedPath
-          ? `${styles.list} ${styles.bottomBorder}`
-          : styles.list
+          ? `${styles.tab} ${styles.bottomBorder}`
+          : styles.tab
       }
     >
       <Link to={props.to}>{props.children}</Link>
@@ -34,9 +35,9 @@ class Header extends React.Component {
           <ListLink to="/" wantedPath="/">
             Projects
           </ListLink>
-          <ListLink to="/resume" wantedPath="/resume">
+          <a href={resume} target="_blank" className={styles.tab}>
             Resume
-          </ListLink>
+          </a>
         </ul>
       </div>
     )

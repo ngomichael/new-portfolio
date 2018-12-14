@@ -20,14 +20,14 @@
   width: 250px;
 }
 
-.list {
+.tab {
   list-style: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 
-.list:hover {
+.tab:hover {
   cursor: pointer;
 }
 
@@ -38,8 +38,9 @@
 a {
   color: #707070;
   text-decoration: none;
+  transition: color 250ms;
 }
 
 a:hover {
-  color: #707070;
+  color: #474646;
 }
