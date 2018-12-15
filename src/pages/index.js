@@ -30,10 +30,10 @@ const IndexPage = () => (
         </p>
       </div> */}
       <div className={styles.projectsContainer}>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project to="project" />
+        <Project to="ufc" />
+        <Project to="spotify" />
+        <Project to="whiteboard" />
       </div>
     </div>
     {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
