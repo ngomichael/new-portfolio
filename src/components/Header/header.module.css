@@ -3,7 +3,8 @@
   align-content: center;
   justify-content: space-between;
   width: 90%;
-  border-top: 5px solid gray;
+  margin: 10px auto;
+  /* border-top: 5px solid #2f7de3; */
 }
 
 .icon {
@@ -20,10 +21,11 @@
   justify-content: space-around;
   margin: 10px 0 0px 0px;
   width: 250px;
+  align-self: center;
 }
 
 .bottomBorder {
-  border-bottom: 4px solid #707070;
+  border-bottom: 4px solid #2f7de3;
 }
 
 .link {

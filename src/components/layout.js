@@ -22,33 +22,21 @@ const Layout = ({ children }) => (
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 950,
-          // padding: `1.25rem 1rem`,
+          maxWidth: 1050,
+          height: `100%`,
         }}
       >
+        <Header />
         <div
           style={{
-            display: `flex`,
-            flexDirection: `column`,
-            alignItems: `center`,
+            margin: '0 auto',
+            maxWidth: 1050,
+            paddingTop: '50px',
           }}
         >
-          <Header />
-          <div
-            style={{
-              margin: '0 auto',
-              maxWidth: 950,
-              // padding: '0px 1.0875rem 1.45rem',
-              paddingTop: '50px',
-              // display: `flex`,
-              // flexDirection: `column`,
-              // alignItems: `center`,
-            }}
-          >
-            {children}
-          </div>
-          <Footer />
+          {children}
         </div>
+        <Footer />
       </div>
     )}
   />

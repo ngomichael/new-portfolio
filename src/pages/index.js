@@ -5,7 +5,36 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
 import styles from './index.module.css'
-import Project from '../components/Project/Project'
+import laptop from '../images/MBP Full Icon.png'
+import hangouts from '../images/UWHangouts.png'
+import ufc from '../images/UFC.png'
+import spotify from '../images/spotify.png'
+import whiteboard from '../images/whiteboard.png'
+import ProjectCard from '../components/ProjectCard/ProjectCard'
+
+const hangoutsInfo = {
+  color: '#4b2e83',
+  title: 'UW Hangouts',
+  imgs: [laptop, hangouts],
+}
+
+const ufcInfo = {
+  color: '#C62828',
+  title: 'UFC Statistics',
+  imgs: [laptop, ufc],
+}
+
+const spotifyInfo = {
+  color: '#1DB954',
+  title: 'Spotify Artist Search',
+  imgs: [laptop, spotify],
+}
+
+const whiteboardInfo = {
+  color: '#2f7de3',
+  title: 'Online Whiteboard',
+  imgs: [laptop, whiteboard],
+}
 
 const IndexPage = () => (
   <Layout>
@@ -30,10 +59,10 @@ const IndexPage = () => (
         </p>
       </div> */}
       <div className={styles.projectsContainer}>
-        <Project to="project" />
-        <Project to="ufc" />
-        <Project to="spotify" />
-        <Project to="whiteboard" />
+        <ProjectCard to="hangouts" projectInfo={hangoutsInfo} />
+        <ProjectCard to="ufc" projectInfo={ufcInfo} />
+        <ProjectCard to="spotify" projectInfo={spotifyInfo} />
+        <ProjectCard to="whiteboard" projectInfo={whiteboardInfo} />
       </div>
     </div>
     {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
