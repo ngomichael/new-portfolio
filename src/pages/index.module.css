@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  width: 60%;
+}
+
+.projectsIntroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Create a breakpoint at 767px to make it into 2x2 */
+
+@media (min-width: 767px) {
+  .projectsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

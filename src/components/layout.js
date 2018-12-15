@@ -3,7 +3,8 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './Header/header'
+import Header from './Header/Header'
+import Footer from './Footer/Footer'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -19,18 +20,34 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div
-        style={{ margin: `0 auto`, maxWidth: 1050, padding: `1.25rem 1rem` }}
+        style={{
+          margin: `0 auto`,
+          maxWidth: 950,
+          padding: `1.25rem 1rem`,
+        }}
       >
-        <Header />
         <div
           style={{
-            margin: '0 auto',
-            maxWidth: 1050,
-            // padding: '0px 1.0875rem 1.45rem',
-            paddingTop: '50px',
+            display: `flex`,
+            flexDirection: `column`,
+            alignItems: `center`,
           }}
         >
-          {children}
+          <Header />
+          <div
+            style={{
+              margin: '0 auto',
+              maxWidth: 950,
+              // padding: '0px 1.0875rem 1.45rem',
+              paddingTop: '50px',
+              // display: `flex`,
+              // flexDirection: `column`,
+              // alignItems: `center`,
+            }}
+          >
+            {children}
+          </div>
+          <Footer />
         </div>
       </div>
     )}

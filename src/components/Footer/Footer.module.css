@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 45px;
+  height: 100px;
+  border-top: 1px solid gray;
+  width: 80%;
+}
+
+.link {
+  color: #707070;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  transition: color 250ms;
+}
+
+.link:hover {
+  color: #474646;
+  cursor: pointer;
+}
+
+.line {
+  border-left: 2px solid gray;
+  height: 30px;
+  transform: rotate(20deg);
+}

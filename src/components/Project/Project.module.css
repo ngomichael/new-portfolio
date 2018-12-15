@@ -1,0 +1,16 @@
+.project {
+  margin-top: 50px;
+  width: 70vw;
+  height: 50vw;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+@media (min-width: 767px) {
+  .project {
+    width: 45vw;
+    height: 35vw;
+    max-width: 350px;
+    max-height: 250px;
+  }
+}

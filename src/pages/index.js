@@ -23,12 +23,12 @@ const IndexPage = () => (
           with a focus on software development.
         </p>
       </div>
-      <div className={styles.projectsIntroContainer}>
+      {/* <div className={styles.projectsIntroContainer}>
         <h2>Projects</h2>
         <p className={styles.description}>
           Here are some of the recent projects I've worked on!
         </p>
-      </div>
+      </div> */}
       <div className={styles.projectsContainer}>
         <Project />
         <Project />

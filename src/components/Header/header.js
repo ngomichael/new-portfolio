@@ -6,14 +6,17 @@ import resume from '../../images/resume.pdf'
 
 const ListLink = props => {
   return (
-    <li
-      className={
-        window.location.href.slice(21) === props.wantedPath
-          ? `${styles.tab} ${styles.bottomBorder}`
-          : styles.tab
-      }
-    >
-      <Link to={props.to}>{props.children}</Link>
+    <li>
+      <Link
+        to={props.to}
+        className={
+          window.location.href.slice(21) === props.wantedPath
+            ? ` ${styles.link} ${styles.bottomBorder}`
+            : styles.link
+        }
+      >
+        {props.children}
+      </Link>
     </li>
   )
 }
@@ -35,7 +38,11 @@ class Header extends React.Component {
           <ListLink to="/" wantedPath="/">
             Projects
           </ListLink>
-          <a href={resume} target="_blank" className={styles.tab}>
+          <a
+            href={resume}
+            target="_blank"
+            className={`${styles.tab} ${styles.link}`}
+          >
             Resume
           </a>
         </ul>
