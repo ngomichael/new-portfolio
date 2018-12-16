@@ -10,11 +10,11 @@ class ProjectCard extends Component {
     const { projectInfo } = this.props
     return (
       <Link to={this.props.to}>
-        <div className={styles.project}>
-          <div
-            className={styles.image}
-            style={{ backgroundColor: projectInfo.color }}
-          >
+        <div
+          className={styles.project}
+          style={{ backgroundColor: projectInfo.color }}
+        >
+          <div className={styles.overlay}>
             <div
               style={{
                 position: 'relative',
@@ -39,15 +39,7 @@ class ProjectCard extends Component {
                 src={projectInfo.imgs[1]}
               />
             </div>
-            {/* <h2 className={styles.title}>{projectInfo.title}</h2> */}
           </div>
-          {/* <div className={styles.overview}>
-            <p className={styles.title}>UW Hangouts</p>
-            <p className={styles.description}>
-              A web application that allows two users to video chat and message
-              one another
-            </p>
-          </div> */}
         </div>
       </Link>
     )
