@@ -11,6 +11,13 @@
   /* bottom: 0; */
 }
 
+.linksContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+}
+
 .link {
   color: #707070;
   text-decoration: none;
