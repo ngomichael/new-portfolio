@@ -28,11 +28,12 @@ class Header extends React.Component {
   }
 
   render() {
-    // console.log(this.state.path)
     return (
       <div className={styles.container}>
         <Link to="/">
-          <span className={styles.icon} />
+          <span className={styles.icon}>
+            <p className={styles.iconText}>m</p>
+          </span>
         </Link>
         <ul className={styles.linksContainer}>
           <ListLink to="/" wantedPath="/">

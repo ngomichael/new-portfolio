@@ -1,5 +1,4 @@
 .container {
-  /* position: absolute; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -8,12 +7,11 @@
   width: 90%;
   margin-left: 5%;
   margin-top: 50px;
-  /* bottom: 0; */
 }
 
 .linksContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 40%;
 }

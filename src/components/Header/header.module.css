@@ -8,12 +8,24 @@
 }
 
 .icon {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   border: 1px solid #707070;
   border-radius: 50%;
   height: 50px;
   width: 50px;
   margin: 10px 0 0px 10px;
+}
+
+.iconText {
+  position: absolute;
+  color: #2f7de3;
+  font-size: 30px;
+  font-style: italic;
+  left: 10px;
+  top: 4px;
 }
 
 .linksContainer {
