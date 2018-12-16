@@ -25,13 +25,13 @@ class ProjectCard extends Component {
                 src={projectInfo.imgs[0]}
                 alt="Macbook Pro"
                 height="225"
-                width="390"
+                width="300"
                 style={{ position: 'relative', right: '66px', top: '25px' }}
               />
               <img
                 style={{
                   position: 'absolute',
-                  right: '138px',
+                  right: '122px',
                   top: '54px',
                 }}
                 height="160"
