@@ -26,6 +26,7 @@
   font-style: italic;
   left: 10px;
   top: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .linksContainer {
@@ -42,9 +43,12 @@
 
 .link {
   color: #707070;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+
+  font-size: 22px;
+  font-weight: 700;
   text-decoration: none;
   padding-bottom: 8px;
   transition: color 250ms;

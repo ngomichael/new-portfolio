@@ -19,9 +19,10 @@
 .link {
   color: #707070;
   text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-size: 20px;
   transition: color 200ms;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .link:hover {
