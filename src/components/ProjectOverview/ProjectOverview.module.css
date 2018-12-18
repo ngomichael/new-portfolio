@@ -12,6 +12,17 @@
   align-self: center;
 }
 
+.title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+  margin-top: 35px;
+}
+
+.subtitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+}
+
 .overviewContainer {
   display: flex;
   justify-content: center;
@@ -24,12 +35,33 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  /* margin: 20px 0 0 0; */
+  margin: 0 0 20px 0;
 }
 
 .stackContainer {
   display: flex;
 }
+
+.technologyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100%;
+  /* position: relative; */
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* position: absolute; */
+}
+
+/* .technologies div:nth-child(n + 3) {
+  margin-left: 20px;
+} */
 
 .description {
   /* margin-bottom: 55px; */
@@ -38,4 +70,10 @@
 
 .link {
   text-decoration: none;
+}
+
+@media (max-width: 367px) {
+  .technologies {
+    width: 50%;
+  }
 }
