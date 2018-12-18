@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './header.module.css'
 import resume from '../../images/resume.pdf'
+import icon from '../../../public/icons/WebsiteIconSlash.png'
 
 const ListLink = props => {
   return (
@@ -11,8 +12,8 @@ const ListLink = props => {
         to={props.to}
         className={
           window.location.href.slice(21) === props.wantedPath
-            ? ` ${styles.link} ${styles.bottomBorder}`
-            : styles.link
+            ? `${styles.link} ${styles.bottomBorder}`
+            : `${styles.grayText} ${styles.link}`
         }
       >
         {props.children}
@@ -32,8 +33,10 @@ class Header extends React.Component {
       <div className={styles.container}>
         <Link to="/">
           <span className={styles.icon}>
-            <p className={styles.iconText}>m</p>
+            {/* <p className={styles.iconText}>M</p> */}
+            <img src={icon} />
           </span>
+          {/* <p>Michael Ngo</p> */}
         </Link>
         <ul className={styles.linksContainer}>
           <ListLink to="/" wantedPath="/">

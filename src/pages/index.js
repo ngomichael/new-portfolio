@@ -49,7 +49,8 @@ const IndexPage = () => (
         </h1>
         <p className={styles.description}>
           I’m a senior at the University of Washington majoring in Informatics
-          with a focus on software development.
+          with a focus on software development. Take a look at some of my
+          projects!
         </p>
       </div>
       {/* <div className={styles.projectsIntroContainer}>
