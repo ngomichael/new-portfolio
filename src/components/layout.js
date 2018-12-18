@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 1050,
+          maxWidth: 1000,
           height: `100%`,
         }}
       >
@@ -30,8 +30,10 @@ const Layout = ({ children }) => (
         <div
           style={{
             margin: '0 auto',
-            maxWidth: 1050,
+            maxWidth: 1000,
             paddingTop: '50px',
+            // display: 'flex',
+            // justifyContent: 'center',
           }}
         >
           {children}

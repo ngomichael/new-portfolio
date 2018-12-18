@@ -5,7 +5,7 @@
   height: 100px;
   border-top: 1px solid gray;
   width: 90%;
-  margin-left: 5%;
+  margin-left: 6%;
   margin-top: 50px;
 }
 
@@ -13,14 +13,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 75%;
+  width: 80%;
 }
 
 .link {
   color: #707070;
   text-decoration: none;
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-se rif; */
-  font-size: 21px;
+  font-size: 19px;
   transition: color 200ms;
   font-family: 'Source Sans Pro', sans-serif;
 }

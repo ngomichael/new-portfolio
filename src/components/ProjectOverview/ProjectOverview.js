@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Layout from '../layout'
+import ProjectImage from '../ProjectImage/ProjectImage'
 import styles from './ProjectOverview.module.css'
 
 const feStack = stack => stack.map(tech => <li>{tech}</li>)
@@ -9,11 +10,17 @@ class ProjectOverview extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <div>
-          <h1>UW Hangouts</h1>
-          <h2 style={{ marginTop: '60px' }}>Overview</h2>
+        {/* <div> */}
+        <h1 className={styles.projectName}>UW Hangouts</h1>
+        <div className={styles.overviewContainer}>
+          <h2>Overview</h2>
           <p className={styles.description}>{this.props.overview}</p>
-          <h2>Tech Stack</h2>
+          <div className={styles.projectImagesContainer}>
+            <ProjectImage />
+            <ProjectImage />
+          </div>
+        </div>
+        {/* <h2>Tech Stack</h2>
           <div className={styles.stackContainer}>
             <div>
               <p>Front-End</p>
@@ -29,8 +36,8 @@ class ProjectOverview extends Component {
             <a href="" target="_blank" className={styles.link}>
               GitHub Repo
             </a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     )
   }

@@ -9,6 +9,7 @@ const overview =
   'UW Hangouts is a project that me and 2 other classmates created for my server-side development class.'
 const feStack = ['React', 'Material UI']
 const beStack = ['Go', 'Node.js', 'MySQL', 'MongoDB', 'WebRTC', 'Docker', 'AWS']
+const imgs = []
 
 const Hangouts = () => (
   <Layout>
