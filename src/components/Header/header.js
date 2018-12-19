@@ -33,17 +33,15 @@ class Header extends React.Component {
       <div className={styles.container}>
         <Link to="/">
           <span className={styles.icon}>
-            {/* <p className={styles.iconText}>M</p> */}
             <img src={icon} />
           </span>
-          {/* <p>Michael Ngo</p> */}
         </Link>
         <ul className={styles.linksContainer}>
           <ListLink to="/" wantedPath="/">
             Projects
           </ListLink>
           <a
-            href={resume}
+            href="https://drive.google.com/file/d/1PyJj4BOHLDTVCYRZOAfWJ72UqeNA6719/view?usp=sharing"
             target="_blank"
             className={`${styles.tab} ${styles.link}`}
           >
