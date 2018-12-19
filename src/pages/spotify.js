@@ -6,11 +6,9 @@ import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
 const overview = {
-  title: 'UFC Statistic Displayer',
-  description: `UFC Statistic Displayer is exactly what it is, it displays UFC fighter statistics. 
-    At this time I just got into the UFC and it was something I really enjoyed watching. So I decided to
-    create a project that interested me while learning new technologies like React, React-Router, and Redux`,
-  timeline: 'September 2017 - Febuary 2018',
+  title: 'Spotify Artist Seach',
+  description: ``,
+  timeline: 'March 2017 - April 2017',
   type: 'Personal Project',
 }
 
@@ -18,9 +16,9 @@ const feTechnologies = [{ icon: react, width: '60', margin: '18' }]
 const beTechnologies = []
 const imgs = []
 
-const UFC = () => (
+const Spotify = () => (
   <Layout>
-    <SEO title="UFC" />
+    <SEO title="Spotify" />
     <ProjectOverview
       overview={overview}
       feTechnologies={feTechnologies}
@@ -30,4 +28,4 @@ const UFC = () => (
   </Layout>
 )
 
-export default UFC
+export default Spotify

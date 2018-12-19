@@ -16,7 +16,7 @@ const overview = {
   title: 'UW Hangouts',
   description:
     'UW Hangouts is a project that me and 2 other classmates created for my server-side development class.',
-  timeline: 'June 2018 - September 2018',
+  timeline: 'November 2018 - December 2018',
   type: 'Personal Project',
 }
 const feTechnologies = [
