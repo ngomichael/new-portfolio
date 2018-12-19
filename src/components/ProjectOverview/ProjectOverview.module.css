@@ -10,6 +10,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 45px;
   align-self: center;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -28,20 +29,30 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 85%;
 }
 
-.projectDetailsTitle {
-  margin-right: '15px';
-  font-weight: '700';
+.projectDetailsContainer {
+  margin-bottom: 20px;
+}
+
+.projectDetailsContainer div:nth-child(-n + 1) {
+  margin-bottom: 15px;
 }
 
 .projectDetails {
   display: flex;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
 }
 
-.projectDetails p:nth-child(-n + 1) {
-  margin-bottom: 15px;
+.projectDetails p:nth-child(n + 2) {
+  color: gray;
+}
+
+.projectDetailsTitle {
+  margin-right: 15px;
+  font-weight: 700;
 }
 
 .projectImagesContainer {
@@ -88,8 +99,8 @@
 
 .description {
   /* margin-bottom: 55px; */
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
   width: 75%;
 }
 

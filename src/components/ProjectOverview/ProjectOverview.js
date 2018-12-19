@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Layout from '../layout'
 import ProjectImage from '../ProjectImage/ProjectImage'
 import TechnologyIcon from '../TechnologyIcon/TechnologyIcon'
 import styles from './ProjectOverview.module.css'
-
-// const feStack = stack => stack.map(tech => <li>{tech}</li>)
-// const beStack = stack => stack.map(tech => <li>{tech}</li>)
 
 class ProjectOverview extends Component {
   render() {
@@ -15,13 +13,13 @@ class ProjectOverview extends Component {
       <div className={styles.container}>
         <h1 className={styles.projectName}>UW Hangouts</h1>
         <div className={styles.overviewContainer}>
-          <div>
+          <div className={styles.projectDetailsContainer}>
             <div className={styles.projectDetails}>
               <p className={styles.projectDetailsTitle}>Timeline: </p>
               <p>{overview.timeline}</p>
             </div>
             <div className={styles.projectDetails}>
-              <p className={style.projectDetailsTitle}>Type: </p>
+              <p className={styles.projectDetailsTitle}>Type: </p>
               <p>{overview.type}</p>
             </div>
           </div>
@@ -55,3 +53,9 @@ class ProjectOverview extends Component {
 }
 
 export default ProjectOverview
+
+ProjectOverview.propTypes = {
+  overview: PropTypes.object.isRequired,
+  feTechnologies: PropTypes.array.isRequired,
+  beTechnologies: PropTypes.array.isRequired,
+}

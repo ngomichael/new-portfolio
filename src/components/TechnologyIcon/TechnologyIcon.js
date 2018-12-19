@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import styles from './TechnologyIcon.module.css'
 
 class TechnologyIcon extends Component {
@@ -19,3 +20,7 @@ class TechnologyIcon extends Component {
 }
 
 export default TechnologyIcon
+
+TechnologyIcon.propTypes = {
+  technology: PropTypes.object.isRequired,
+}
