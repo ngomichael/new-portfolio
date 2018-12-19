@@ -7,13 +7,13 @@ class TechnologyIcon extends Component {
     const { icon, width, margin } = this.props.technology
     return (
       <div className={styles.container}>
-        <img
+        {/* <img
           alt="icon"
           src={icon}
           width={width}
           style={{ top: `${margin}%` }}
           className={styles.icon}
-        />
+        /> */}
       </div>
     )
   }

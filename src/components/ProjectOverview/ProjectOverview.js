@@ -11,7 +11,7 @@ class ProjectOverview extends Component {
 
     return (
       <div className={styles.container}>
-        <h1 className={styles.projectName}>UW Hangouts</h1>
+        <h1 className={styles.projectName}>{overview.title}</h1>
         <div className={styles.overviewContainer}>
           <div className={styles.projectDetailsContainer}>
             <div className={styles.projectDetails}>
@@ -32,7 +32,9 @@ class ProjectOverview extends Component {
         </div>
         <h2 className={styles.title}>Tech Stack</h2>
         <div className={styles.technologyContainer}>
-          <h3 className={styles.subtitle}>Front-End</h3>
+          {feTechnologies.length ? (
+            <h3 className={styles.subtitle}>Front-End</h3>
+          ) : null}
           <div className={styles.technologies}>
             {feTechnologies.map(technology => (
               <TechnologyIcon technology={technology} />
@@ -40,7 +42,9 @@ class ProjectOverview extends Component {
           </div>
         </div>
         <div className={styles.technologyContainer}>
-          <h3 className={styles.subtitle}>Back-End</h3>
+          {beTechnologies.length ? (
+            <h3 className={styles.subtitle}>Back-End</h3>
+          ) : null}
           <div className={styles.technologies}>
             {beTechnologies.map(technology => (
               <TechnologyIcon technology={technology} />

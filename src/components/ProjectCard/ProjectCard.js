@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styles from './ProjectCard.module.css'
-// import laptop from '../../images/MBP Full Icon.png'
-// import hangouts from '../../images/UWHangouts.png'
 
 class ProjectCard extends Component {
   render() {

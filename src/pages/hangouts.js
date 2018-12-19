@@ -13,13 +13,14 @@ import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
 const overview = {
+  title: 'UW Hangouts',
   description:
     'UW Hangouts is a project that me and 2 other classmates created for my server-side development class.',
   timeline: 'June 2018 - September 2018',
   type: 'Personal Project',
 }
 const feTechnologies = [
-  { icon: react, width: '60', margin: '18' },
+  { icon: react, width: '100', margin: '18' },
   { icon: mui, width: '35', margin: '25' },
 ]
 
@@ -46,11 +47,3 @@ const Hangouts = () => (
 )
 
 export default Hangouts
-
-// ProjectCard.propTypes = {
-//   imgs: PropTypes.array,
-//   overview: PropTypes.string,
-//   feStack: PropTypes.array,
-//   beStack: PropTypes.array,
-//   ghLink: PropTypes.string,
-// }

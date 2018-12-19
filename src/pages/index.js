@@ -12,29 +12,32 @@ import spotify from '../images/spotify.png'
 import whiteboard from '../images/whiteboard.png'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
 
-const hangoutsInfo = {
-  color: '#4b2e83',
-  title: 'UW Hangouts',
-  imgs: [laptop, hangouts],
-}
-
-const ufcInfo = {
-  color: '#C62828',
-  title: 'UFC Statistics',
-  imgs: [laptop, ufc],
-}
-
-const spotifyInfo = {
-  color: '#1DB954',
-  title: 'Spotify Artist Search',
-  imgs: [laptop, spotify],
-}
-
-const whiteboardInfo = {
-  color: '#2f7de3',
-  title: 'Online Whiteboard',
-  imgs: [laptop, whiteboard],
-}
+const projects = [
+  {
+    color: '#4b2e83',
+    title: 'UW Hangouts',
+    imgs: [laptop, hangouts],
+    to: 'hangouts',
+  },
+  {
+    color: '#C62828',
+    title: 'UFC Statistics',
+    imgs: [laptop, ufc],
+    to: 'ufc',
+  },
+  {
+    color: '#1DB954',
+    title: 'Spotify Artist Search',
+    imgs: [laptop, spotify],
+    to: 'spotify',
+  },
+  {
+    color: '#2f7de3',
+    title: 'Online Whiteboard',
+    imgs: [laptop, whiteboard],
+    to: 'whiteboard',
+  },
+]
 
 const IndexPage = () => (
   <Layout>
@@ -53,17 +56,10 @@ const IndexPage = () => (
           projects!
         </p>
       </div>
-      {/* <div className={styles.projectsIntroContainer}>
-        <h2>Projects</h2>
-        <p className={styles.description}>
-          Here are some of the recent projects I've worked on!
-        </p>
-      </div> */}
       <div className={styles.projectsContainer}>
-        <ProjectCard to="hangouts" projectInfo={hangoutsInfo} />
-        <ProjectCard to="ufc" projectInfo={ufcInfo} />
-        <ProjectCard to="spotify" projectInfo={spotifyInfo} />
-        <ProjectCard to="whiteboard" projectInfo={whiteboardInfo} />
+        {projects.map(project => (
+          <ProjectCard to={project.to} projectInfo={project} />
+        ))}
       </div>
     </div>
     {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
