@@ -10,7 +10,7 @@ const links = [
 class Footer extends Component {
   render() {
     return (
-      <div className={styles.container}>
+      <footer className={styles.container}>
         <div className={styles.linksContainer}>
           {links.map(link => (
             <a href={link.url} target="_blank" className={styles.link}>
@@ -41,7 +41,7 @@ class Footer extends Component {
             Medium
           </a> */}
         </div>
-      </div>
+      </footer>
     )
   }
 }

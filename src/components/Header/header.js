@@ -2,9 +2,9 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './header.module.css'
-import resume from '../../images/resume.pdf'
 import icon from '../../../public/icons/WebsiteIconSlash.png'
 
+// TODO: Is there a better way to check url and add a bottom border?
 const ListLink = props => {
   return (
     <li>
@@ -25,12 +25,11 @@ const ListLink = props => {
 class Header extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
   }
 
   render() {
     return (
-      <div className={styles.container}>
+      <header className={styles.container}>
         <Link to="/">
           <span className={styles.icon}>
             <img src={icon} />
@@ -48,17 +47,13 @@ class Header extends React.Component {
             Resume
           </a>
         </ul>
-      </div>
+      </header>
     )
   }
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: '',
 }
 
 export default Header

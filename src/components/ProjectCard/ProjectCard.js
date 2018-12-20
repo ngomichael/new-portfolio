@@ -5,13 +5,14 @@ import styles from './ProjectCard.module.css'
 
 class ProjectCard extends Component {
   render() {
-    const { projectInfo } = this.props
+    const { projectInfo, to } = this.props
     return (
-      <Link to={this.props.to}>
+      <Link to={to}>
         <div
           className={styles.project}
           style={{ backgroundColor: projectInfo.color }}
         >
+          {/* TODO: Name this style better, it isn't an overlay */}
           <div className={styles.overlay}>
             <div
               style={{
