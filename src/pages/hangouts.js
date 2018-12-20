@@ -8,6 +8,8 @@ import mysql from '../icons/mysql-icon.svg'
 import mui from '../icons/mui-icon.svg'
 import node from '../icons/nodejs-icon.svg'
 import react from '../icons/react-icon.svg'
+import hangoutsHome from '../images/overview/hangoutsHome.png'
+import hangoutsVideo from '../images/overview/hangoutsVideo.png'
 import Layout from '../components/layout'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
@@ -18,6 +20,7 @@ const overview = {
     'UW Hangouts is a project that me and 2 other classmates created for my server-side development class.',
   timeline: 'November 2018 - December 2018',
   type: 'Personal Project',
+  imgs: [hangoutsHome, hangoutsVideo],
 }
 const feTechnologies = [
   { icon: react, width: '100', margin: '18' },
@@ -32,7 +35,6 @@ const beTechnologies = [
   { icon: docker, width: '35', margin: '22' },
   { icon: aws, width: '35', margin: '25' },
 ]
-const imgs = []
 
 const Hangouts = () => (
   <Layout>

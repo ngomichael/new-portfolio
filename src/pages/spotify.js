@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import react from '../icons/react-icon.svg'
 import Layout from '../components/layout'
+import spotifyHome from '../images/overview/spotifyHome.png'
+import spotifyArtistInfo from '../images/overview/spotifyArtistInfo.png'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
@@ -10,11 +12,11 @@ const overview = {
   description: ``,
   timeline: 'March 2017 - April 2017',
   type: 'Personal Project',
+  imgs: [spotifyHome, spotifyArtistInfo],
 }
 
 const feTechnologies = [{ icon: react, width: '60', margin: '18' }]
 const beTechnologies = []
-const imgs = []
 
 const Spotify = () => (
   <Layout>

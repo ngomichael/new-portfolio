@@ -25,8 +25,9 @@ class ProjectOverview extends Component {
           <h2 className={styles.title}>Overview</h2>
           <p className={styles.description}>{overview.description}</p>
           <div className={styles.projectImagesContainer}>
-            <ProjectImage />
-            <ProjectImage />
+            {overview.imgs.map(img => (
+              <ProjectImage img={img} />
+            ))}
           </div>
         </section>
         <h2 className={styles.title}>Tech Stack</h2>
