@@ -1,11 +1,12 @@
 .container {
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: antiquewhite;
   display: flex;
   justify-content: center;
-  vertical-align: middle;
+  align-items: center;
+  /* vertical-align: middle; */
   position: relative;
 }
 

@@ -4,16 +4,16 @@ import styles from './TechnologyIcon.module.css'
 
 class TechnologyIcon extends Component {
   render() {
-    const { icon, width, margin } = this.props.technology
+    const { icon } = this.props.technology
     return (
       <div className={styles.container}>
-        {/* <img
+        <img
           alt="icon"
           src={icon}
-          width={width}
-          style={{ top: `${margin}%` }}
+          // width={width}
+          // style={{ top: `${0}%` }}
           className={styles.icon}
-        /> */}
+        />
       </div>
     )
   }

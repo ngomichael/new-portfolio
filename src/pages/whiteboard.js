@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import react from '../icons/react-icon.svg'
+import js from '../icons/js-icon.svg'
+import css from '../icons/css-icon.svg'
+import html from '../icons/html-icon.svg'
 import Layout from '../components/layout'
 import whiteboardHome from '../images/overview/whiteboardHome.png'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
@@ -14,7 +16,7 @@ const overview = {
   imgs: [whiteboardHome],
 }
 
-const feTechnologies = [{ icon: react, width: '60', margin: '18' }]
+const feTechnologies = [{ icon: js }, { icon: css }, { icon: html }]
 const beTechnologies = []
 
 const Whiteboard = () => (

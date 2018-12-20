@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import react from '../icons/react-icon.svg'
+import jQuery from '../icons/jQuery-icon.svg'
+import js from '../icons/js-icon.svg'
+import css from '../icons/css-icon.svg'
+import html from '../icons/html-icon.svg'
 import Layout from '../components/layout'
 import spotifyHome from '../images/overview/spotifyHome.png'
 import spotifyArtistInfo from '../images/overview/spotifyArtistInfo.png'
@@ -15,7 +18,12 @@ const overview = {
   imgs: [spotifyHome, spotifyArtistInfo],
 }
 
-const feTechnologies = [{ icon: react, width: '60', margin: '18' }]
+const feTechnologies = [
+  { icon: js },
+  { icon: jQuery },
+  { icon: css },
+  { icon: html },
+]
 const beTechnologies = []
 
 const Spotify = () => (

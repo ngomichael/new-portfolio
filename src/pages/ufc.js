@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import react from '../icons/react-icon.svg'
+import redux from '../icons/redux-icon.svg'
+import reactRouter from '../icons/react-router-icon.svg'
 import Layout from '../components/layout'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import ufcHome from '../images/overview/ufcHome.png'
 import ufcStats from '../images/overview/ufcStats.png'
+
 import SEO from '../components/seo'
 
 const overview = {
@@ -17,7 +20,11 @@ const overview = {
   imgs: [ufcHome, ufcStats],
 }
 
-const feTechnologies = [{ icon: react, width: '60', margin: '18' }]
+const feTechnologies = [
+  { icon: react, width: '60', margin: '18' },
+  { icon: redux },
+  { icon: reactRouter },
+]
 const beTechnologies = []
 
 const UFC = () => (
