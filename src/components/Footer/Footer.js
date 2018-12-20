@@ -17,29 +17,6 @@ class Footer extends Component {
               {link.siteName}
             </a>
           ))}
-          {/* <a
-            href="https://github.com/ngomichael"
-            target="_blank"
-            className={styles.link}
-          >
-            GitHub
-          </a>
-          <div className={styles.line} />
-          <a
-            href="https://www.linkedin.com/in/mhngo/"
-            target="_blank"
-            className={styles.link}
-          >
-            LinkedIn
-          </a>
-          <div className={styles.line} />
-          <a
-            href="https://medium.com/@ngomichael"
-            target="_blank"
-            className={styles.link}
-          >
-            Medium
-          </a> */}
         </div>
       </footer>
     )

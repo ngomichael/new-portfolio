@@ -2,26 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-left: 50px; */
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .projectName {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 45px;
+  font-size: 48px;
   align-self: center;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .title {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 40px;
-  margin-top: 35px;
+  font-size: 32px;
+  margin-top: 32px;
 }
 
 .subtitle {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .overviewContainer {
@@ -32,18 +31,24 @@
   width: 85%;
 }
 
+.description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 75%;
+}
+
 .projectDetailsContainer {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .projectDetailsContainer div:nth-child(-n + 1) {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .projectDetails {
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .projectDetails p:nth-child(n + 2) {
@@ -51,7 +56,7 @@
 }
 
 .projectDetailsTitle {
-  margin-right: 15px;
+  margin-right: 16px;
   font-weight: 700;
 }
 
@@ -60,12 +65,12 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 0 20px 0;
+  margin-bottom: 24px;
 }
 
-.projectImagesContainer div:nth-child(-n + 1) {
-  margin-right: 10px;
-}
+/* .projectImagesContainer div:nth-child(-n + 1) {
+  margin-right: 12px;
+} */
 
 .stackContainer {
   display: flex;
@@ -76,7 +81,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 24px;
   width: 100%;
   /* position: relative; */
 }
@@ -90,7 +95,7 @@
 }
 
 .technologies div:nth-child(n + 2) {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .technologies div {
@@ -101,13 +106,6 @@
   margin-left: 20px;
 } */
 
-.description {
-  /* margin-bottom: 55px; */
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  width: 75%;
-}
-
 .link {
   text-decoration: none;
 }
@@ -117,3 +115,5 @@
     width: 50%;
   }
 } */
+
+/* @media (min-width: ) */

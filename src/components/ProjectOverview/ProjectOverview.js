@@ -14,11 +14,11 @@ class ProjectOverview extends Component {
         <section className={styles.overviewContainer}>
           <div className={styles.projectDetailsContainer}>
             <div className={styles.projectDetails}>
-              <p className={styles.projectDetailsTitle}>Timeline: </p>
+              <p className={styles.projectDetailsTitle}>Timeline</p>
               <p>{overview.timeline}</p>
             </div>
             <div className={styles.projectDetails}>
-              <p className={styles.projectDetailsTitle}>Type: </p>
+              <p className={styles.projectDetailsTitle}>Type</p>
               <p>{overview.type}</p>
             </div>
           </div>

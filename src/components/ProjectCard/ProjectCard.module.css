@@ -1,5 +1,5 @@
 .project {
-  margin-top: 50px;
+  margin-top: 64px;
   width: 63vw;
   height: 40vw;
   min-width: 300px;
@@ -22,12 +22,6 @@
 
 .overlay:hover {
   background-color: rgba(0, 0, 0, 0.25);
-}
-
-.title {
-  margin-bottom: 10px;
-  font-size: 1.75em;
-  color: black;
 }
 
 @media (min-width: 767px) {
