@@ -10,16 +10,20 @@ class ProjectOverview extends Component {
 
     return (
       <div className={styles.container}>
-        <h1 className={styles.projectName}>{overview.title}</h1>
         <section className={styles.overviewContainer}>
+          <h1 className={styles.projectName}>{overview.title}</h1>
           <div className={styles.projectDetailsContainer}>
             <div className={styles.projectDetails}>
-              <p className={styles.projectDetailsTitle}>Timeline</p>
-              <p>{overview.timeline}</p>
+              <p className={styles.projectDetailsTitle}>TIMELINE</p>
+              <p className={styles.projectDetailsDescription}>
+                {overview.timeline}
+              </p>
             </div>
             <div className={styles.projectDetails}>
-              <p className={styles.projectDetailsTitle}>Type</p>
-              <p>{overview.type}</p>
+              <p className={styles.projectDetailsTitle}>TYPE</p>
+              <p className={styles.projectDetailsDescription}>
+                {overview.type}
+              </p>
             </div>
           </div>
           <h2 className={styles.title}>Overview</h2>
