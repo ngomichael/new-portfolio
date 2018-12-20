@@ -10,7 +10,7 @@ import SEO from '../components/seo'
 const overview = {
   title: 'Spotify Artist Seach',
   description: ``,
-  timeline: 'March 2017 - April 2017',
+  timeline: "March '17 - April '17",
   type: 'Personal Project',
   imgs: [spotifyHome, spotifyArtistInfo],
 }

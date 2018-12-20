@@ -15,7 +15,7 @@
   .container {
     width: 55vw;
     height: 30vw;
-    min-width: 260px;
+    min-width: 290px;
     min-height: 155px;
   }
 
@@ -23,7 +23,7 @@
     border-radius: 7px;
     width: 55vw;
     height: 30vw;
-    min-width: 260px;
+    min-width: 290px;
     min-height: 155px;
   }
 }

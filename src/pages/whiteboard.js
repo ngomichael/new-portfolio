@@ -9,7 +9,7 @@ import SEO from '../components/seo'
 const overview = {
   title: 'Online Whiteboard',
   description: ``,
-  timeline: 'December 2016 - March 2017',
+  timeline: "Dec '16 - March '17",
   type: 'Personal Project',
   imgs: [whiteboardHome],
 }
