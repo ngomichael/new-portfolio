@@ -10,11 +10,11 @@ const ListLink = props => {
     <li>
       <Link
         to={props.to}
-        // className={
-        //   window.location.href.slice(21) === props.wantedPath
-        //     ? `${styles.link} ${styles.bottomBorder}`
-        //     : `${styles.grayText} ${styles.link}`
-        // }
+        className={
+          window.location.href.slice(21) === props.wantedPath
+            ? `${styles.link} ${styles.bottomBorder}`
+            : `${styles.grayText} ${styles.link}`
+        }
         className={styles.link}
       >
         {props.children}

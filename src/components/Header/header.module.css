@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-around;
   width: 250px;
-  align-self: center;
+  margin-top: 12px;
 }
 
 .grayText {
@@ -34,7 +34,7 @@
 
 .link {
   font-family: 'Open Sans', sans-serif;
-  color: rgb(32, 32, 32);
+  color: hsl(220, 27%, 22%);
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
@@ -44,6 +44,7 @@
 
 .link:hover {
   cursor: pointer;
+  color: hsl(233, 25%, 12%);
 }
 
 li {

@@ -57,7 +57,11 @@ const IndexPage = () => (
       </div>
       <div className={styles.projectsContainer}>
         {projects.map(project => (
-          <ProjectCard to={project.to} projectInfo={project} />
+          <ProjectCard
+            key={project.title}
+            to={project.to}
+            projectInfo={project}
+          />
         ))}
       </div>
     </div>

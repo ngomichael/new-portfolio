@@ -15,17 +15,21 @@
 
 .title {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  color: hsl(220, 27%, 22%);
+  width: 70%;
+  line-height: 1em;
   font-size: 48px;
+  letter-spacing: -0.05em;
 }
 
 .description {
   text-align: center;
   width: 60%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
-  color: hsl(201, 23%, 34%);
+  line-height: 1.5em;
+  color: hsl(228, 21%, 31%);
 }
 
 .projectsContainer {

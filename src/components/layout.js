@@ -32,8 +32,6 @@ const Layout = ({ children }) => (
             margin: '0 auto',
             maxWidth: 1000,
             paddingTop: '50px',
-            // display: 'flex',
-            // justifyContent: 'center',
           }}
         >
           {children}
