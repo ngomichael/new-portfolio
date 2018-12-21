@@ -7,7 +7,7 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import './layout.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, pathname }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
           height: `100%`,
         }}
       >
-        <Header />
+        <Header pathname={pathname} />
         <div
           style={{
             margin: '0 auto',

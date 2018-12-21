@@ -4,22 +4,18 @@ import React from 'react'
 import styles from './header.module.css'
 import icon from '../../../public/icons/WebsiteIconSlash.png'
 
-// TODO: Is there a better way to check url and add a bottom border?
 const ListLink = props => {
   return (
-    <li>
-      <Link
-        to={props.to}
-        className={
-          window.location.href.slice(21) === props.wantedPath
-            ? `${styles.link} ${styles.bottomBorder}`
-            : `${styles.grayText} ${styles.link}`
-        }
-        className={styles.link}
-      >
-        {props.children}
-      </Link>
-    </li>
+    <Link
+      to={props.to}
+      className={
+        props.currPath === props.to
+          ? `${styles.link} ${styles.bottomBorder}`
+          : `${styles.link}`
+      }
+    >
+      {props.children}
+    </Link>
   )
 }
 
@@ -29,6 +25,7 @@ class Header extends React.Component {
   }
 
   render() {
+    console.log(this.props.pathname === '/')
     return (
       <header className={styles.container}>
         <Link to="/">
@@ -36,8 +33,8 @@ class Header extends React.Component {
             <img src={icon} />
           </span>
         </Link>
-        <ul className={styles.linksContainer}>
-          <ListLink to="/" wantedPath="/">
+        <div className={styles.linksContainer}>
+          <ListLink to="/" currPath={this.props.pathname}>
             Projects
           </ListLink>
           <a
@@ -47,7 +44,7 @@ class Header extends React.Component {
           >
             Resume
           </a>
-        </ul>
+        </div>
       </header>
     )
   }

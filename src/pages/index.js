@@ -38,8 +38,8 @@ const projects = [
   },
 ]
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = props => (
+  <Layout pathname={props.location.pathname}>
     <SEO
       title="Home"
       keywords={['michael', 'ngo', 'software', 'developer', '']}
