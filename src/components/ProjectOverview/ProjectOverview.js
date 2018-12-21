@@ -36,26 +36,26 @@ class ProjectOverview extends Component {
         </section>
         <h2 className={styles.title}>Tech Stack</h2>
         <section style={{ width: '100%' }}>
-          <div className={styles.technologyContainer}>
-            {feTechnologies.length ? (
-              <h3 className={styles.subtitle}>Front-End</h3>
-            ) : null}
-            <div className={styles.technologies}>
-              {feTechnologies.map(technology => (
-                <TechnologyIcon technology={technology} />
-              ))}
+          {feTechnologies.length !== 0 && (
+            <div className={styles.technologyContainer}>
+              {<h3 className={styles.subtitle}>Front-End</h3>}
+              <div className={styles.technologies}>
+                {feTechnologies.map(technology => (
+                  <TechnologyIcon technology={technology} />
+                ))}
+              </div>
             </div>
-          </div>
-          <div className={styles.technologyContainer}>
-            {beTechnologies.length ? (
-              <h3 className={styles.subtitle}>Back-End</h3>
-            ) : null}
-            <div className={styles.technologies}>
-              {beTechnologies.map(technology => (
-                <TechnologyIcon technology={technology} />
-              ))}
+          )}
+          {beTechnologies.length !== 0 && (
+            <div className={styles.technologyContainer}>
+              {<h3 className={styles.subtitle}>Back-End</h3>}
+              <div className={styles.technologies}>
+                {beTechnologies.map(technology => (
+                  <TechnologyIcon technology={technology} />
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </div>
     )

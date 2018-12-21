@@ -54,6 +54,7 @@ const IndexPage = () => (
           majoring in{' '}
           <a
             href="https://ischool.uw.edu/programs/informatics"
+            target="_blank"
             className={styles.informaticsLink}
           >
             Informatics

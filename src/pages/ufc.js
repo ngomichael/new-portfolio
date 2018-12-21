@@ -14,7 +14,8 @@ const overview = {
   title: 'UFC Statistic Displayer',
   description: `UFC Statistic Displayer is exactly what it is, it displays UFC fighter statistics. 
     At this time I just got into the UFC and it was something I really enjoyed watching. So I decided to
-    create a project that interested me while learning new technologies like React, React-Router, and Redux`,
+    create a project that interested me while learning new technologies like React, React-Router, and Redux. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.`,
   timeline: "Sep '17 - Feb '18",
   type: 'Personal Project',
   imgs: [ufcHome, ufcStats],

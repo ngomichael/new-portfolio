@@ -16,7 +16,7 @@
 .title {
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
-  margin: 32px 0 32px 0;
+  margin: 48px 0 24px 0;
   color: hsl(220, 27%, 22%);
 }
 
@@ -97,7 +97,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .technologies {

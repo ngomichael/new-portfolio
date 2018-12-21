@@ -8,7 +8,7 @@ body {
   margin: 0;
   position: relative;
   min-height: 100%;
-  background-color: #f8f8f8;
+  background-color: hsl(0, 0%, 97%);
 }
 article,
 aside,

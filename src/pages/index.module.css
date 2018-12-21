@@ -33,12 +33,19 @@
 }
 
 .informaticsLink {
-  color: hsl(214, 76%, 54%);
+  color: hsla(0, 0%, 0%, 1);
+  font-weight: 600;
+  background: linear-gradient(
+    to top,
+    rgba(255, 215, 0, 0.4) 35%,
+    transparent 35%
+  );
   text-decoration: none;
+  transition: all 250ms;
 }
 
 .informaticsLink:hover {
-  text-decoration: underline;
+  background: hsla(51, 100%, 50%, 1);
 }
 
 .projectsContainer {
