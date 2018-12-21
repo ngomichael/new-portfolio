@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
+import github from '../../icons/github-icon.svg'
+import linkedin from '../../icons/linkedin-icon.svg'
+import medium from '../../icons/medium-icon.png'
 import styles from './Footer.module.css'
 
 const links = [
-  { url: 'https://github.com/ngomichael', siteName: 'GitHub' },
-  { url: 'https://www.linkedin.com/in/mhngo/', siteName: 'LinkedIn' },
-  { url: 'https://medium.com/@ngomichael', siteName: 'Medium' },
+  { url: 'https://github.com/ngomichael', siteName: 'GitHub', icon: github },
+  {
+    url: 'https://www.linkedin.com/in/mhngo/',
+    siteName: 'LinkedIn',
+    icon: linkedin,
+  },
+  { url: 'https://medium.com/@ngomichael', siteName: 'Medium', icon: medium },
 ]
 
 class Footer extends Component {
@@ -19,7 +26,14 @@ class Footer extends Component {
               key={link.siteName}
               className={styles.link}
             >
-              {link.siteName}
+              <div className={styles.iconContainer}>
+                <img
+                  src={link.icon}
+                  alt={link.siteName}
+                  width="26"
+                  className={styles.icon}
+                />
+              </div>
             </a>
           ))}
         </div>

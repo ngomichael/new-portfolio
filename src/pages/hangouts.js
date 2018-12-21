@@ -19,7 +19,7 @@ const overview = {
   description:
     'UW Hangouts is a project that me and 2 other classmates created for my server-side development class.',
   timeline: "Nov '18 - Dec '18",
-  type: 'Personal Project',
+  type: 'Server-Side Web Dev Final Project',
   imgs: [hangoutsHome, hangoutsVideo],
 }
 const feTechnologies = [

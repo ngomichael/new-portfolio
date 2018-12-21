@@ -29,7 +29,7 @@
 }
 
 .bottomBorder {
-  border-bottom: 4px solid #2f7de3;
+  border-bottom: 4px solid hsl(214, 76%, 54%);
 }
 
 .link {

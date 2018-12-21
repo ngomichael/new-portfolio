@@ -58,7 +58,7 @@ const IndexPage = () => (
           >
             Informatics
           </a>
-          . Take a look at my projects!
+          . Take a look around!
         </p>
       </div>
       <div className={styles.projectsContainer}>

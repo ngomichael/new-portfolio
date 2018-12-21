@@ -60,10 +60,10 @@
 .projectDetails {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   font-family: 'Open Sans', sans-serif;
-  padding: 12px;
-  height: 48px;
+  padding: 0 12px;
+  width: 240px;
 }
 
 .projectDetailsTitle {
@@ -76,6 +76,7 @@
 
 .projectDetailsDescription {
   font-size: 24px;
+  width: 240px;
 }
 
 .projectImagesContainer {
@@ -118,9 +119,9 @@
   text-decoration: none;
 }
 
-@media (max-width: 367px) {
+@media (max-width: 376px) {
   .projectName {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .title {
@@ -129,5 +130,13 @@
 
   .subtitle {
     font-size: 16px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .projectDetailsDescription {
+    font-size: 18px;
   }
 }
