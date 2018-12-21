@@ -7,40 +7,47 @@ class ProjectCard extends Component {
   render() {
     const { projectInfo, to } = this.props
     return (
-      <Link to={to}>
-        <div
-          className={styles.project}
-          style={{ backgroundColor: projectInfo.color }}
-        >
-          {/* TODO: Name this style better, it isn't an overlay */}
-          <div className={styles.overlay}>
-            <div
+      <div
+        className={styles.project}
+        style={{ backgroundColor: projectInfo.color }}
+      >
+        <Link to={to}>
+          <div
+            className={styles.overlay}
+            style={{ backgroundColor: projectInfo.color }}
+          />
+          <div
+            style={{
+              position: 'relative',
+              overflow: 'hidden',
+            }}
+          >
+            <img
+              src={projectInfo.imgs[0]}
+              alt="Macbook Pro"
+              height="225"
+              width="300"
               style={{
                 position: 'relative',
-                overflow: 'hidden',
+                right: '66px',
+                top: '25px',
+                zIndex: 1,
               }}
-            >
-              <img
-                src={projectInfo.imgs[0]}
-                alt="Macbook Pro"
-                height="225"
-                width="300"
-                style={{ position: 'relative', right: '66px', top: '25px' }}
-              />
-              <img
-                style={{
-                  position: 'absolute',
-                  right: '122px',
-                  top: '54px',
-                }}
-                height="160"
-                width="255"
-                src={projectInfo.imgs[1]}
-              />
-            </div>
+            />
+            <img
+              style={{
+                position: 'absolute',
+                right: '198px',
+                top: '56px',
+                zIndex: 1,
+              }}
+              height="160"
+              width="255"
+              src={projectInfo.imgs[1]}
+            />
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
     )
   }
 }

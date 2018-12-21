@@ -6,7 +6,12 @@
   min-height: 250px;
   border-radius: 7px;
   box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
   position: relative;
+}
+
+.project:hover .overlay {
+  top: 50%;
 }
 
 .overlay {
@@ -14,14 +19,10 @@
   height: 100%;
   width: 100%;
   display: flex;
+  top: 100%;
   align-items: center;
-  border-radius: 7px;
-  background-color: rgba(0, 0, 0, 0);
   transition: all 200ms;
-}
-
-.overlay:hover {
-  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 10;
 }
 
 @media (min-width: 767px) {
