@@ -8,10 +8,45 @@
   box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.18);
   overflow: hidden;
   position: relative;
+  animation: slideInFromLeft 500ms ease;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .project:hover .overlay {
   top: 50%;
+}
+
+.images {
+  opacity: 0;
+  animation: fadeIn 500ms ease 500ms forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .overlay {
@@ -21,7 +56,7 @@
   display: flex;
   top: 100%;
   align-items: center;
-  transition: all 200ms;
+  transition: all 250ms;
   z-index: 10;
 }
 

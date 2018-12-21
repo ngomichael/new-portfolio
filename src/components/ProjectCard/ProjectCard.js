@@ -21,6 +21,7 @@ class ProjectCard extends Component {
               position: 'relative',
               overflow: 'hidden',
             }}
+            className={styles.images}
           >
             <img
               src={projectInfo.imgs[0]}
