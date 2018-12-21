@@ -13,25 +13,25 @@ import ProjectCard from '../components/ProjectCard/ProjectCard'
 
 const projects = [
   {
-    color: '#4b2e83',
+    color: 'hsl(260, 48%, 35%)',
     title: 'UW Hangouts',
     imgs: [laptop, hangouts],
     to: 'hangouts',
   },
   {
-    color: '#C62828',
+    color: 'hsl(0, 66%, 47%)',
     title: 'UFC Statistics',
     imgs: [laptop, ufc],
     to: 'ufc',
   },
   {
-    color: '#1DB954',
+    color: 'hsl(141, 73%, 42%)',
     title: 'Spotify Artist Search',
     imgs: [laptop, spotify],
     to: 'spotify',
   },
   {
-    color: '#2f7de3',
+    color: 'hsl(214, 76%, 54%)',
     title: 'Online Whiteboard',
     imgs: [laptop, whiteboard],
     to: 'whiteboard',
@@ -50,9 +50,15 @@ const IndexPage = () => (
           Full-Stack Developer, Student & NBA Fan
         </h1>
         <p className={styles.description}>
-          I’m a senior at the University of Washington majoring in Informatics
-          with a focus on software development. Take a look at some of my
-          projects!
+          Thanks for coming by! I’m a senior at the University of Washington
+          majoring in{' '}
+          <a
+            href="https://ischool.uw.edu/programs/informatics"
+            className={styles.informaticsLink}
+          >
+            Informatics
+          </a>
+          . Take a look at my projects!
         </p>
       </div>
       <div className={styles.projectsContainer}>

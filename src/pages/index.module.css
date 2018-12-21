@@ -32,6 +32,15 @@
   color: hsl(228, 21%, 31%);
 }
 
+.informaticsLink {
+  color: hsl(214, 76%, 54%);
+  text-decoration: none;
+}
+
+.informaticsLink:hover {
+  text-decoration: underline;
+}
+
 .projectsContainer {
   display: flex;
   flex-direction: column;
