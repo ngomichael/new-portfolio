@@ -7,6 +7,7 @@ class ProjectImage extends Component {
     return (
       <div className={styles.container}>
         <img src={img} className={styles.screenshots} />
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
       </div>
     )
   }

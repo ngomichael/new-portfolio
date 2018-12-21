@@ -25,6 +25,22 @@ class ProjectOverview extends Component {
                 {overview.type}
               </p>
             </div>
+            <div className={styles.projectDetails}>
+              <p className={styles.projectDetailsTitle}>FRONT-END</p>
+              <div className={styles.technologies}>
+                {feTechnologies.map(technology => (
+                  <TechnologyIcon technology={technology} />
+                ))}
+              </div>
+            </div>
+            <div className={styles.projectDetails}>
+              <p className={styles.projectDetailsTitle}>BACK-END</p>
+              <div className={styles.technologies}>
+                {beTechnologies.map(technology => (
+                  <TechnologyIcon technology={technology} />
+                ))}
+              </div>
+            </div>
           </div>
           <h2 className={styles.title}>Overview</h2>
           <p className={styles.description}>{overview.description}</p>
@@ -34,7 +50,7 @@ class ProjectOverview extends Component {
             ))}
           </div>
         </section>
-        <h2 className={styles.title}>Tech Stack</h2>
+        {/* <h2 className={styles.title}>Tech Stack</h2>
         <section style={{ width: '100%' }}>
           {feTechnologies.length !== 0 && (
             <div className={styles.technologyContainer}>
@@ -56,7 +72,7 @@ class ProjectOverview extends Component {
               </div>
             </div>
           )}
-        </section>
+        </section> */}
       </div>
     )
   }

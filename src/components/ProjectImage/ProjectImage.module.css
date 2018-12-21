@@ -9,6 +9,7 @@
 
 .screenshots {
   border-radius: 7px;
+  margin: 0;
 }
 
 @media (max-width: 767px) {
