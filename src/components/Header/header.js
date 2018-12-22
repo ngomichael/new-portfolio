@@ -10,11 +10,14 @@ const ListLink = props => {
       to={props.to}
       className={
         props.currPath === props.to
-          ? `${styles.link} ${styles.bottomBorder}`
-          : `${styles.link}`
+          ? `${styles.link} ${styles.blackText}`
+          : `${styles.link} ${styles.grayText}`
       }
     >
       {props.children}
+      {props.to === props.currPath && (
+        <div className={styles.bottomBorder} style={{ width: '50%' }} />
+      )}
     </Link>
   )
 }
@@ -22,10 +25,15 @@ const ListLink = props => {
 class Header extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      width: '0',
+    }
   }
 
+  updateWidth() {}
+
   render() {
-    console.log(this.props.pathname === '/')
+    const { pathname } = this.props
     return (
       <header className={styles.container}>
         <Link to="/">
@@ -34,13 +42,13 @@ class Header extends React.Component {
           </span>
         </Link>
         <div className={styles.linksContainer}>
-          <ListLink to="/" currPath={this.props.pathname}>
+          <ListLink to="/" currPath={pathname}>
             Projects
           </ListLink>
           <a
             href="https://drive.google.com/file/d/1PyJj4BOHLDTVCYRZOAfWJ72UqeNA6719/view?usp=sharing"
             target="_blank"
-            className={`${styles.tab} ${styles.link}`}
+            className={`${styles.link} ${styles.grayText}`}
           >
             Resume
           </a>

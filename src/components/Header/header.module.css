@@ -26,16 +26,27 @@
 }
 
 .bottomBorder {
-  border-bottom: 4px solid hsl(214, 76%, 54%);
+  margin-top: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: hsl(214, 76%, 54%);
+  transition: all 250ms;
 }
 
 .link {
   font-family: 'Open Sans', sans-serif;
-  color: hsl(220, 27%, 22%);
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
-  transition: color 250ms;
+  transition: all 250ms;
+}
+
+.grayText {
+  color: hsl(228, 14%, 58%);
+}
+
+.blackText {
+  color: hsl(220, 27%, 22%);
 }
 
 .link:hover {
