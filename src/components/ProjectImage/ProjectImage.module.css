@@ -13,6 +13,7 @@
 }
 
 .container:hover .caption {
+  font-size: 16px;
   color: hsl(220, 27%, 22%);
 }
 

@@ -20,10 +20,6 @@
   }
 }
 
-.project:hover .overlay {
-  top: 50%;
-}
-
 .images {
   opacity: 0;
   animation: fadeIn 300ms ease 400ms forwards;
@@ -49,6 +45,20 @@
   }
 }
 
+.laptop {
+  position: relative;
+  right: 66px;
+  top: 25px;
+  z-index: 1;
+}
+
+.screenshot {
+  position: absolute;
+  left: -78px;
+  top: 55px;
+  z-index: 1;
+}
+
 .overlay {
   position: absolute;
   height: 50%;
@@ -60,6 +70,12 @@
   padding-left: 32px;
   transition: all 250ms;
   z-index: 10;
+}
+
+@media (min-width: 376px) {
+  .project:hover .overlay {
+    top: 50%;
+  }
 }
 
 .projectTitle {
