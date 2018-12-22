@@ -12,6 +12,7 @@
   margin-bottom: 48px;
   letter-spacing: -0.05em;
   opacity: 0;
+  color: hsl(220, 27%, 22%);
   animation: slideInFromTop 400ms ease 400ms forwards;
 }
 
@@ -30,7 +31,7 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   margin: 32px 0 24px 0;
-  color: hsl(220, 27%, 22%);
+  color: hsl(228, 21%, 31%);
 }
 
 .subtitle {
@@ -76,7 +77,7 @@
   /* justify-content: space-around; */
   font-family: 'Open Sans', sans-serif;
   padding: 0 12px;
-  margin-top: 16px;
+  margin-top: 48px;
   width: 240px;
 }
 
@@ -151,6 +152,7 @@
 
   .description {
     font-size: 18px;
+    width: 90%;
   }
 
   .projectDetailsDescription {

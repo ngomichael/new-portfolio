@@ -45,6 +45,42 @@
   color: hsl(228, 21%, 31%);
 }
 
+.projectsTextContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  margin-top: 96px;
+  animation: slideInFromLeft 400ms ease;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: hsl(228, 21%, 31%);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+/* .description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  width: 80%;
+  line-height: 1.5em;
+  color: hsl(201, 23%, 34%);
+} */
+
 .informaticsLink {
   color: hsla(0, 0%, 0%, 1);
   font-weight: 600;
@@ -72,6 +108,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    width: 100%;
+  }
+
+  .description {
+    width: 100%;
   }
 }
 

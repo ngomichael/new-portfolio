@@ -14,6 +14,7 @@ import ProjectCard from '../components/ProjectCard/ProjectCard'
 const projects = [
   {
     color: 'hsl(260, 48%, 35%)',
+    overlayColor: 'hsl(260, 48%, 28%',
     title: 'UW Hangouts',
     imgs: [laptop, hangouts],
     to: 'hangouts',
@@ -21,6 +22,7 @@ const projects = [
   },
   {
     color: 'hsl(0, 66%, 47%)',
+    overlayColor: 'hsl(0, 66%, 40%)',
     title: 'UFC Statistics',
     imgs: [laptop, ufc],
     to: 'ufc',
@@ -28,6 +30,7 @@ const projects = [
   },
   {
     color: 'hsl(141, 73%, 42%)',
+    overlayColor: 'hsl(141, 73%, 35%)',
     title: 'Spotify Artist Search',
     imgs: [laptop, spotify],
     to: 'spotify',
@@ -35,6 +38,7 @@ const projects = [
   },
   {
     color: 'hsl(214, 76%, 54%)',
+    overlayColor: 'hsl(214, 76%, 47%)',
     title: 'Online Whiteboard',
     imgs: [laptop, whiteboard],
     to: 'whiteboard',
@@ -63,7 +67,12 @@ const IndexPage = props => (
           >
             Informatics
           </a>
-          . Take a look around!
+        </p>
+      </div>
+      <div className={styles.projectsTextContainer}>
+        <h2 className={styles.subtitle}>Projects</h2>
+        <p className={styles.description}>
+          Here are some of my most recent projects
         </p>
       </div>
       <div className={styles.projectsContainer}>
