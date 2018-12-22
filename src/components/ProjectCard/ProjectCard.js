@@ -31,21 +31,9 @@ class ProjectCard extends Component {
               alt="Macbook Pro"
               height="225"
               width="300"
-              // style={{
-              //   position: 'relative',
-              //   right: '66px',
-              //   top: '25px',
-              //   zIndex: 1,
-              // }}
               className={styles.laptop}
             />
             <img
-              // style={{
-              //   position: 'absolute',
-              //   right: '198px',
-              //   top: '56px',
-              //   zIndex: 1,
-              // }}
               className={styles.screenshot}
               height="160"
               width="255"
