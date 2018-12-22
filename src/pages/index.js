@@ -17,24 +17,28 @@ const projects = [
     title: 'UW Hangouts',
     imgs: [laptop, hangouts],
     to: 'hangouts',
+    type: 'Class Project',
   },
   {
     color: 'hsl(0, 66%, 47%)',
     title: 'UFC Statistics',
     imgs: [laptop, ufc],
     to: 'ufc',
+    type: 'Personal Project',
   },
   {
     color: 'hsl(141, 73%, 42%)',
     title: 'Spotify Artist Search',
     imgs: [laptop, spotify],
     to: 'spotify',
+    type: 'Personal Project',
   },
   {
     color: 'hsl(214, 76%, 54%)',
     title: 'Online Whiteboard',
     imgs: [laptop, whiteboard],
     to: 'whiteboard',
+    type: 'Personal Project',
   },
 ]
 

@@ -15,7 +15,10 @@ class ProjectCard extends Component {
           <div
             className={styles.overlay}
             style={{ backgroundColor: projectInfo.color }}
-          />
+          >
+            <p className={styles.projectTitle}>{projectInfo.title}</p>
+            <p className={styles.projectType}>{projectInfo.type}</p>
+          </div>
           <div
             style={{
               position: 'relative',

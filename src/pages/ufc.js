@@ -18,13 +18,19 @@ const overview = {
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.`,
   timeline: "Sep '17 - Feb '18",
   type: 'Personal Project',
-  imgs: [ufcHome, ufcStats],
+  imgs: [
+    { img: ufcHome, caption: 'Home page where a user chooses a fighter' },
+    {
+      img: ufcStats,
+      caption: 'Statistics page where the fighters statistics are displayed',
+    },
+  ],
 }
 
 const feTechnologies = [
-  { icon: react, width: '60', margin: '18' },
-  { icon: redux },
-  { icon: reactRouter },
+  { icon: react, width: '60', margin: '18', name: 'React' },
+  { icon: redux, name: 'Redux' },
+  { icon: reactRouter, name: 'React-Router' },
 ]
 const beTechnologies = []
 

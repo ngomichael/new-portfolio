@@ -23,20 +23,29 @@ const overview = {
     sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   timeline: "Nov '18 - Dec '18",
   type: 'Server-Side Web Dev Final Project',
-  imgs: [hangoutsHome, hangoutsVideo],
+  imgs: [
+    {
+      img: hangoutsHome,
+      caption: 'Home page where a user can search for a friend',
+    },
+    {
+      img: hangoutsVideo,
+      caption: 'Video chat page where two users video chat with one another',
+    },
+  ],
 }
 const feTechnologies = [
-  { icon: react, width: '100', margin: '18' },
-  { icon: mui, width: '35', margin: '25' },
+  { icon: react, width: '100', margin: '18', name: 'React' },
+  { icon: mui, width: '35', margin: '25', name: 'Material UI' },
 ]
 
 const beTechnologies = [
-  { icon: golang, width: '35', margin: '22' },
-  { icon: node, width: '35', margin: '18' },
-  { icon: mysql, width: '40', margin: '26' },
-  { icon: mongodb, width: '35', margin: '24' },
-  { icon: docker, width: '35', margin: '22' },
-  { icon: aws, width: '35', margin: '25' },
+  { icon: golang, width: '35', margin: '22', name: 'Go' },
+  { icon: node, width: '35', margin: '18', name: 'Node' },
+  { icon: mysql, width: '40', margin: '26', name: 'MySQL' },
+  { icon: mongodb, width: '35', margin: '24', name: 'MongoDB' },
+  { icon: docker, width: '35', margin: '22', name: 'Docker' },
+  { icon: aws, width: '35', margin: '25', name: 'AWS' },
 ]
 
 const Hangouts = () => (

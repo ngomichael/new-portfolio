@@ -17,10 +17,20 @@ const overview = {
     sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   timeline: "Dec '16 - March '17",
   type: 'Personal Project',
-  imgs: [whiteboardHome],
+  imgs: [
+    {
+      img: whiteboardHome,
+      caption:
+        'Home page where a user can draw whatever they want on the whiteboard',
+    },
+  ],
 }
 
-const feTechnologies = [{ icon: js }, { icon: css }, { icon: html }]
+const feTechnologies = [
+  { icon: js, name: 'JavaScript' },
+  { icon: css, name: 'CSS' },
+  { icon: html, name: 'HTML' },
+]
 const beTechnologies = []
 
 const Whiteboard = () => (

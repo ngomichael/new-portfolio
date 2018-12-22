@@ -12,13 +12,13 @@
   align-items: center;
   width: 90%;
   opacity: 0;
-  animation: slideInFromTop 500ms ease 500ms forwards;
+  animation: slideInFromTop 400ms ease 400ms forwards;
 }
 
 @keyframes slideInFromTop {
   0% {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;

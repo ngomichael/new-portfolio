@@ -28,17 +28,29 @@ class ProjectOverview extends Component {
             <div className={styles.projectDetails}>
               <p className={styles.projectDetailsTitle}>FRONT-END</p>
               <div className={styles.technologies}>
-                {feTechnologies.map(technology => (
-                  <TechnologyIcon technology={technology} />
-                ))}
+                {feTechnologies.length !== 0 ? (
+                  feTechnologies.map(technology => (
+                    <li className={styles.projectDetailsDescription}>
+                      {technology.name}
+                    </li>
+                  ))
+                ) : (
+                  <p className={styles.projectDetailsDescription}>None</p>
+                )}
               </div>
             </div>
             <div className={styles.projectDetails}>
               <p className={styles.projectDetailsTitle}>BACK-END</p>
               <div className={styles.technologies}>
-                {beTechnologies.map(technology => (
-                  <TechnologyIcon technology={technology} />
-                ))}
+                {beTechnologies.length !== 0 ? (
+                  beTechnologies.map(technology => (
+                    <li className={styles.projectDetailsDescription}>
+                      {technology.name}
+                    </li>
+                  ))
+                ) : (
+                  <p className={styles.projectDetailsDescription}>None</p>
+                )}
               </div>
             </div>
           </div>
@@ -46,7 +58,7 @@ class ProjectOverview extends Component {
           <p className={styles.description}>{overview.description}</p>
           <div className={styles.projectImagesContainer}>
             {overview.imgs.map(img => (
-              <ProjectImage img={img} />
+              <ProjectImage img={img.img} caption={img.caption} />
             ))}
           </div>
         </section>

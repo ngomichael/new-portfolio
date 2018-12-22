@@ -19,14 +19,23 @@ const overview = {
     sunt in culpa qui officia deserunt mollit anim id est laborum.`,
   timeline: "March '17 - April '17",
   type: 'Personal Project',
-  imgs: [spotifyHome, spotifyArtistInfo],
+  imgs: [
+    {
+      img: spotifyHome,
+      caption: 'Home page where a user can search for an artist',
+    },
+    {
+      img: spotifyArtistInfo,
+      caption: "Artist page where an artist's information is shown.",
+    },
+  ],
 }
 
 const feTechnologies = [
-  { icon: js },
-  { icon: jQuery },
-  { icon: css },
-  { icon: html },
+  { icon: js, name: 'JavaScript' },
+  { icon: jQuery, name: 'jQuery' },
+  { icon: css, name: 'CSS' },
+  { icon: html, name: 'HTML' },
 ]
 const beTechnologies = []
 
