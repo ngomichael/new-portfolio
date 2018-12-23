@@ -7,7 +7,7 @@
   max-width: 670px;
   max-height: 370px;
   border-radius: 7px;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
   margin-bottom: 24px;
   transition: all 250ms ease;
 }
@@ -20,8 +20,8 @@
 }
 
 .container:hover {
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.18);
-  transform: translate(-5px, -5px);
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.18);
+  transform: translateY(-5px);
 }
 
 .container:hover .caption {
@@ -32,7 +32,7 @@
 .caption {
   font-size: 14px;
   color: hsl(228, 14%, 58%);
-  padding: 4px 0 0 16px;
+  padding: 8px 0 0 16px;
   transition: all 250ms ease;
 }
 

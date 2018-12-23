@@ -12,10 +12,15 @@ import SEO from '../components/seo'
 
 const overview = {
   title: 'UFC Statistic Displayer',
-  description: `UFC Statistic Displayer is exactly what it is, it displays UFC fighter statistics. 
-    At this time I just got into the UFC and it was something I really enjoyed watching. So I decided to
-    create a project that interested me while learning new technologies like React, React-Router, and Redux. 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.`,
+  description: `My project does exactly what the names suggests, it displays UFC statistics.
+  More specifically, it displays UFC fighter statistics. The home page shows you the top 10
+  pound for pound fighters and as a user you pick a fighter. Once you pick a fighter the 
+  application takes you to another page where you are able to see 6 different statistics for
+  that fighter, where they're from, and their record. 
+  In my rankings of my favorite projects, this is definitely up there. I just learned so much at
+  the end of the project and had so much fun immersing myself in different technologies.
+  The most notable 3 were: React, Redux, and React-Router. This project is what really started my 
+  love for React and it has only grown ever since.`,
   timeline: "Sep '17 - Feb '18",
   type: 'Personal Project',
   imgs: [
