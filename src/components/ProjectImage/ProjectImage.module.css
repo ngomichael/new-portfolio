@@ -33,6 +33,7 @@
   font-size: 14px;
   color: hsl(228, 14%, 58%);
   padding: 8px 0 0 16px;
+  font-family: 'Open Sans', sans-serif;
   transition: all 250ms ease;
 }
 

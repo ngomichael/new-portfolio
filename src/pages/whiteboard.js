@@ -8,13 +8,18 @@ import whiteboardHome from '../images/overview/whiteboardHome.png'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
+// What and Why
 const overview = {
   title: 'Online Whiteboard',
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-    sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+  description: `My Online Whiteboard project is my very first project where I
+  used more than 25 lines of JavaScript! I used this project as my first
+  taste of JavaScript and this came with a ton of headaches and 
+  challenges, but it be like that sometimes. This web application allows
+  you to draw on the whiteboard, erase, and clear the whiteboard. Options
+  you have when drawing is the color and the thickness of the stroke.
+  
+  
+  `,
   timeline: "Dec '16 - March '17",
   type: 'Personal Project',
   imgs: [

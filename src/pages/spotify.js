@@ -10,13 +10,21 @@ import spotifyArtistInfo from '../images/overview/spotifyArtistInfo.png'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
+// What and Why
 const overview = {
   title: 'Spotify Artist Seach',
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-    sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+  description: `Music is a huge part of my life and Spotify is probably my most used app.
+  So why not make a project using Spotify's API? Spotify Artist Search is a web application
+  that allows you as a user to search for an artist and see their photo, top 10 songs,
+  and their related artists. I felt that if someone was using my application to find new artists, 
+  being able to quickly listen to their most popular songs would be helpful. One of the features 
+  that I implemented to help with this is that when you hover over each song, it plays a snippet 
+  of the song. If you like the artist, you can go to one of the related artists and do the same!
+  
+  Whenever I start a personal project I always try and choose a topic that I would be interested in
+  to stay motivated and a thing or two that I want to learn. This time it was Spotify and APIs. I
+  learned how to interact with APIs and work with async data.
+  `,
   timeline: "March '17 - April '17",
   type: 'Personal Project',
   imgs: [

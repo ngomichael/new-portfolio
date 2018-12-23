@@ -21,7 +21,7 @@ const overview = {
   notice three main features: video chatting, messaging, and searching for friends. With a timeline
   of ~1.5 weeks, I am really happy with how much we were able to get done and that we only had to suffer 
   through one all-nighter (I count that as a win). Thinking back at how much I learned through this class
-  and all of the applicable skills I gained, I can say that all of the stressful Monday nights (the
+  and all of the skills I gained and applied, I can say that all of the stressful Monday nights (the
   assignemnts were due on Tuesday) were worth it.`,
   timeline: "Nov '18 - Dec '18",
   type: 'Server-Side Web Dev Final Project',
