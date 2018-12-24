@@ -31,7 +31,7 @@
   line-height: 1.5em;
   text-align: center;
   color: hsl(228, 21%, 31%);
-  width: 65%;
+  width: 70%;
 }
 
 .projectsTextContainer {
@@ -51,22 +51,6 @@
   color: hsl(228, 21%, 31%);
   letter-spacing: 2px;
   margin-bottom: 8px;
-}
-
-.informaticsLink {
-  color: hsla(0, 0%, 0%, 1);
-  font-weight: 600;
-  background: linear-gradient(
-    to top,
-    rgba(255, 215, 0, 0.4) 35%,
-    transparent 35%
-  );
-  text-decoration: none;
-  transition: all 250ms;
-}
-
-.informaticsLink:hover {
-  background: hsla(51, 100%, 50%, 1);
 }
 
 .projectsContainer {

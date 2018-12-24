@@ -7,13 +7,7 @@ class TechnologyIcon extends Component {
     const { icon } = this.props.technology
     return (
       <div className={styles.container}>
-        <img
-          alt="icon"
-          src={icon}
-          // width={width}
-          // style={{ top: `${0}%` }}
-          className={styles.icon}
-        />
+        <img alt="icon" src={icon} className={styles.icon} />
       </div>
     )
   }

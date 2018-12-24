@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
 import styles from './index.module.css'
 import laptop from '../images/MBP Full Icon.png'
@@ -10,6 +8,7 @@ import ufc from '../images/UFC.png'
 import spotify from '../images/spotify.png'
 import whiteboard from '../images/whiteboard.png'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
+import HighlightedLink from '../components/HighlightedLink/HighlightedLink'
 
 const projects = [
   {
@@ -58,15 +57,16 @@ const IndexPage = props => (
           Full-Stack Developer, Student & NBA Fan
         </h1>
         <p className={styles.description}>
-          Thanks for coming by! I’m a senior at the University of Washington
-          majoring in{' '}
-          <a
-            href="https://ischool.uw.edu/programs/informatics"
-            target="_blank"
-            className={styles.informaticsLink}
-          >
-            Informatics
-          </a>
+          Thanks for coming by! I'm{' '}
+          <HighlightedLink
+            site="https://ischool.uw.edu/programs/informatics"
+            linkText="Michael Ngo"
+          />
+          , a senior at the University of Washington majoring in{' '}
+          <HighlightedLink
+            site="https://www.linkedin.com/in/mhngo/"
+            linkText="Informatics"
+          />
         </p>
       </div>
       <div className={styles.projectsTextContainer}>
@@ -85,10 +85,6 @@ const IndexPage = props => (
         ))}
       </div>
     </div>
-    {/* <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div> */}
-    {/* <Link to="/about/">Go to about</Link> */}
   </Layout>
 )
 

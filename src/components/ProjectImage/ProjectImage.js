@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styles from './ProjectImage.module.css'
-import { checkPropTypes } from 'prop-types'
 
 class ProjectImage extends Component {
   render() {

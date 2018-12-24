@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import jQuery from '../icons/jQuery-icon.svg'
 import js from '../icons/js-icon.svg'
 import css from '../icons/css-icon.svg'
@@ -10,7 +9,6 @@ import spotifyArtistInfo from '../images/overview/spotifyArtistInfo.png'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
-// What and Why
 const overview = {
   title: 'Spotify Artist Seach',
   description: `Music is a huge part of my life and Spotify is probably my most used app.

@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import styles from './header.module.css'
+import styles from './Header.module.css'
 import icon from '../../../public/icons/WebsiteIconSlash.png'
 
 const ListLink = props => {
@@ -29,8 +29,6 @@ class Header extends React.Component {
       width: '0',
     }
   }
-
-  updateWidth() {}
 
   render() {
     const { pathname } = this.props

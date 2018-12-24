@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import react from '../icons/react-icon.svg'
 import redux from '../icons/redux-icon.svg'
 import reactRouter from '../icons/react-router-icon.svg'
@@ -48,7 +47,6 @@ const UFC = () => (
       feTechnologies={feTechnologies}
       beTechnologies={beTechnologies}
     />
-    {/* <Link to="/">Go back to the homepage</Link> */}
   </Layout>
 )
 

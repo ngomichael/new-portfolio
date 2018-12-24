@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ProjectImage from '../ProjectImage/ProjectImage'
-import TechnologyIcon from '../TechnologyIcon/TechnologyIcon'
 import styles from './ProjectOverview.module.css'
 
 class ProjectOverview extends Component {
@@ -62,29 +61,6 @@ class ProjectOverview extends Component {
             ))}
           </div>
         </section>
-        {/* <h2 className={styles.title}>Tech Stack</h2>
-        <section style={{ width: '100%' }}>
-          {feTechnologies.length !== 0 && (
-            <div className={styles.technologyContainer}>
-              {<h3 className={styles.subtitle}>Front-End</h3>}
-              <div className={styles.technologies}>
-                {feTechnologies.map(technology => (
-                  <TechnologyIcon technology={technology} />
-                ))}
-              </div>
-            </div>
-          )}
-          {beTechnologies.length !== 0 && (
-            <div className={styles.technologyContainer}>
-              {<h3 className={styles.subtitle}>Back-End</h3>}
-              <div className={styles.technologies}>
-                {beTechnologies.map(technology => (
-                  <TechnologyIcon technology={technology} />
-                ))}
-              </div>
-            </div>
-          )}
-        </section> */}
       </div>
     )
   }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import aws from '../icons/aws-icon.svg'
 import docker from '../icons/docker-icon.svg'
 import golang from '../icons/golang-icon.svg'
@@ -58,7 +57,6 @@ const Hangouts = () => (
       feTechnologies={feTechnologies}
       beTechnologies={beTechnologies}
     />
-    {/* <Link to="/">Go back to the homepage</Link> */}
   </Layout>
 )
 
