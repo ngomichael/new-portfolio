@@ -6,7 +6,7 @@ import styles from './ProjectOverview.module.css'
 class ProjectOverview extends Component {
   render() {
     const { overview, feTechnologies, beTechnologies } = this.props
-
+    console.log(overview.description)
     return (
       <div className={styles.container}>
         <section className={styles.overviewContainer}>

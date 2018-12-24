@@ -59,12 +59,12 @@ const IndexPage = props => (
         <p className={styles.description}>
           Thanks for coming by! I'm{' '}
           <HighlightedLink
-            site="https://ischool.uw.edu/programs/informatics"
+            site="https://www.linkedin.com/in/mhngo/"
             linkText="Michael Ngo"
           />
           , a senior at the University of Washington majoring in{' '}
           <HighlightedLink
-            site="https://www.linkedin.com/in/mhngo/"
+            site="https://ischool.uw.edu/programs/informatics"
             linkText="Informatics"
           />
         </p>
