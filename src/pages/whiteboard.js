@@ -11,15 +11,15 @@ import SEO from '../components/seo'
 // What and Why
 const overview = {
   title: 'Online Whiteboard',
-  description: `My Online Whiteboard project is my very first project where I
+  description: `This project for me was the start of making more than just static websites.
+  This web application allows you to draw on the whiteboard, erase, and clear the whiteboard. The
+  options you have when drawing is the color and the thickness of the stroke. 
+
+  My Online Whiteboard project is my very first project where I
   used more than 25 lines of JavaScript! I used this project as my first
   taste of JavaScript and this came with a ton of headaches and 
-  challenges, but it be like that sometimes. This web application allows
-  you to draw on the whiteboard, erase, and clear the whiteboard. Options
-  you have when drawing is the color and the thickness of the stroke.
-  
-  
-  `,
+  challenges, but it be like that sometimes. This jumpstarted my appreaction for JavaScript
+  and I haven't stopped working with it since.`,
   timeline: "Dec '16 - March '17",
   type: 'Personal Project',
   imgs: [

@@ -4,6 +4,7 @@
   justify-content: space-between;
   width: 88%;
   margin: 16px auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .icon {
@@ -13,8 +14,7 @@
   position: relative;
   height: 50px;
   width: 50px;
-  margin-top: 10px;
-  top: 12px;
+  margin-top: 16px;
 }
 
 .linksContainer {
@@ -26,15 +26,14 @@
 }
 
 .bottomBorder {
-  margin-top: 4px;
-  height: 4px;
-  border-radius: 4px;
   background-color: hsl(214, 76%, 54%);
+  border-radius: 4px;
+  height: 4px;
+  margin-top: 4px;
   transition: all 250ms;
 }
 
 .link {
-  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
@@ -53,7 +52,3 @@
   cursor: pointer;
   color: hsl(233, 25%, 12%);
 }
-/* 
-li {
-  list-style: none;
-} */

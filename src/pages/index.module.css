@@ -15,34 +15,23 @@
   animation: slideInFromTop 400ms ease 400ms forwards;
 }
 
-@keyframes slideInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .title {
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: hsl(220, 27%, 22%);
-  width: 70%;
   line-height: 1em;
   font-size: 48px;
   letter-spacing: -0.05em;
+  text-align: center;
+  color: hsl(220, 27%, 22%);
+  width: 75%;
 }
 
 .description {
-  text-align: center;
-  width: 60%;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   line-height: 1.5em;
+  text-align: center;
   color: hsl(228, 21%, 31%);
+  width: 65%;
 }
 
 .projectsTextContainer {
@@ -55,15 +44,6 @@
   animation: slideInFromLeft 400ms ease;
 }
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-50px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .subtitle {
   font-family: 'Open Sans', sans-serif;
   font-size: 36px;
@@ -72,14 +52,6 @@
   letter-spacing: 2px;
   margin-bottom: 8px;
 }
-
-/* .description {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  width: 80%;
-  line-height: 1.5em;
-  color: hsl(201, 23%, 34%);
-} */
 
 .informaticsLink {
   color: hsla(0, 0%, 0%, 1);
@@ -128,5 +100,25 @@
 
   .description {
     font-size: 24px;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

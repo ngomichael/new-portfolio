@@ -1,48 +1,20 @@
 .project {
-  margin-top: 64px;
+  position: relative;
+  border-radius: 7px;
+  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
   width: 63vw;
   height: 40vw;
   min-width: 300px;
   min-height: 250px;
-  border-radius: 7px;
-  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.18);
-  overflow: hidden;
-  position: relative;
+  margin-top: 64px;
+  font-family: 'Open Sans', sans-serif;
   animation: slideInFromLeft 400ms ease;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-50px);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 .images {
   opacity: 0;
   animation: fadeIn 300ms ease 400ms forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .laptop {
@@ -66,16 +38,16 @@
 @media (min-width: 376px) {
   .overlay {
     position: absolute;
-    height: 50%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    top: 100%;
     justify-content: center;
+    height: 50%;
+    width: 100%;
+    top: 100%;
     padding-left: 32px;
-    transition: all 250ms;
-    z-index: 10;
     opacity: 0.95;
+    z-index: 10;
+    transition: all 250ms;
   }
 
   .project:hover .overlay {
@@ -86,16 +58,14 @@
 .projectTitle {
   color: rgb(235, 235, 235);
   font-size: 24px;
-  padding-bottom: 8px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   letter-spacing: -0.025em;
+  padding-bottom: 8px;
 }
 
 .projectType {
   color: rgb(235, 235, 235);
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
@@ -105,5 +75,34 @@
     height: 20vw;
     max-width: 375px;
     max-height: 230px;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

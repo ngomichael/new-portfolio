@@ -1,14 +1,13 @@
 .container {
-  margin-top: 50px;
-  /* width: 370px;
-  height: 195px; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+  border-radius: 7px;
   width: 70vw;
   height: 40vw;
   max-width: 670px;
   max-height: 370px;
-  border-radius: 7px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
   margin-bottom: 24px;
+  margin-top: 50px;
+  font-family: 'Open Sans', sans-serif;
   transition: all 250ms ease;
 }
 
@@ -30,17 +29,14 @@
 }
 
 .caption {
-  font-size: 14px;
   color: hsl(228, 14%, 58%);
+  font-size: 14px;
   padding: 8px 0 0 16px;
-  font-family: 'Open Sans', sans-serif;
   transition: all 250ms ease;
 }
 
 @media (max-width: 767px) {
   .container {
-    /* width: 55vw;
-    height: 29vw; */
     width: 70vw;
     height: 40vw;
     min-width: 290px;

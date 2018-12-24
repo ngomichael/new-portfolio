@@ -20,12 +20,7 @@ class Footer extends Component {
       <footer className={styles.container}>
         <div className={styles.linksContainer}>
           {links.map(link => (
-            <a
-              href={link.url}
-              target="_blank"
-              key={link.siteName}
-              className={styles.link}
-            >
+            <a href={link.url} target="_blank" key={link.siteName}>
               <div className={styles.iconContainer}>
                 <img
                   src={link.icon}

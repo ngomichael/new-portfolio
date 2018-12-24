@@ -6,40 +6,26 @@
 }
 
 .projectName {
-  font-family: 'Open Sans', sans-serif;
   font-size: 48px;
   text-align: center;
-  margin-bottom: 48px;
   letter-spacing: -0.05em;
-  opacity: 0;
   color: hsl(220, 27%, 22%);
+  margin-bottom: 48px;
+  opacity: 0;
   animation: slideInFromTop 400ms ease 400ms forwards;
 }
 
-@keyframes slideInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .title {
-  font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   margin: 32px 0 24px 0;
   color: hsl(228, 21%, 31%);
 }
 
 .subtitle {
-  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: hsl(228, 14%, 58%);
   letter-spacing: 2px;
+  color: hsl(228, 14%, 58%);
   margin-bottom: 16px;
 }
 
@@ -52,54 +38,45 @@
 }
 
 .description {
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  width: 80%;
   line-height: 1.5em;
+  width: 80%;
   color: hsl(201, 23%, 34%);
 }
 
 .projectDetailsContainer {
-  margin-bottom: 16px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 65%;
+  margin-bottom: 16px;
 }
-
-/* .projectDetailsContainer div:nth-child(n + 2) {
-  margin-bottom: 24px;
-} */
 
 .projectDetails {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
-  font-family: 'Open Sans', sans-serif;
+  width: 240px;
   padding: 0 12px;
   margin-top: 48px;
-  width: 240px;
 }
 
 .projectDetailsTitle {
   font-size: 12px;
-  color: hsl(228, 14%, 79%);
   letter-spacing: 2px;
-  /* margin-right: 16px; */
-  margin-bottom: 4px;
   font-weight: 700;
+  color: hsl(228, 14%, 79%);
+  margin-bottom: 4px;
 }
 
 .projectDetailsDescription {
   font-size: 20px;
-  padding-bottom: 4px;
   width: 240px;
+  padding-bottom: 4px;
 }
 
 .projectImagesContainer {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -123,17 +100,9 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-top: 8px;
   width: 95%;
+  margin-top: 8px;
 }
-
-/* .technologies div:nth-child(n + 2) {
-  margin-left: 16px;
-} */
-
-/* .technologies div {
-  margin-bottom: 10px;
-} */
 
 .link {
   text-decoration: none;
@@ -159,5 +128,16 @@
 
   .projectDetailsDescription {
     font-size: 18px;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
