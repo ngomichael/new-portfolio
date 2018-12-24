@@ -6,7 +6,6 @@ import styles from './ProjectOverview.module.css'
 class ProjectOverview extends Component {
   render() {
     const { overview, feTechnologies, beTechnologies } = this.props
-    console.log(overview.description)
     return (
       <div className={styles.container}>
         <section className={styles.overviewContainer}>
@@ -29,7 +28,10 @@ class ProjectOverview extends Component {
               <div className={styles.technologies}>
                 {feTechnologies.length !== 0 ? (
                   feTechnologies.map(technology => (
-                    <li className={styles.projectDetailsDescription}>
+                    <li
+                      key={technology.name}
+                      className={styles.projectDetailsDescription}
+                    >
                       {technology.name}
                     </li>
                   ))
@@ -43,7 +45,10 @@ class ProjectOverview extends Component {
               <div className={styles.technologies}>
                 {beTechnologies.length !== 0 ? (
                   beTechnologies.map(technology => (
-                    <li className={styles.projectDetailsDescription}>
+                    <li
+                      key={technology.name}
+                      lassName={styles.projectDetailsDescription}
+                    >
                       {technology.name}
                     </li>
                   ))
