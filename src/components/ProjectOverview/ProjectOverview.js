@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import ProjectImage from '../ProjectImage/ProjectImage'
+import highlightLink from '../HighlightedLink/HighlightedLink'
 import styles from './ProjectOverview.module.css'
+import HighlightedLink from '../HighlightedLink/HighlightedLink'
 
 class ProjectOverview extends Component {
   render() {
@@ -47,7 +50,7 @@ class ProjectOverview extends Component {
                   beTechnologies.map(technology => (
                     <li
                       key={technology.name}
-                      lassName={styles.projectDetailsDescription}
+                      className={styles.projectDetailsDescription}
                     >
                       {technology.name}
                     </li>
@@ -66,6 +69,9 @@ class ProjectOverview extends Component {
             ))}
           </div>
         </section>
+        <Link to="/" className={styles.homeLink}>
+          Go back to projects
+        </Link>
       </div>
     )
   }

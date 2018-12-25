@@ -104,8 +104,22 @@
   margin-top: 8px;
 }
 
-.link {
+.homeLink {
+  font-size: 24px;
+  color: hsla(0, 0%, 0%, 1);
+  font-weight: 600;
+  background: linear-gradient(
+    to top,
+    rgba(255, 215, 0, 0.4) 35%,
+    transparent 35%
+  );
   text-decoration: none;
+  margin-top: 64px;
+  transition: all 250ms;
+}
+
+.homeLink:hover {
+  background: hsla(51, 100%, 50%, 1);
 }
 
 @media (max-width: 376px) {
