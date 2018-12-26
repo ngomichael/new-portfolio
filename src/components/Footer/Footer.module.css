@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.18);
   background-color: hsla(214, 76%, 68%, 1);
   width: 50px;
   height: 50px;
@@ -33,7 +33,7 @@
 
 .iconContainer:hover {
   background-color: hsl(214, 76%, 54%);
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.18);
   transform: translateY(3px);
 }
 
