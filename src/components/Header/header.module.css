@@ -25,6 +25,10 @@
   margin-top: 12px;
 }
 
+.listItem {
+  list-style: none;
+}
+
 .bottomBorder {
   background-color: hsl(214, 76%, 54%);
   border-radius: 4px;
