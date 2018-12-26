@@ -7,7 +7,7 @@ class ProjectImage extends Component {
     const { img, caption } = this.props
     return (
       <div className={styles.container}>
-        <img src={img} className={styles.screenshot} />
+        <img src={img} alt="Project Screenshot" className={styles.screenshot} />
         <figcaption className={styles.caption}>{caption}</figcaption>
       </div>
     )

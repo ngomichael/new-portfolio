@@ -25,17 +25,13 @@ const ListLink = props => {
 }
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     const { pathname } = this.props
     return (
       <header className={styles.container}>
         <Link to="/">
           <span className={styles.icon}>
-            <img src={icon} />
+            <img src={icon} alt="Michael Ngo Website Icon" />
           </span>
         </Link>
         <ul className={styles.linksContainer}>
@@ -46,6 +42,7 @@ class Header extends React.Component {
             <a
               href="https://drive.google.com/file/d/1PyJj4BOHLDTVCYRZOAfWJ72UqeNA6719/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
               className={`${styles.link} ${styles.grayText}`}
             >
               Resume

@@ -35,6 +35,7 @@ class ProjectCard extends Component {
             />
             <img
               className={styles.screenshot}
+              alt="Website Screenshot"
               height="160"
               width="255"
               src={projectInfo.imgs[1]}
