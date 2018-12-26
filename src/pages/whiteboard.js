@@ -31,23 +31,18 @@ const overview = {
         'Home page where a user can draw whatever they want on the whiteboard',
     },
   ],
+  feTechnologies: [
+    { icon: js, name: 'JavaScript' },
+    { icon: css, name: 'CSS' },
+    { icon: html, name: 'HTML' },
+  ],
+  beTechnologies: [],
 }
-
-const feTechnologies = [
-  { icon: js, name: 'JavaScript' },
-  { icon: css, name: 'CSS' },
-  { icon: html, name: 'HTML' },
-]
-const beTechnologies = []
 
 const Whiteboard = () => (
   <Layout>
     <SEO title="Whiteboard" />
-    <ProjectOverview
-      overview={overview}
-      feTechnologies={feTechnologies}
-      beTechnologies={beTechnologies}
-    />
+    <ProjectOverview overview={overview} />
   </Layout>
 )
 

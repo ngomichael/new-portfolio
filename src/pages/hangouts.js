@@ -39,29 +39,24 @@ const overview = {
       caption: 'Video chat page where two users video chat with one another',
     },
   ],
+  feTechnologies: [
+    { icon: react, width: '100', margin: '18', name: 'React' },
+    { icon: mui, width: '35', margin: '25', name: 'Material UI' },
+  ],
+  beTechnologies: [
+    { icon: golang, width: '35', margin: '22', name: 'Go' },
+    { icon: node, width: '35', margin: '18', name: 'Node' },
+    { icon: mysql, width: '40', margin: '26', name: 'MySQL' },
+    { icon: mongodb, width: '35', margin: '24', name: 'MongoDB' },
+    { icon: docker, width: '35', margin: '22', name: 'Docker' },
+    { icon: aws, width: '35', margin: '25', name: 'AWS' },
+  ],
 }
-const feTechnologies = [
-  { icon: react, width: '100', margin: '18', name: 'React' },
-  { icon: mui, width: '35', margin: '25', name: 'Material UI' },
-]
-
-const beTechnologies = [
-  { icon: golang, width: '35', margin: '22', name: 'Go' },
-  { icon: node, width: '35', margin: '18', name: 'Node' },
-  { icon: mysql, width: '40', margin: '26', name: 'MySQL' },
-  { icon: mongodb, width: '35', margin: '24', name: 'MongoDB' },
-  { icon: docker, width: '35', margin: '22', name: 'Docker' },
-  { icon: aws, width: '35', margin: '25', name: 'AWS' },
-]
 
 const Hangouts = () => (
   <Layout>
     <SEO title="Hangouts" />
-    <ProjectOverview
-      overview={overview}
-      feTechnologies={feTechnologies}
-      beTechnologies={beTechnologies}
-    />
+    <ProjectOverview overview={overview} />
   </Layout>
 )
 

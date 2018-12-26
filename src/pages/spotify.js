@@ -11,7 +11,6 @@ import SEO from '../components/seo'
 
 const overview = {
   title: 'Spotify Artist Seach',
-
   description: [
     `Music is a huge part of my life and Spotify is probably my most used app.
   So why not make a project using Spotify's API? Spotify Artist Search is a web application
@@ -38,24 +37,19 @@ const overview = {
       caption: "Artist page where an artist's information is shown.",
     },
   ],
+  feTechnologies: [
+    { icon: js, name: 'JavaScript' },
+    { icon: jQuery, name: 'jQuery' },
+    { icon: css, name: 'CSS' },
+    { icon: html, name: 'HTML' },
+  ],
+  beTechnologies: [],
 }
-
-const feTechnologies = [
-  { icon: js, name: 'JavaScript' },
-  { icon: jQuery, name: 'jQuery' },
-  { icon: css, name: 'CSS' },
-  { icon: html, name: 'HTML' },
-]
-const beTechnologies = []
 
 const Spotify = () => (
   <Layout>
     <SEO title="Spotify" />
-    <ProjectOverview
-      overview={overview}
-      feTechnologies={feTechnologies}
-      beTechnologies={beTechnologies}
-    />
+    <ProjectOverview overview={overview} />
     {/* <Link to="/">Go back to the homepage</Link> */}
   </Layout>
 )

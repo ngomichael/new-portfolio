@@ -33,23 +33,18 @@ const overview = {
       caption: 'Statistics page where the fighters statistics are displayed',
     },
   ],
+  feTechnologies: [
+    { icon: react, width: '60', margin: '18', name: 'React' },
+    { icon: redux, name: 'Redux' },
+    { icon: reactRouter, name: 'React-Router' },
+  ],
+  beTechnologies: [],
 }
-
-const feTechnologies = [
-  { icon: react, width: '60', margin: '18', name: 'React' },
-  { icon: redux, name: 'Redux' },
-  { icon: reactRouter, name: 'React-Router' },
-]
-const beTechnologies = []
 
 const UFC = () => (
   <Layout>
     <SEO title="UFC" />
-    <ProjectOverview
-      overview={overview}
-      feTechnologies={feTechnologies}
-      beTechnologies={beTechnologies}
-    />
+    <ProjectOverview overview={overview} />
   </Layout>
 )
 

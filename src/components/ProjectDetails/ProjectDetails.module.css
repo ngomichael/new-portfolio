@@ -1,0 +1,7 @@
+.projectDetailsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 65%;
+  margin-bottom: 16px;
+}

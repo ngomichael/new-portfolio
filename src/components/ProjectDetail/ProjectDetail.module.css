@@ -1,0 +1,21 @@
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  padding: 0 12px;
+  margin-top: 48px;
+}
+
+.projectDetailsTitle {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: hsl(228, 14%, 79%);
+  margin-bottom: 4px;
+}
+
+.projectDetailsDescription {
+  font-size: 20px;
+  width: 240px;
+  padding-bottom: 4px;
+}
