@@ -4,8 +4,8 @@ import redux from '../icons/redux-icon.svg'
 import reactRouter from '../icons/react-router-icon.svg'
 import Layout from '../components/layout'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
-import ufcHome from '../images/overview/ufcHome.png'
-import ufcStats from '../images/overview/ufcStats.png'
+import ufcHome from '../images/overview/ufcHome.jpg'
+import ufcStats from '../images/overview/ufcStats.jpg'
 
 import SEO from '../components/seo'
 

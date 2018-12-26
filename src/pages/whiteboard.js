@@ -3,7 +3,7 @@ import js from '../icons/js-icon.svg'
 import css from '../icons/css-icon.svg'
 import html from '../icons/html-icon.svg'
 import Layout from '../components/layout'
-import whiteboardHome from '../images/overview/whiteboardHome.png'
+import whiteboardHome from '../images/overview/whiteboardHome.jpg'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
