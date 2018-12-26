@@ -13,7 +13,8 @@ import HighlightedLink from '../components/HighlightedLink/HighlightedLink'
 const projects = [
   {
     color: 'hsl(260, 48%, 35%)',
-    overlayColor: 'hsl(260, 48%, 28%',
+    overlayColor: 'hsl(260, 48%, 28%)',
+    borderTopColor: 'hsl(260, 53%, 48%)',
     title: 'UW Hangouts',
     imgs: [laptop, hangouts],
     to: 'hangouts',
@@ -22,6 +23,7 @@ const projects = [
   {
     color: 'hsl(0, 66%, 47%)',
     overlayColor: 'hsl(0, 66%, 40%)',
+    borderTopColor: 'hsl(0, 71%, 60%)',
     title: 'UFC Statistics',
     imgs: [laptop, ufc],
     to: 'ufc',
@@ -30,6 +32,7 @@ const projects = [
   {
     color: 'hsl(141, 73%, 42%)',
     overlayColor: 'hsl(141, 73%, 35%)',
+    borderTopColor: 'hsl(141, 78%, 55%)',
     title: 'Spotify Artist Search',
     imgs: [laptop, spotify],
     to: 'spotify',
@@ -38,6 +41,7 @@ const projects = [
   {
     color: 'hsl(214, 76%, 54%)',
     overlayColor: 'hsl(214, 76%, 47%)',
+    borderTopColor: 'hsl(214, 81%, 67%)',
     title: 'Online Whiteboard',
     imgs: [laptop, whiteboard],
     to: 'whiteboard',

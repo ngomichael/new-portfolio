@@ -9,7 +9,10 @@ class ProjectCard extends Component {
     return (
       <div
         className={styles.project}
-        style={{ backgroundColor: projectInfo.color }}
+        style={{
+          backgroundColor: projectInfo.color,
+          borderTop: `3px solid ${projectInfo.borderTopColor}`,
+        }}
       >
         <Link to={to}>
           <div
