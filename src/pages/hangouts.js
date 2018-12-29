@@ -18,12 +18,11 @@ const overview = {
   description: [
     `UW Hangouts is a web application that I created with Muatasim Qazi and Yash Vig for
   our server-side web development final project. If you played around with our application you would 
-  notice three main features: video chatting, messaging, and searching for friends. With a timeline
-  of ~1.5 weeks.`,
+  notice three main features: video chatting, messaging, and searching for friends.`,
     <br />,
     <br />,
-    `I am really happy with how much we were able to get done and that we only had to suffer 
-  through one all-nighter (I count that as a win). Thinking back at how much I learned through this class
+    `With a timeline of ~1.5 weeks, I am really happy with how much we were able to get done and that 
+  we only had to suffer through one all-nighter. Thinking back at how much I learned through this class
   and all of the skills I gained and applied, I can say that all of the stressful Monday nights (the
   assignemnts were due on Tuesday) were worth it.`,
   ],
@@ -32,7 +31,8 @@ const overview = {
   imgs: [
     {
       img: hangoutsHome,
-      caption: 'Home page where a user can search for a friend',
+      caption:
+        'Home page where a user can search for a friend to message or video chat',
     },
     {
       img: hangoutsVideo,

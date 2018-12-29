@@ -78,7 +78,7 @@ const IndexPage = props => (
       <div className={styles.projectsTextContainer}>
         <h2 className={styles.subtitle}>Projects</h2>
         <p className={styles.description}>
-          Here are some of my most recent projects
+          Take a look at some of my most recent projects
         </p>
       </div>
       <div className={styles.projectsContainer}>

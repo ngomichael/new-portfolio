@@ -14,8 +14,8 @@ const overview = {
   description: [
     `My project does exactly what the names suggests, it displays UFC statistics.
   More specifically, it displays UFC fighter statistics. The home page shows you the top 10
-  pound for pound fighters and as a user you pick a fighter. Once you pick a fighter the 
-  application takes you to another page where you are able to see 6 different statistics for
+  pound for pound fighters and as a user, you pick a fighter you want to know more about. Once you 
+  pick a fighter the application takes you to another page where you are able to see 6 different statistics for
   that fighter, where they're from, and their record.`,
     <br />,
     <br />,
@@ -30,7 +30,8 @@ const overview = {
     { img: ufcHome, caption: 'Home page where a user chooses a fighter' },
     {
       img: ufcStats,
-      caption: 'Statistics page where the fighters statistics are displayed',
+      caption:
+        'Statistics page where the fighters statistics and information are displayed',
     },
   ],
   feTechnologies: [

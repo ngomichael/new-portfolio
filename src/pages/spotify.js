@@ -14,16 +14,18 @@ const overview = {
   description: [
     `Music is a huge part of my life and Spotify is probably my most used app.
   So why not make a project using Spotify's API? Spotify Artist Search is a web application
-  that allows you as a user to search for an artist and see their photo, top 10 songs,
+  that allows you as a user, to search for an artist and see their photo, top 10 songs,
   and their related artists. I felt that if someone was using my application to find new artists, 
-  being able to quickly listen to their most popular songs would be helpful. One of the features 
+  being able to quickly listen to the artist's most popular songs would be helpful. One of the features 
   that I implemented to help with this is that when you hover over each song, it plays a snippet 
-  of the song. If you like the artist, you can go to one of the related artists and do the same!`,
+  of the song. If you like the artist, you can go to one of their related artists, go through the 
+  same process, and find new artists and songs to listen to!`,
     <br />,
     <br />,
-    `Whenever I start a personal project I always try and choose a topic that I would be interested in
-  to stay motivated and a thing or two that I want to learn. This time it was Spotify and APIs. I
-  learned how to interact with APIs and work with async data.`,
+    `Whenever I start a personal project I always try to choose a topic that I would be interested
+  and a thing or two that I want to learn. This time it was Spotify and APIs. I
+  learned how to interact with APIs and work with async data. I'm glad that I was exposed to this early, because
+  at that time I didn't know that I would be working with APIs and async data so often.`,
   ],
   timeline: "March '17 - April '17",
   type: 'Personal Project',

@@ -19,7 +19,7 @@ const overview = {
     `My Online Whiteboard project is my very first project where I
   used more than 25 lines of JavaScript! I used this project as my first
   taste of JavaScript and this came with a ton of headaches and 
-  challenges, but it be like that sometimes. This jumpstarted my appreaction for JavaScript
+  challenges, but it's like that sometimes. This jumpstarted my appreaction for JavaScript
   and I haven't stopped working with it since.`,
   ],
   timeline: "Dec '16 - March '17",
@@ -28,7 +28,7 @@ const overview = {
     {
       img: whiteboardHome,
       caption:
-        'Home page where a user can draw whatever they want on the whiteboard',
+        'Home page where a user can draw what they want on the whiteboard',
     },
   ],
   feTechnologies: [
