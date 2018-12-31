@@ -8,6 +8,7 @@ import ProjectDetails from '../ProjectDetails/ProjectDetails'
 class ProjectOverview extends Component {
   render() {
     const { overview } = this.props
+
     return (
       <div className={styles.container}>
         <section className={styles.overviewContainer}>
@@ -17,10 +18,11 @@ class ProjectOverview extends Component {
           <p className={styles.description}>{overview.description}</p>
           <div className={styles.projectImagesContainer}>
             {overview.imgs.map(img => (
-              <ProjectImage key={img.id} img={img.img} caption={img.caption} />
+              <ProjectImage img={img.img} caption={img.caption} />
             ))}
           </div>
         </section>
+
         <Link to="/" className={styles.homeLink}>
           Go back to projects
         </Link>
