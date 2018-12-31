@@ -35,14 +35,18 @@
   height: 4px;
   margin-top: 4px;
   width: 50%;
-  transition: all 250ms;
 }
 
 .link {
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
-  transition: all 250ms;
+  transition: color 250ms ease;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: hsl(233, 25%, 12%);
 }
 
 .grayText {
@@ -51,9 +55,4 @@
 
 .blackText {
   color: hsl(220, 27%, 22%);
-}
-
-.link:hover {
-  cursor: pointer;
-  color: hsl(233, 25%, 12%);
 }

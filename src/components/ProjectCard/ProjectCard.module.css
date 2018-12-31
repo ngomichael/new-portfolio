@@ -49,7 +49,7 @@
     padding-left: 32px;
     opacity: 0.95;
     z-index: 10;
-    transition: all 250ms;
+    transition: top 250ms ease;
   }
 
   .project:hover .overlay {

@@ -28,7 +28,8 @@
   background-color: hsla(214, 76%, 68%, 1);
   width: 50px;
   height: 50px;
-  transition: all 250ms;
+  transition: background-color 250ms ease, box-shadow 250ms ease,
+    transform 250ms ease;
 }
 
 .iconContainer:hover {
