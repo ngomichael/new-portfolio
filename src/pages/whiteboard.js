@@ -1,7 +1,4 @@
 import React from 'react'
-import js from '../icons/js-icon.svg'
-import css from '../icons/css-icon.svg'
-import html from '../icons/html-icon.svg'
 import Layout from '../components/layout'
 import whiteboardHome from '../images/overview/whiteboardHome.jpg'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
@@ -31,11 +28,7 @@ const overview = {
         'Home page where a user can draw what they want on the whiteboard',
     },
   ],
-  feTechnologies: [
-    { icon: js, name: 'JavaScript' },
-    { icon: css, name: 'CSS' },
-    { icon: html, name: 'HTML' },
-  ],
+  feTechnologies: [{ name: 'JavaScript' }, { name: 'CSS' }, { name: 'HTML' }],
   beTechnologies: [],
 }
 

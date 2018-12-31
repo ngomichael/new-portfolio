@@ -1,7 +1,4 @@
 import React from 'react'
-import react from '../icons/react-icon.svg'
-import redux from '../icons/redux-icon.svg'
-import reactRouter from '../icons/react-router-icon.svg'
 import Layout from '../components/layout'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import ufcHome from '../images/overview/ufcHome.jpg'
@@ -35,9 +32,9 @@ const overview = {
     },
   ],
   feTechnologies: [
-    { icon: react, width: '60', margin: '18', name: 'React' },
-    { icon: redux, name: 'Redux' },
-    { icon: reactRouter, name: 'React-Router' },
+    { name: 'React' },
+    { name: 'Redux' },
+    { name: 'React-Router' },
   ],
   beTechnologies: [],
 }

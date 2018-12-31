@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styles from './ProjectCard.module.css'
+import laptop from '../../images/MBP Full Icon.png'
 
 class ProjectCard extends Component {
   render() {
@@ -30,7 +31,7 @@ class ProjectCard extends Component {
             className={styles.images}
           >
             <img
-              src={projectInfo.imgs[0]}
+              src={laptop}
               alt="Macbook Pro"
               height="225"
               width="300"
@@ -41,7 +42,7 @@ class ProjectCard extends Component {
               alt="Website Screenshot"
               height="160"
               width="255"
-              src={projectInfo.imgs[1]}
+              src={projectInfo.screenshot}
             />
           </div>
         </Link>

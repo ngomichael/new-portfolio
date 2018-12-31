@@ -1,8 +1,4 @@
 import React from 'react'
-import jQuery from '../icons/jQuery-icon.svg'
-import js from '../icons/js-icon.svg'
-import css from '../icons/css-icon.svg'
-import html from '../icons/html-icon.svg'
 import Layout from '../components/layout'
 import spotifyHome from '../images/overview/spotifyHome.jpg'
 import spotifyArtistInfo from '../images/overview/spotifyArtistInfo.jpg'
@@ -40,10 +36,10 @@ const overview = {
     },
   ],
   feTechnologies: [
-    { icon: js, name: 'JavaScript' },
-    { icon: jQuery, name: 'jQuery' },
-    { icon: css, name: 'CSS' },
-    { icon: html, name: 'HTML' },
+    { name: 'JavaScript' },
+    { name: 'jQuery' },
+    { name: 'CSS' },
+    { name: 'HTML' },
   ],
   beTechnologies: [],
 }
