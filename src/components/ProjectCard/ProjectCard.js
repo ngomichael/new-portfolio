@@ -23,13 +23,7 @@ class ProjectCard extends Component {
             <p className={styles.projectTitle}>{projectInfo.title}</p>
             <p className={styles.projectType}>{projectInfo.type}</p>
           </div>
-          <div
-            style={{
-              position: 'relative',
-              overflow: 'hidden',
-            }}
-            className={styles.images}
-          >
+          <div className={styles.images}>
             <img
               src={laptop}
               alt="Macbook Pro"
@@ -54,5 +48,14 @@ class ProjectCard extends Component {
 export default ProjectCard
 
 ProjectCard.propTypes = {
-  projectInfo: PropTypes.object.isRequired,
+  projectInfo: PropTypes.shape({
+    color: PropTypes.string.isRequired,
+    overlayColor: PropTypes.string.isRequired,
+    borderTopColor: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    // What type is screenshot?
+    screenshot: PropTypes.any.isRequired,
+    to: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+  }).isRequired,
 }

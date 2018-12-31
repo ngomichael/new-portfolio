@@ -4,7 +4,7 @@ import styles from './HighlightedLink.module.css'
 
 const HighlightedLink = ({ site, linkText, target }) => {
   return (
-    <a href={site} target={target ? target : ''} className={styles.link}>
+    <a href={site} target={target} className={styles.link}>
       {linkText}
     </a>
   )
