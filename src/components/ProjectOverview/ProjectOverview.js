@@ -17,7 +17,7 @@ class ProjectOverview extends Component {
           <p className={styles.description}>{overview.description}</p>
           <div className={styles.projectImagesContainer}>
             {overview.imgs.map(img => (
-              <ProjectImage img={img.img} caption={img.caption} />
+              <ProjectImage key={img.id} img={img.img} caption={img.caption} />
             ))}
           </div>
         </section>

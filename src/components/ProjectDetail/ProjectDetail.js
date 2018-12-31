@@ -6,24 +6,21 @@ const ProjectDetail = ({ title, description }) => {
   return (
     <>
       <div className={styles.projectDetails}>
-        <p className={styles.projectDetailsTitle}>{title}</p>
+        <p className={styles.title}>{title}</p>
         {typeof description === 'string' ? (
-          <p className={styles.projectDetailsDescription}>{description}</p>
+          <p className={styles.description}>{description}</p>
         ) : (
-          <div className={styles.technologies}>
+          <ul className={styles.technologies}>
             {description.length !== 0 ? (
               description.map(technology => (
-                <li
-                  key={technology.name}
-                  className={styles.projectDetailsDescription}
-                >
+                <li key={technology.name} className={styles.description}>
                   {technology.name}
                 </li>
               ))
             ) : (
-              <p className={styles.projectDetailsDescription}>None</p>
+              <p className={styles.description}>None</p>
             )}
-          </div>
+          </ul>
         )}
       </div>
     </>

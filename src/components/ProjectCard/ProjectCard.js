@@ -53,8 +53,7 @@ ProjectCard.propTypes = {
     overlayColor: PropTypes.string.isRequired,
     borderTopColor: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    // What type is screenshot?
-    screenshot: PropTypes.any.isRequired,
+    screenshot: PropTypes.node.isRequired,
     to: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
   }).isRequired,

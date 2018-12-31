@@ -5,7 +5,7 @@ import ProjectDetail from '../ProjectDetail/ProjectDetail'
 
 const ProjectDetails = ({ overview }) => {
   return (
-    <div className={styles.projectDetailsContainer}>
+    <div className={styles.container}>
       <ProjectDetail title="Timeline" description={overview.timeline} />
       <ProjectDetail title="Type" description={overview.type} />
       <ProjectDetail title="Front-End" description={overview.feTechnologies} />
@@ -17,5 +17,13 @@ const ProjectDetails = ({ overview }) => {
 export default ProjectDetails
 
 ProjectDetails.propTypes = {
-  overview: PropTypes.object.isRequired,
+  overview: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.array.isRequired,
+    timeline: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    imgs: PropTypes.array.isRequired,
+    feTechnologies: PropTypes.array.isRequired,
+    beTechnologies: PropTypes.array.isRequired,
+  }),
 }

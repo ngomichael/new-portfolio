@@ -24,7 +24,10 @@ const overview = {
   timeline: "Sep '17 - Feb '18",
   type: 'Personal Project',
   imgs: [
-    { img: ufcHome, caption: 'Home page where a user chooses a fighter' },
+    {
+      img: ufcHome,
+      caption: 'Home page where a user chooses a fighter',
+    },
     {
       img: ufcStats,
       caption:

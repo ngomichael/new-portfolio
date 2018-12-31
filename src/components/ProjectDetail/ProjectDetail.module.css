@@ -6,15 +6,16 @@
   margin-top: 48px;
 }
 
-.projectDetailsTitle {
+.title {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 700;
+  text-transform: uppercase;
   color: hsl(228, 14%, 79%);
   margin-bottom: 4px;
 }
 
-.projectDetailsDescription {
+.description {
   font-size: 20px;
   width: 240px;
   padding-bottom: 4px;
