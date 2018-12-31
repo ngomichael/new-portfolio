@@ -16,9 +16,7 @@ const ListLink = props => {
         }
       >
         {props.children}
-        {props.to === props.currPath && (
-          <div className={styles.bottomBorder} style={{ width: '50%' }} />
-        )}
+        {props.to === props.currPath && <div className={styles.bottomBorder} />}
       </Link>
     </li>
   )
