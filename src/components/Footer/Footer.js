@@ -22,32 +22,30 @@ const links = [
   },
 ]
 
-class Footer extends Component {
-  render() {
-    return (
-      <footer className={styles.container}>
-        <div className={styles.linksContainer}>
-          {links.map(link => (
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={link.siteName}
-            >
-              <div className={styles.iconContainer}>
-                <img
-                  src={link.icon}
-                  alt={link.siteName}
-                  width="26"
-                  className={styles.icon}
-                />
-              </div>
-            </a>
-          ))}
-        </div>
-      </footer>
-    )
-  }
+const Footer = () => {
+  return (
+    <footer className={styles.container}>
+      <div className={styles.linksContainer}>
+        {links.map(link => (
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={link.siteName}
+          >
+            <div className={styles.iconContainer}>
+              <img
+                src={link.icon}
+                alt={link.siteName}
+                width="26"
+                className={styles.icon}
+              />
+            </div>
+          </a>
+        ))}
+      </div>
+    </footer>
+  )
 }
 
 export default Footer
