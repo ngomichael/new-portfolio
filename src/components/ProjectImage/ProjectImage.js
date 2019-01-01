@@ -18,5 +18,5 @@ export default ProjectImage
 
 ProjectImage.propType = {
   img: PropTypes.node.isRequired,
-  caption: PropTypes.string,
+  caption: PropTypes.string.isRequired,
 }

@@ -34,5 +34,5 @@ ProjectDetail.propTypes = {
   description: PropTypes.oneOf(
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string)
-  ),
+  ).isRequired,
 }

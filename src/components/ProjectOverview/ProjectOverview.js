@@ -16,6 +16,7 @@ class ProjectOverview extends Component {
           <ProjectDetails overview={overview} />
           <h2 className={styles.title}>Overview</h2>
           <p className={styles.description}>{overview.description}</p>
+
           <div className={styles.projectImagesContainer}>
             {overview.imgs.map(img => (
               <ProjectImage img={img.img} caption={img.caption} />
@@ -36,10 +37,7 @@ export default ProjectOverview
 ProjectOverview.propTypes = {
   overview: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    // Is this the right way to check?
-    description: PropTypes.arrayOf(
-      PropTypes.oneOfType([PropTypes.string, PropTypes.node])
-    ),
+    description: PropTypes.arrayOf(PropTypes.node),
     timeline: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     imgs: PropTypes.arrayOf(
@@ -48,7 +46,7 @@ ProjectOverview.propTypes = {
         caption: PropTypes.string.isRequired,
       })
     ).isRequired,
-    feTechnologies: PropTypes.arrayOf(PropTypes.string),
-    beTechnologies: PropTypes.arrayOf(PropTypes.string),
+    feTechnologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    beTechnologies: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 }

@@ -19,7 +19,6 @@ export default ProjectDetails
 ProjectDetails.propTypes = {
   overview: PropTypes.shape({
     title: PropTypes.string,
-    // Is this the right way to check?
     description: PropTypes.arrayOf(
       PropTypes.oneOfType([PropTypes.string, PropTypes.node])
     ),
