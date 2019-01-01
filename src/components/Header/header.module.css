@@ -4,7 +4,6 @@
   justify-content: space-between;
   width: 88%;
   margin: 16px auto;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .icon {
@@ -34,14 +33,18 @@
   border-radius: 4px;
   height: 4px;
   margin-top: 4px;
-  transition: all 250ms;
+  width: 50%;
 }
 
 .link {
   font-size: 24px;
   font-weight: 700;
-  text-decoration: none;
-  transition: all 250ms;
+  transition: color 250ms ease;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: hsl(233, 25%, 12%);
 }
 
 .grayText {
@@ -50,9 +53,4 @@
 
 .blackText {
   color: hsl(220, 27%, 22%);
-}
-
-.link:hover {
-  cursor: pointer;
-  color: hsl(233, 25%, 12%);
 }

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .projectName {
@@ -83,9 +82,8 @@
     rgba(255, 215, 0, 0.4) 35%,
     transparent 35%
   );
-  text-decoration: none;
   margin-top: 64px;
-  transition: all 250ms;
+  transition: background 250ms ease;
 }
 
 .homeLink:hover {

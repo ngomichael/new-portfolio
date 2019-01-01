@@ -8,6 +8,7 @@ import ProjectDetails from '../ProjectDetails/ProjectDetails'
 class ProjectOverview extends Component {
   render() {
     const { overview } = this.props
+
     return (
       <div className={styles.container}>
         <section className={styles.overviewContainer}>
@@ -15,12 +16,14 @@ class ProjectOverview extends Component {
           <ProjectDetails overview={overview} />
           <h2 className={styles.title}>Overview</h2>
           <p className={styles.description}>{overview.description}</p>
+
           <div className={styles.projectImagesContainer}>
             {overview.imgs.map(img => (
               <ProjectImage img={img.img} caption={img.caption} />
             ))}
           </div>
         </section>
+
         <Link to="/" className={styles.homeLink}>
           Go back to projects
         </Link>
@@ -32,5 +35,18 @@ class ProjectOverview extends Component {
 export default ProjectOverview
 
 ProjectOverview.propTypes = {
-  overview: PropTypes.object.isRequired,
+  overview: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.arrayOf(PropTypes.node),
+    timeline: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    imgs: PropTypes.arrayOf(
+      PropTypes.shape({
+        img: PropTypes.node.isRequired,
+        caption: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    feTechnologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    beTechnologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 }

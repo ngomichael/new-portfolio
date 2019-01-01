@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './Header.module.css'
-import icon from '../../../public/icons/WebsiteIconSlash.png'
+import portfolioIcon from '../../../public/icons/website-slash-icon.png'
 
 const ListLink = props => {
   return (
@@ -16,9 +16,7 @@ const ListLink = props => {
         }
       >
         {props.children}
-        {props.to === props.currPath && (
-          <div className={styles.bottomBorder} style={{ width: '50%' }} />
-        )}
+        {props.to === props.currPath && <div className={styles.bottomBorder} />}
       </Link>
     </li>
   )
@@ -31,13 +29,14 @@ class Header extends React.Component {
       <header className={styles.container}>
         <Link to="/">
           <span className={styles.icon}>
-            <img src={icon} alt="Michael Ngo Website Icon" />
+            <img src={portfolioIcon} alt="Michael Ngo Website Icon" />
           </span>
         </Link>
         <ul className={styles.linksContainer}>
           <ListLink to="/" currPath={pathname}>
             Projects
           </ListLink>
+
           <li className={styles.listItem}>
             <a
               href="https://drive.google.com/file/d/1PyJj4BOHLDTVCYRZOAfWJ72UqeNA6719/view?usp=sharing"
@@ -55,7 +54,7 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  pathname: PropTypes.node,
 }
 
 export default Header

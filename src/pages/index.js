@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import styles from './index.module.css'
-import laptop from '../images/MBP Full Icon.png'
 import hangouts from '../images/UWHangouts.jpg'
 import ufc from '../images/UFC.jpg'
 import spotify from '../images/spotify.jpg'
@@ -16,7 +15,7 @@ const projects = [
     overlayColor: 'hsl(260, 48%, 28%)',
     borderTopColor: 'hsl(260, 53%, 48%)',
     title: 'UW Hangouts',
-    imgs: [laptop, hangouts],
+    screenshot: hangouts,
     to: 'hangouts',
     type: 'Class Project',
   },
@@ -25,7 +24,7 @@ const projects = [
     overlayColor: 'hsl(0, 66%, 40%)',
     borderTopColor: 'hsl(0, 71%, 60%)',
     title: 'UFC Statistics',
-    imgs: [laptop, ufc],
+    screenshot: ufc,
     to: 'ufc',
     type: 'Personal Project',
   },
@@ -34,7 +33,7 @@ const projects = [
     overlayColor: 'hsl(141, 73%, 35%)',
     borderTopColor: 'hsl(141, 78%, 55%)',
     title: 'Spotify Artist Search',
-    imgs: [laptop, spotify],
+    screenshot: spotify,
     to: 'spotify',
     type: 'Personal Project',
   },
@@ -43,7 +42,7 @@ const projects = [
     overlayColor: 'hsl(214, 76%, 47%)',
     borderTopColor: 'hsl(214, 81%, 67%)',
     title: 'Online Whiteboard',
-    imgs: [laptop, whiteboard],
+    screenshot: whiteboard,
     to: 'whiteboard',
     type: 'Personal Project',
   },
@@ -60,6 +59,7 @@ const IndexPage = props => (
         <h1 className={styles.title}>
           Full-Stack Developer, Student & NBA Fan
         </h1>
+
         <p className={styles.description}>
           Thanks for coming by! I'm{' '}
           <HighlightedLink
@@ -75,19 +75,18 @@ const IndexPage = props => (
           />
         </p>
       </div>
+
       <div className={styles.projectsTextContainer}>
         <h2 className={styles.subtitle}>Projects</h2>
+
         <p className={styles.description}>
           Take a look at some of my most recent projects
         </p>
       </div>
+
       <div className={styles.projectsContainer}>
         {projects.map(project => (
-          <ProjectCard
-            key={project.title}
-            to={project.to}
-            projectInfo={project}
-          />
+          <ProjectCard key={project.title} projectInfo={project} />
         ))}
       </div>
     </div>

@@ -1,7 +1,4 @@
 import React from 'react'
-import react from '../icons/react-icon.svg'
-import redux from '../icons/redux-icon.svg'
-import reactRouter from '../icons/react-router-icon.svg'
 import Layout from '../components/layout'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import ufcHome from '../images/overview/ufcHome.jpg'
@@ -27,18 +24,17 @@ const overview = {
   timeline: "Sep '17 - Feb '18",
   type: 'Personal Project',
   imgs: [
-    { img: ufcHome, caption: 'Home page where a user chooses a fighter' },
+    {
+      img: ufcHome,
+      caption: 'Home page where a user chooses a fighter',
+    },
     {
       img: ufcStats,
       caption:
         'Statistics page where the fighters statistics and information are displayed',
     },
   ],
-  feTechnologies: [
-    { icon: react, width: '60', margin: '18', name: 'React' },
-    { icon: redux, name: 'Redux' },
-    { icon: reactRouter, name: 'React-Router' },
-  ],
+  feTechnologies: ['React', 'Redux', 'React-Router'],
   beTechnologies: [],
 }
 

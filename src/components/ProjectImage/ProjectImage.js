@@ -17,6 +17,6 @@ class ProjectImage extends Component {
 export default ProjectImage
 
 ProjectImage.propType = {
-  img: PropTypes.object.isRequired,
-  caption: PropTypes.string,
+  img: PropTypes.node.isRequired,
+  caption: PropTypes.string.isRequired,
 }
