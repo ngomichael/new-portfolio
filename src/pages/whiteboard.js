@@ -28,7 +28,7 @@ const overview = {
         'Home page where a user can draw what they want on the whiteboard',
     },
   ],
-  feTechnologies: [{ name: 'JavaScript' }, { name: 'CSS' }, { name: 'HTML' }],
+  feTechnologies: ['JavaScript', 'CSS', 'HTML'],
   beTechnologies: [],
 }
 

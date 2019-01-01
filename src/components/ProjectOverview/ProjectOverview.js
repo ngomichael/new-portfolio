@@ -36,11 +36,19 @@ export default ProjectOverview
 ProjectOverview.propTypes = {
   overview: PropTypes.shape({
     title: PropTypes.string.isRequired,
-    description: PropTypes.array.isRequired,
+    // Is this the right way to check?
+    description: PropTypes.arrayOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.node])
+    ),
     timeline: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
-    imgs: PropTypes.array.isRequired,
-    feTechnologies: PropTypes.array.isRequired,
-    beTechnologies: PropTypes.array.isRequired,
+    imgs: PropTypes.arrayOf(
+      PropTypes.shape({
+        img: PropTypes.node.isRequired,
+        caption: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    feTechnologies: PropTypes.arrayOf(PropTypes.string),
+    beTechnologies: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 }

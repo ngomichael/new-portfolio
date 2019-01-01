@@ -13,8 +13,8 @@ const ProjectDetail = ({ title, description }) => {
           <ul className={styles.technologies}>
             {description.length !== 0 ? (
               description.map(technology => (
-                <li key={technology.name} className={styles.description}>
-                  {technology.name}
+                <li key={technology} className={styles.description}>
+                  {technology}
                 </li>
               ))
             ) : (
@@ -31,5 +31,8 @@ export default ProjectDetail
 
 ProjectDetail.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.any.isRequired,
+  description: PropTypes.oneOf(
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string)
+  ),
 }

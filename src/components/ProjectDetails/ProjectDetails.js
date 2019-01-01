@@ -19,11 +19,19 @@ export default ProjectDetails
 ProjectDetails.propTypes = {
   overview: PropTypes.shape({
     title: PropTypes.string,
-    description: PropTypes.array,
+    // Is this the right way to check?
+    description: PropTypes.arrayOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.node])
+    ),
     timeline: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
-    imgs: PropTypes.array,
-    feTechnologies: PropTypes.array.isRequired,
-    beTechnologies: PropTypes.array.isRequired,
+    imgs: PropTypes.arrayOf(
+      PropTypes.shape({
+        img: PropTypes.node.isRequired,
+        caption: PropTypes.string.isRequired,
+      })
+    ),
+    feTechnologies: PropTypes.arrayOf(PropTypes.string),
+    beTechnologies: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 }

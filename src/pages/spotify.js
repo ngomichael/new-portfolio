@@ -35,12 +35,7 @@ const overview = {
       caption: "Artist page where an artist's information is shown.",
     },
   ],
-  feTechnologies: [
-    { name: 'JavaScript' },
-    { name: 'jQuery' },
-    { name: 'CSS' },
-    { name: 'HTML' },
-  ],
+  feTechnologies: ['JavaScript', 'jQuery', 'CSS', 'HTML'],
   beTechnologies: [],
 }
 

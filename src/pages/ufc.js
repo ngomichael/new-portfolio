@@ -34,11 +34,7 @@ const overview = {
         'Statistics page where the fighters statistics and information are displayed',
     },
   ],
-  feTechnologies: [
-    { name: 'React' },
-    { name: 'Redux' },
-    { name: 'React-Router' },
-  ],
+  feTechnologies: ['React', 'Redux', 'React-Router'],
   beTechnologies: [],
 }
 

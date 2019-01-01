@@ -53,7 +53,7 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-  pathname: PropTypes.node.isRequired,
+  pathname: PropTypes.node,
 }
 
 export default Header

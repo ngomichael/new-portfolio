@@ -31,15 +31,8 @@ const overview = {
       caption: 'Video chat page where two users video chat with one another',
     },
   ],
-  feTechnologies: [{ name: 'React' }, { name: 'Material UI' }],
-  beTechnologies: [
-    { name: 'Go' },
-    { name: 'Node' },
-    { name: 'MySQL' },
-    { name: 'MongoDB' },
-    { name: 'Docker' },
-    { name: 'AWS' },
-  ],
+  feTechnologies: ['React', 'Material UI'],
+  beTechnologies: ['Go', 'Node', 'MySQL', 'MongoDB', 'Docker', 'AWS'],
 }
 
 const Hangouts = () => (
