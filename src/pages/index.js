@@ -74,12 +74,14 @@ const IndexPage = props => (
             site="https://www.linkedin.com/in/mhngo/"
             linkText="Michael Ngo"
             target="_blank"
+            rel="noopener noreferrer"
           />
           , a senior at the University of Washington majoring in{' '}
           <HighlightedLink
             site="https://ischool.uw.edu/programs/informatics"
             linkText="Informatics"
             target="_blank"
+            rel="noopener noreferrer"
           />
         </p>
       </div>

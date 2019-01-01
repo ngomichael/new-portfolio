@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import ReactImageFallback from 'react-image-fallback'
 import { Link } from 'gatsby'
 import styles from './ProjectCard.module.css'
-import laptop from '../../images/MBP Full Icon.png'
+import laptopPNG from '../../images/MBP Full Icon.png'
+import laptopWebP from '../../images/MBP Full Icon.webp'
 
 class ProjectCard extends Component {
   render() {
@@ -26,8 +27,9 @@ class ProjectCard extends Component {
           </div>
 
           <div className={styles.images}>
-            <img
-              src={laptop}
+            <ReactImageFallback
+              src={laptopWebP}
+              fallbackImage={laptopPNG}
               alt="Macbook Pro"
               height="225"
               width="300"

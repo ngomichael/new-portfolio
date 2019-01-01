@@ -57,7 +57,7 @@
 }
 
 .projectTitle {
-  color: rgb(235, 235, 235);
+  color: hsl(0, 0%, 95%);
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -65,7 +65,7 @@
 }
 
 .projectType {
-  color: rgb(235, 235, 235);
+  color: hsl(0, 0%, 95%);
   font-size: 20px;
   font-weight: 400;
 }
