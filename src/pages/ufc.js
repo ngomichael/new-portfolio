@@ -1,8 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
-import ufcHome from '../images/overview/ufcHome.jpg'
-import ufcStats from '../images/overview/ufcStats.jpg'
+import ufcHomeJPG from '../images/overview/ufcHome.jpg'
+import ufcHomeWebP from '../images/overview/ufcHome.webp'
+import ufcStatsJPG from '../images/overview/ufcStats.jpg'
+import ufcStatsWebP from '../images/overview/ufcStats.webp'
 
 import SEO from '../components/seo'
 
@@ -25,11 +27,13 @@ const overview = {
   type: 'Personal Project',
   imgs: [
     {
-      img: ufcHome,
+      img: ufcHomeWebP,
+      fallbackImg: ufcHomeJPG,
       caption: 'Home page where a user chooses a fighter',
     },
     {
-      img: ufcStats,
+      img: ufcStatsWebP,
+      fallbackImg: ufcStatsJPG,
       caption:
         'Statistics page where the fighters statistics and information are displayed',
     },

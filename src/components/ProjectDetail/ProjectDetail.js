@@ -31,8 +31,8 @@ export default ProjectDetail
 
 ProjectDetail.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.oneOf(
+  description: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.arrayOf(PropTypes.string)
-  ).isRequired,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
 }

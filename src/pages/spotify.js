@@ -1,7 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
-import spotifyHome from '../images/overview/spotifyHome.jpg'
-import spotifyArtistInfo from '../images/overview/spotifyArtistInfo.jpg'
+import spotifyHomeJPG from '../images/overview/spotifyHome.jpg'
+import spotifyHomeWebP from '../images/overview/spotifyHome.webp'
+import spotifyArtistInfoJPG from '../images/overview/spotifyArtistInfo.jpg'
+import spotifyArtistInfoWebP from '../images/overview/spotifyArtistInfo.webp'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
@@ -27,11 +29,13 @@ const overview = {
   type: 'Personal Project',
   imgs: [
     {
-      img: spotifyHome,
+      img: spotifyHomeWebP,
+      fallbackImg: spotifyHomeJPG,
       caption: 'Home page where a user can search for an artist',
     },
     {
-      img: spotifyArtistInfo,
+      img: spotifyArtistInfoWebP,
+      fallbackImg: spotifyArtistInfoJPG,
       caption: "Artist page where an artist's information is shown.",
     },
   ],

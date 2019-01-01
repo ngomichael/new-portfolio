@@ -2,10 +2,14 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import styles from './index.module.css'
-import hangouts from '../images/UWHangouts.jpg'
-import ufc from '../images/UFC.jpg'
-import spotify from '../images/spotify.jpg'
-import whiteboard from '../images/whiteboard.jpg'
+import hangoutsJPG from '../images/UWHangouts.jpg'
+import hangoutsWebP from '../images/UWHangouts.webp'
+import ufcJPG from '../images/UFC.jpg'
+import ufcWebP from '../images/UFC.webp'
+import spotifyJPG from '../images/spotify.jpg'
+import spotifyWebP from '../images/spotify.webp'
+import whiteboardJPG from '../images/whiteboard.jpg'
+import whiteboardWebP from '../images/whiteboard.webp'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
 import HighlightedLink from '../components/HighlightedLink/HighlightedLink'
 
@@ -15,7 +19,8 @@ const projects = [
     overlayColor: 'hsl(260, 48%, 28%)',
     borderTopColor: 'hsl(260, 53%, 48%)',
     title: 'UW Hangouts',
-    screenshot: hangouts,
+    screenshot: hangoutsJPG,
+    fallbackScreenshot: hangoutsWebP,
     to: 'hangouts',
     type: 'Class Project',
   },
@@ -24,7 +29,8 @@ const projects = [
     overlayColor: 'hsl(0, 66%, 40%)',
     borderTopColor: 'hsl(0, 71%, 60%)',
     title: 'UFC Statistics',
-    screenshot: ufc,
+    screenshot: ufcJPG,
+    fallbackScreenshot: ufcWebP,
     to: 'ufc',
     type: 'Personal Project',
   },
@@ -33,7 +39,8 @@ const projects = [
     overlayColor: 'hsl(141, 73%, 35%)',
     borderTopColor: 'hsl(141, 78%, 55%)',
     title: 'Spotify Artist Search',
-    screenshot: spotify,
+    screenshot: spotifyJPG,
+    fallbackScreenshot: spotifyWebP,
     to: 'spotify',
     type: 'Personal Project',
   },
@@ -42,7 +49,8 @@ const projects = [
     overlayColor: 'hsl(214, 76%, 47%)',
     borderTopColor: 'hsl(214, 81%, 67%)',
     title: 'Online Whiteboard',
-    screenshot: whiteboard,
+    screenshot: whiteboardJPG,
+    fallbackScreenshot: whiteboardWebP,
     to: 'whiteboard',
     type: 'Personal Project',
   },

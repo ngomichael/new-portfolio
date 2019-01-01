@@ -1,6 +1,8 @@
 import React from 'react'
-import hangoutsHome from '../images/overview/hangoutsHome.jpg'
-import hangoutsVideo from '../images/overview/hangoutsVideo.jpg'
+import hangoutsHomeJPG from '../images/overview/hangoutsHome.jpg'
+import hangoutsHomeWebP from '../images/overview/hangoutsHome.webp'
+import hangoutsVideoJPG from '../images/overview/hangoutsVideo.jpg'
+import hangoutsVideoWebP from '../images/overview/hangoutsVideo.webp'
 import Layout from '../components/layout'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
@@ -22,12 +24,14 @@ const overview = {
   type: 'Server-Side Web Dev Final Project',
   imgs: [
     {
-      img: hangoutsHome,
+      img: hangoutsHomeWebP,
+      fallbackImg: hangoutsHomeJPG,
       caption:
         'Home page where a user can search for a friend to message or video chat',
     },
     {
-      img: hangoutsVideo,
+      img: hangoutsVideoWebP,
+      fallbackImg: hangoutsVideoJPG,
       caption: 'Video chat page where two users video chat with one another',
     },
   ],

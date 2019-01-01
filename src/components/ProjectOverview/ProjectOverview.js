@@ -19,7 +19,11 @@ class ProjectOverview extends Component {
 
           <div className={styles.projectImagesContainer}>
             {overview.imgs.map(img => (
-              <ProjectImage img={img.img} caption={img.caption} />
+              <ProjectImage
+                img={img.img}
+                fallbackImg={img.fallbackImg}
+                caption={img.caption}
+              />
             ))}
           </div>
         </section>
@@ -43,6 +47,7 @@ ProjectOverview.propTypes = {
     imgs: PropTypes.arrayOf(
       PropTypes.shape({
         img: PropTypes.node.isRequired,
+        fallbackImg: PropTypes.node.isRequired,
         caption: PropTypes.string.isRequired,
       })
     ).isRequired,
