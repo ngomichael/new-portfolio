@@ -59,6 +59,7 @@ const IndexPage = props => (
         <h1 className={styles.title}>
           Full-Stack Developer, Student & NBA Fan
         </h1>
+
         <p className={styles.description}>
           Thanks for coming by! I'm{' '}
           <HighlightedLink
@@ -74,19 +75,18 @@ const IndexPage = props => (
           />
         </p>
       </div>
+
       <div className={styles.projectsTextContainer}>
         <h2 className={styles.subtitle}>Projects</h2>
+
         <p className={styles.description}>
           Take a look at some of my most recent projects
         </p>
       </div>
+
       <div className={styles.projectsContainer}>
         {projects.map(project => (
-          <ProjectCard
-            key={project.title}
-            to={project.to}
-            projectInfo={project}
-          />
+          <ProjectCard key={project.title} projectInfo={project} />
         ))}
       </div>
     </div>

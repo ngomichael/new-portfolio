@@ -18,12 +18,12 @@ export default ProjectDetails
 
 ProjectDetails.propTypes = {
   overview: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    description: PropTypes.array.isRequired,
+    title: PropTypes.string,
+    description: PropTypes.array,
     timeline: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
-    imgs: PropTypes.array.isRequired,
+    imgs: PropTypes.array,
     feTechnologies: PropTypes.array.isRequired,
     beTechnologies: PropTypes.array.isRequired,
-  }),
+  }).isRequired,
 }

@@ -34,5 +34,13 @@ class ProjectOverview extends Component {
 export default ProjectOverview
 
 ProjectOverview.propTypes = {
-  overview: PropTypes.object.isRequired,
+  overview: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.array.isRequired,
+    timeline: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    imgs: PropTypes.array.isRequired,
+    feTechnologies: PropTypes.array.isRequired,
+    beTechnologies: PropTypes.array.isRequired,
+  }).isRequired,
 }

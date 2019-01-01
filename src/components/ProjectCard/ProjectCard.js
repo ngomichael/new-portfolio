@@ -6,7 +6,7 @@ import laptop from '../../images/MBP Full Icon.png'
 
 class ProjectCard extends Component {
   render() {
-    const { projectInfo, to } = this.props
+    const { projectInfo } = this.props
     return (
       <div
         className={styles.project}
@@ -15,7 +15,7 @@ class ProjectCard extends Component {
           borderTop: `3px solid ${projectInfo.borderTopColor}`,
         }}
       >
-        <Link to={to}>
+        <Link to={projectInfo.to}>
           <div
             className={styles.overlay}
             style={{ backgroundColor: projectInfo.overlayColor }}
@@ -23,6 +23,7 @@ class ProjectCard extends Component {
             <p className={styles.projectTitle}>{projectInfo.title}</p>
             <p className={styles.projectType}>{projectInfo.type}</p>
           </div>
+
           <div className={styles.images}>
             <img
               src={laptop}
@@ -31,6 +32,7 @@ class ProjectCard extends Component {
               width="300"
               className={styles.laptop}
             />
+
             <img
               className={styles.screenshot}
               alt="Website Screenshot"
