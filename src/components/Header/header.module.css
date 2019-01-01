@@ -4,7 +4,6 @@
   justify-content: space-between;
   width: 88%;
   margin: 16px auto;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .icon {
@@ -40,7 +39,6 @@
 .link {
   font-size: 24px;
   font-weight: 700;
-  text-decoration: none;
   transition: color 250ms ease;
 }
 

@@ -6,7 +6,6 @@
     rgba(255, 215, 0, 0.4) 35%,
     transparent 35%
   );
-  text-decoration: none;
   transition: background 250ms ease;
 }
 

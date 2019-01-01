@@ -16,7 +16,6 @@
 }
 
 .title {
-  font-family: 'Open Sans', sans-serif;
   line-height: 1em;
   font-size: 48px;
   letter-spacing: -0.05em;
@@ -26,7 +25,6 @@
 }
 
 .description {
-  font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   line-height: 1.5em;
   text-align: center;
@@ -45,7 +43,6 @@
 }
 
 .subtitle {
-  font-family: 'Open Sans', sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: hsl(228, 21%, 31%);

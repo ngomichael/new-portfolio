@@ -7,7 +7,6 @@
   max-height: 370px;
   margin-bottom: 24px;
   margin-top: 50px;
-  font-family: 'Open Sans', sans-serif;
   transition: box-shadow 250ms ease, transform 250ms ease;
 }
 .container:hover {

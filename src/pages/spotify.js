@@ -48,7 +48,6 @@ const Spotify = () => (
   <Layout>
     <SEO title="Spotify" />
     <ProjectOverview overview={overview} />
-    {/* <Link to="/">Go back to the homepage</Link> */}
   </Layout>
 )
 
