@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: `Michael Ngo's Portfolio`,
+        short_name: 'Portfolio',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: 'rgb(49, 126, 227)',
+        theme_color: 'rgb(49, 126, 227)',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/website-slash-icon.png', // This path is relative to the root of the site.
       },
     },
     {
