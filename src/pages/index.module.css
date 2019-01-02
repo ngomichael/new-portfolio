@@ -12,7 +12,7 @@
   align-items: center;
   width: 90%;
   opacity: 0;
-  animation: slideInFromTop 400ms ease 400ms forwards;
+  animation: slideInFromTop 500ms ease 300ms forwards;
 }
 
 .title {
@@ -39,7 +39,8 @@
   align-items: center;
   width: 85%;
   margin-top: 96px;
-  animation: slideInFromLeft 400ms ease;
+  opacity: 0;
+  animation: slideInFromLeft 600ms 600ms ease forwards;
 }
 
 .subtitle {
@@ -54,6 +55,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transform: translateX(-50px);
 }
 
 @media (min-width: 767px) {
@@ -98,8 +100,10 @@
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-50px);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }

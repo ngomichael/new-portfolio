@@ -15,9 +15,11 @@ import HighlightedLink from '../components/HighlightedLink/HighlightedLink'
 
 const projects = [
   {
+    index: 1,
     color: 'hsl(260, 48%, 35%)',
     overlayColor: 'hsl(260, 48%, 28%)',
     borderTopColor: 'hsl(260, 53%, 48%)',
+    animationDelay: '600ms',
     title: 'UW Hangouts',
     screenshot: hangoutsJPG,
     fallbackScreenshot: hangoutsWebP,
@@ -25,9 +27,11 @@ const projects = [
     type: 'Class Project',
   },
   {
+    index: 2,
     color: 'hsl(0, 66%, 47%)',
     overlayColor: 'hsl(0, 66%, 40%)',
     borderTopColor: 'hsl(0, 71%, 60%)',
+    animationDelay: '650ms',
     title: 'UFC Statistics',
     screenshot: ufcJPG,
     fallbackScreenshot: ufcWebP,
@@ -35,9 +39,11 @@ const projects = [
     type: 'Personal Project',
   },
   {
+    index: 3,
     color: 'hsl(141, 73%, 42%)',
     overlayColor: 'hsl(141, 73%, 35%)',
     borderTopColor: 'hsl(141, 78%, 55%)',
+    animationDelay: '700ms',
     title: 'Spotify Artist Search',
     screenshot: spotifyJPG,
     fallbackScreenshot: spotifyWebP,
@@ -45,9 +51,11 @@ const projects = [
     type: 'Personal Project',
   },
   {
+    index: 4,
     color: 'hsl(214, 76%, 54%)',
     overlayColor: 'hsl(214, 76%, 47%)',
     borderTopColor: 'hsl(214, 81%, 67%)',
+    animationDelay: '750ms',
     title: 'Online Whiteboard',
     screenshot: whiteboardJPG,
     fallbackScreenshot: whiteboardWebP,
@@ -88,7 +96,6 @@ const IndexPage = props => (
 
       <div className={styles.projectsTextContainer}>
         <h2 className={styles.subtitle}>Projects</h2>
-
         <p className={styles.description}>
           Take a look at some of my most recent projects
         </p>

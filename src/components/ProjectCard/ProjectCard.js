@@ -15,6 +15,7 @@ class ProjectCard extends Component {
         style={{
           backgroundColor: projectInfo.color,
           borderTop: `3px solid ${projectInfo.borderTopColor}`,
+          animationDelay: projectInfo.animationDelay,
         }}
       >
         <Link to={projectInfo.to}>
@@ -58,6 +59,7 @@ ProjectCard.propTypes = {
     color: PropTypes.string.isRequired,
     overlayColor: PropTypes.string.isRequired,
     borderTopColor: PropTypes.string.isRequired,
+    animationDelay: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     screenshot: PropTypes.node.isRequired,
     fallbackScreenshot: PropTypes.node.isRequired,
