@@ -1,6 +1,6 @@
 .link {
   color: hsla(0, 0%, 0%, 1);
-  font-weight: 600;
+  font-weight: var(--fw-4);
   background: linear-gradient(
     to top,
     rgba(255, 215, 0, 0.4) 35%,

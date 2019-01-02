@@ -3,7 +3,7 @@
   align-content: center;
   justify-content: space-between;
   width: 88%;
-  margin: 16px auto;
+  margin: var(--m-4) auto;
 }
 
 .icon {
@@ -13,7 +13,7 @@
   position: relative;
   height: 50px;
   width: 50px;
-  margin-top: 24px;
+  margin-top: var(--mt-5);
 }
 
 .linksContainer {
@@ -21,7 +21,7 @@
   justify-content: space-around;
   width: 250px;
   height: 45px;
-  margin-top: 12px;
+  margin-top: var(--mt-3);
 }
 
 .listItem {
@@ -30,15 +30,15 @@
 
 .bottomBorder {
   background-color: hsl(214, 76%, 54%);
-  border-radius: 4px;
+  border-radius: var(--br-1);
   height: 4px;
-  margin-top: 4px;
+  margin-top: var(--mt-1);
   width: 50%;
 }
 
 .link {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-4);
   transition: color 250ms ease;
 }
 

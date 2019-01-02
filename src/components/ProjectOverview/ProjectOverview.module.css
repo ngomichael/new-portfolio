@@ -5,27 +5,19 @@
 }
 
 .projectName {
-  font-size: 48px;
+  font-size: var(--fs-8);
   text-align: center;
   letter-spacing: -0.05em;
   color: hsl(220, 27%, 22%);
-  margin-bottom: 48px;
-  opacity: 0;
+  margin-bottom: var(--mb-7);
+  opacity: var(--opacity-0);
   animation: slideInFromTop 400ms ease 400ms forwards;
 }
 
 .title {
-  font-size: 32px;
-  margin: 32px 0 24px 0;
+  font-size: var(--fs-7);
+  margin: var(--mt-6) var(--mr-0) var(--mb-5) var(--ml-0);
   color: hsl(228, 21%, 31%);
-}
-
-.subtitle {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: hsl(228, 14%, 58%);
-  margin-bottom: 16px;
 }
 
 .overviewContainer {
@@ -37,7 +29,7 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: var(--fs-4);
   line-height: 1.5em;
   width: 80%;
   color: hsl(201, 23%, 34%);
@@ -49,7 +41,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: var(--mb-6);
 }
 
 .stackContainer {
@@ -62,7 +54,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 48px;
+  margin-bottom: var(--mb-7);
 }
 
 .technologies {
@@ -70,19 +62,19 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 95%;
-  margin-top: 8px;
+  margin-top: var(--mt-2);
 }
 
 .homeLink {
-  font-size: 24px;
+  font-size: var(--fs-5);
   color: hsla(0, 0%, 0%, 1);
-  font-weight: 600;
+  font-weight: var(--fw-4);
   background: linear-gradient(
     to top,
     rgba(255, 215, 0, 0.4) 35%,
     transparent 35%
   );
-  margin-top: 64px;
+  margin-top: var(--mt-8);
   transition: background 250ms ease;
 }
 
@@ -92,34 +84,34 @@
 
 @media (max-width: 376px) {
   .projectName {
-    font-size: 36px;
+    font-size: var(--fs-7);
   }
 
   .title {
-    font-size: 24px;
+    font-size: var(--fs-5);
   }
 
   .subtitle {
-    font-size: 16px;
+    font-size: var(--fs-3);
   }
 
   .description {
-    font-size: 18px;
+    font-size: var(--fs-4);
     width: 90%;
   }
 
   .projectDetailsDescription {
-    font-size: 18px;
+    font-size: var(--fs-4);
   }
 }
 
 @keyframes slideInFromTop {
   0% {
-    opacity: 0;
+    opacity: var(--opacity-0);
     transform: translateY(-20px);
   }
   100% {
-    opacity: 1;
+    opacity: var(--opacity-4);
     transform: translateY(0);
   }
 }

@@ -2,21 +2,21 @@
   display: flex;
   flex-direction: column;
   width: 240px;
-  padding: 0 12px;
-  margin-top: 48px;
+  padding: var(--pt-0) var(--pr-3) var(--pb-0) var(--pl-3);
+  margin-top: var(--mt-7);
 }
 
 .title {
-  font-size: 12px;
+  font-size: var(--fs-1);
   letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: var(--fw-5);
   text-transform: uppercase;
   color: hsl(228, 21%, 31%);
-  margin-bottom: 12px;
+  margin-bottom: var(--mb-3);
 }
 
 .description {
-  font-size: 20px;
+  font-size: var(--fs-4);
   width: 240px;
-  padding-bottom: 4px;
+  padding-bottom: var(--pb-1);
 }
