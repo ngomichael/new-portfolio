@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './Header.module.css'
-import portfolioIcon from '../../../public/icons/website-slash-icon.png'
+import portfolioIcon from '../../images/website-slash-icon.png'
 
 const ListLink = props => {
   return (

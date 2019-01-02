@@ -9,7 +9,7 @@
   min-height: 250px;
   margin-top: 64px;
   opacity: 0;
-  animation: slideInFromLeft 700ms ease forwards;
+  animation: slideInFromLeft 900ms ease forwards;
 }
 
 .images {

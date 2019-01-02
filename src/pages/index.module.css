@@ -12,7 +12,7 @@
   align-items: center;
   width: 90%;
   opacity: 0;
-  animation: slideInFromTop 500ms ease 300ms forwards;
+  animation: slideInFromTop 500ms ease 400ms forwards;
 }
 
 .title {
@@ -40,7 +40,7 @@
   width: 85%;
   margin-top: 96px;
   opacity: 0;
-  animation: slideInFromLeft 600ms 600ms ease forwards;
+  animation: slideInFromLeft 600ms 700ms ease forwards;
 }
 
 .subtitle {
