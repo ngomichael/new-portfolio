@@ -14,24 +14,25 @@
   animation: slideInFromTop 400ms ease 400ms forwards;
 }
 
-.title {
-  font-size: var(--fs-7);
-  margin: var(--mt-6) var(--mr-0) var(--mb-5) var(--ml-0);
-  color: hsl(228, 21%, 31%);
-}
-
 .overviewContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 85%;
+  width: 70%;
+}
+
+.title {
+  font-size: var(--fs-7);
+  width: 100%;
+  margin: var(--mt-6) var(--mr-0) var(--mb-5) var(--ml-0);
+  color: hsl(228, 21%, 31%);
 }
 
 .description {
   font-size: var(--fs-4);
   line-height: 1.5em;
-  width: 80%;
+  width: 100%;
   color: hsl(201, 23%, 34%);
 }
 
