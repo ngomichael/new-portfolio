@@ -1,0 +1,874 @@
+:root {
+  /* Opacity */
+  --opacity-0: 0;
+  --opacity-1: 0.2;
+  --opacity-2: 0.4;
+  --opacity-3: 0.7;
+  --opacity-4: 1;
+
+  /* Font-Size */
+  --fs-1: 12px;
+  --fs-2: 14px;
+  --fs-3: 16px;
+  --fs-4: 18px;
+  --fs-5: 24px;
+  --fs-6: 30px;
+  --fs-7: 36px;
+  --fs-8: 48px;
+  --fs-9: 60px;
+  --fs-10: 72px;
+
+  /* Font-Weight */
+  --fw-1: 100;
+  --fw-2: 300;
+  --fw-3: 400;
+  --fw-4: 600;
+  --fw-5: 700;
+
+  /* Padding */
+  --p-0: 0px;
+  --p-1: 4px;
+  --p-2: 8px;
+  --p-3: 12px;
+  --p-4: 16px;
+  --p-5: 24px;
+  --p-6: 32px;
+  --p-7: 48px;
+  --p-8: 64px;
+  --p-9: 96px;
+  --p-10: 128px;
+  --p-11: 192px;
+  --p-12: 256px;
+  --p-13: 384px;
+  --p-14: 512px;
+  --p-15: 640px;
+  --p-16: 768px;
+
+  --pt-0: 0px;
+  --pt-1: 4px;
+  --pt-2: 8px;
+  --pt-3: 12px;
+  --pt-4: 16px;
+  --pt-5: 24px;
+  --pt-6: 32px;
+  --pt-7: 48px;
+  --pt-8: 64px;
+  --pt-9: 96px;
+  --pt-10: 128px;
+  --pt-11: 192px;
+  --pt-12: 256px;
+  --pt-13: 384px;
+  --pt-14: 512px;
+  --pt-15: 640px;
+  --pt-16: 768px;
+
+  --pb-0: 0px;
+  --pb-1: 4px;
+  --pb-2: 8px;
+  --pb-3: 12px;
+  --pb-4: 16px;
+  --pb-5: 24px;
+  --pb-6: 32px;
+  --pb-7: 48px;
+  --pb-8: 64px;
+  --pb-9: 96px;
+  --pb-10: 128px;
+  --pb-11: 192px;
+  --pb-12: 256px;
+  --pb-13: 384px;
+  --pb-14: 512px;
+  --pb-15: 640px;
+  --pb-16: 768px;
+
+  --pl-0: 0px;
+  --pl-1: 4px;
+  --pl-2: 8px;
+  --pl-3: 12px;
+  --pl-4: 16px;
+  --pl-5: 24px;
+  --pl-6: 32px;
+  --pl-7: 48px;
+  --pl-8: 64px;
+  --pl-9: 96px;
+  --pl-10: 128px;
+  --pl-11: 192px;
+  --pl-12: 256px;
+  --pl-13: 384px;
+  --pl-14: 512px;
+  --pl-15: 640px;
+  --pl-16: 768px;
+
+  --pr-0: 0px;
+  --pr-1: 4px;
+  --pr-2: 8px;
+  --pr-3: 12px;
+  --pr-4: 16px;
+  --pr-5: 24px;
+  --pr-6: 32px;
+  --pr-7: 48px;
+  --pr-8: 64px;
+  --pr-9: 96px;
+  --pr-10: 128px;
+  --pr-11: 192px;
+  --pr-12: 256px;
+  --pr-13: 384px;
+  --pr-14: 512px;
+  --pr-15: 640px;
+  --pr-16: 768px;
+
+  /* Margin */
+  --m-0: 0px;
+  --m-1: 4px;
+  --m-2: 8px;
+  --m-3: 12px;
+  --m-4: 16px;
+  --m-5: 24px;
+  --m-6: 32px;
+  --m-7: 48px;
+  --m-8: 64px;
+  --m-9: 96px;
+  --m-10: 128px;
+  --m-11: 192px;
+  --m-12: 256px;
+  --m-13: 384px;
+  --m-14: 512px;
+  --m-15: 640px;
+  --m-16: 768px;
+
+  --mt-0: 0px;
+  --mt-1: 4px;
+  --mt-2: 8px;
+  --mt-3: 12px;
+  --mt-4: 16px;
+  --mt-5: 24px;
+  --mt-6: 32px;
+  --mt-7: 48px;
+  --mt-8: 64px;
+  --mt-9: 96px;
+  --mt-10: 128px;
+  --mt-11: 192px;
+  --mt-12: 256px;
+  --mt-13: 384px;
+  --mt-14: 512px;
+  --mt-15: 640px;
+  --mt-16: 768px;
+
+  --mb-0: 0px;
+  --mb-1: 4px;
+  --mb-2: 8px;
+  --mb-3: 12px;
+  --mb-4: 16px;
+  --mb-5: 24px;
+  --mb-6: 32px;
+  --mb-7: 48px;
+  --mb-8: 64px;
+  --mb-9: 96px;
+  --mb-10: 128px;
+  --mb-11: 192px;
+  --mb-12: 256px;
+  --mb-13: 384px;
+  --mb-14: 512px;
+  --mb-15: 640px;
+  --mb-16: 768px;
+
+  --ml-0: 0px;
+  --ml-1: 4px;
+  --ml-2: 8px;
+  --ml-3: 12px;
+  --ml-4: 16px;
+  --ml-5: 24px;
+  --ml-6: 32px;
+  --ml-7: 48px;
+  --ml-8: 64px;
+  --ml-9: 96px;
+  --ml-10: 128px;
+  --ml-11: 192px;
+  --ml-12: 256px;
+  --ml-13: 384px;
+  --ml-14: 512px;
+  --ml-15: 640px;
+  --ml-16: 768px;
+
+  --mr-0: 0px;
+  --mr-1: 4px;
+  --mr-2: 8px;
+  --mr-3: 12px;
+  --mr-4: 16px;
+  --mr-5: 24px;
+  --mr-6: 32px;
+  --mr-7: 48px;
+  --mr-8: 64px;
+  --mr-9: 96px;
+  --mr-10: 128px;
+  --mr-11: 192px;
+  --mr-12: 256px;
+  --mr-13: 384px;
+  --mr-14: 512px;
+  --mr-15: 640px;
+  --mr-16: 768px;
+
+  /* Border-Width */
+  --bw-1: 1px;
+  --bw-2: 2px;
+  --bw-3: 4px;
+  --bw-4: 7px;
+
+  /* Border-Radius */
+  --br-1: 4px;
+  --br-2: 10px;
+  --br-3: 20px;
+  --br-4: 40px;
+  --br-5: 80px;
+  --br-circle: 50%;
+
+  /* Box-Shadow */
+  --bs-1: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+  --bs-2: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+  --bs-3: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+  --bs-4: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+  --bs-5: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+}
+
+html {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  position: relative;
+  min-height: 100%;
+  background-color: hsl(0, 0%, 97%);
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+progress {
+  vertical-align: baseline;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+optgroup {
+  font-weight: 700;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+[type='reset'],
+[type='submit'],
+button,
+html [type='button'] {
+  -webkit-appearance: button;
+}
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+textarea {
+  overflow: auto;
+}
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+[type='search'] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+html {
+  /* font: 112.5%/1.45em georgia, serif; */
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+}
+img {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+h1 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+h2 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 1.62671rem;
+  line-height: 1.1;
+}
+h3 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 1.38316rem;
+  line-height: 1.1;
+}
+h4 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+h5 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 0.85028rem;
+  line-height: 1.1;
+}
+h6 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  color: inherit;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 0.78405rem;
+  line-height: 1.1;
+}
+hgroup {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+ul {
+  margin-left: 1.45rem;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  list-style-position: outside;
+  list-style-image: none;
+}
+ol {
+  margin-left: 1.45rem;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  list-style-position: outside;
+  list-style-image: none;
+}
+dl {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+dd {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+p {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+figure {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+pre {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  font-size: 0.85rem;
+  line-height: 1.42;
+  background: hsla(0, 0%, 0%, 0.04);
+  border-radius: 3px;
+  overflow: auto;
+  word-wrap: normal;
+  padding: 1.45rem;
+}
+table {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+  font-size: 1rem;
+  line-height: 1.45rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+fieldset {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+blockquote {
+  margin-left: 1.45rem;
+  margin-right: 1.45rem;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+form {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+noscript {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+iframe {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+hr {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: calc(1.45rem - 1px);
+  background: hsla(0, 0%, 0%, 0.2);
+  border: none;
+  height: 1px;
+}
+address {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.45rem;
+}
+b {
+  font-weight: bold;
+}
+strong {
+  font-weight: bold;
+}
+dt {
+  font-weight: bold;
+}
+th {
+  font-weight: bold;
+}
+li {
+  margin-bottom: calc(1.45rem / 2);
+}
+ol li {
+  padding-left: 0;
+}
+ul li {
+  padding-left: 0;
+}
+li > ol {
+  margin-left: 1.45rem;
+  margin-bottom: calc(1.45rem / 2);
+  margin-top: calc(1.45rem / 2);
+}
+li > ul {
+  margin-left: 1.45rem;
+  margin-bottom: calc(1.45rem / 2);
+  margin-top: calc(1.45rem / 2);
+}
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+li *:last-child {
+  margin-bottom: 0;
+}
+p *:last-child {
+  margin-bottom: 0;
+}
+li > p {
+  margin-bottom: calc(1.45rem / 2);
+}
+code {
+  font-size: 0.85rem;
+  line-height: 1.45rem;
+}
+kbd {
+  font-size: 0.85rem;
+  line-height: 1.45rem;
+}
+samp {
+  font-size: 0.85rem;
+  line-height: 1.45rem;
+}
+abbr {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+}
+acronym {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+}
+abbr[title] {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  cursor: help;
+  text-decoration: none;
+}
+thead {
+  text-align: left;
+}
+td,
+th {
+  text-align: left;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+  font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
+  padding-left: 0.96667rem;
+  padding-right: 0.96667rem;
+  padding-top: 0.725rem;
+  padding-bottom: calc(0.725rem - 1px);
+}
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+tt,
+code {
+  background-color: hsla(0, 0%, 0%, 0.04);
+  border-radius: 3px;
+  font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+    'Liberation Mono', Menlo, Courier, monospace;
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+pre code {
+  background: none;
+  line-height: 1.42;
+}
+code:before,
+code:after,
+tt:before,
+tt:after {
+  letter-spacing: -0.2em;
+  content: ' ';
+}
+pre code:before,
+pre code:after,
+pre tt:before,
+pre tt:after {
+  content: '';
+}
+
+.headerFooterContainer {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100%;
+}
+
+.mainContent {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}

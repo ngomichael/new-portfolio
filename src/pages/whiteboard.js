@@ -1,10 +1,9 @@
 import React from 'react'
-import js from '../icons/js-icon.svg'
-import css from '../icons/css-icon.svg'
-import html from '../icons/html-icon.svg'
 import Layout from '../components/layout'
-import whiteboardHome from '../images/overview/whiteboardHome.jpg'
+import whiteboardHomeJPG from '../images/overview/whiteboardHome.jpg'
+import whiteboardHomeWebP from '../images/overview/whiteboardHome.webp'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
+
 import SEO from '../components/seo'
 
 const overview = {
@@ -26,16 +25,13 @@ const overview = {
   type: 'Personal Project',
   imgs: [
     {
-      img: whiteboardHome,
+      img: whiteboardHomeWebP,
+      fallbackImg: whiteboardHomeJPG,
       caption:
         'Home page where a user can draw what they want on the whiteboard',
     },
   ],
-  feTechnologies: [
-    { icon: js, name: 'JavaScript' },
-    { icon: css, name: 'CSS' },
-    { icon: html, name: 'HTML' },
-  ],
+  feTechnologies: ['JavaScript', 'CSS', 'HTML'],
   beTechnologies: [],
 }
 

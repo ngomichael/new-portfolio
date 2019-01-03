@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "michael-ngo-portfolio",
+  "description": "Michael Ngo's Portfolio",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Michael Ngo <michael_ngo@live.com>",
   "dependencies": {
     "gatsby": "^2.0.53",
     "gatsby-image": "^2.0.20",
@@ -16,7 +16,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-image-fallback": "^8.0.0"
   },
   "keywords": [
     "gatsby"
@@ -34,6 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ngomichael/new-portfolio"
   }
 }

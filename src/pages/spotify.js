@@ -1,11 +1,9 @@
 import React from 'react'
-import jQuery from '../icons/jQuery-icon.svg'
-import js from '../icons/js-icon.svg'
-import css from '../icons/css-icon.svg'
-import html from '../icons/html-icon.svg'
 import Layout from '../components/layout'
-import spotifyHome from '../images/overview/spotifyHome.jpg'
-import spotifyArtistInfo from '../images/overview/spotifyArtistInfo.jpg'
+import spotifyHomeJPG from '../images/overview/spotifyHome.jpg'
+import spotifyHomeWebP from '../images/overview/spotifyHome.webp'
+import spotifyArtistInfoJPG from '../images/overview/spotifyArtistInfo.jpg'
+import spotifyArtistInfoWebP from '../images/overview/spotifyArtistInfo.webp'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
 import SEO from '../components/seo'
 
@@ -31,20 +29,17 @@ const overview = {
   type: 'Personal Project',
   imgs: [
     {
-      img: spotifyHome,
+      img: spotifyHomeWebP,
+      fallbackImg: spotifyHomeJPG,
       caption: 'Home page where a user can search for an artist',
     },
     {
-      img: spotifyArtistInfo,
+      img: spotifyArtistInfoWebP,
+      fallbackImg: spotifyArtistInfoJPG,
       caption: "Artist page where an artist's information is shown.",
     },
   ],
-  feTechnologies: [
-    { icon: js, name: 'JavaScript' },
-    { icon: jQuery, name: 'jQuery' },
-    { icon: css, name: 'CSS' },
-    { icon: html, name: 'HTML' },
-  ],
+  feTechnologies: ['JavaScript', 'jQuery', 'CSS', 'HTML'],
   beTechnologies: [],
 }
 
@@ -52,7 +47,6 @@ const Spotify = () => (
   <Layout>
     <SEO title="Spotify" />
     <ProjectOverview overview={overview} />
-    {/* <Link to="/">Go back to the homepage</Link> */}
   </Layout>
 )
 

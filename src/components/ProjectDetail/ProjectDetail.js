@@ -2,28 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './ProjectDetail.module.css'
 
-const ProjectDetail = ({ title, description }) => {
+const ProjectDetail = ({ title, description, children }) => {
   return (
     <>
       <div className={styles.projectDetails}>
-        <p className={styles.projectDetailsTitle}>{title}</p>
+        <p className={styles.title}>{children}</p>
         {typeof description === 'string' ? (
-          <p className={styles.projectDetailsDescription}>{description}</p>
+          <p className={styles.description}>{description}</p>
         ) : (
-          <div className={styles.technologies}>
+          <ul className={styles.technologies}>
             {description.length !== 0 ? (
               description.map(technology => (
-                <li
-                  key={technology.name}
-                  className={styles.projectDetailsDescription}
-                >
-                  {technology.name}
+                <li key={technology} className={styles.description}>
+                  {technology}
                 </li>
               ))
             ) : (
-              <p className={styles.projectDetailsDescription}>None</p>
+              <p className={styles.description}>None</p>
             )}
-          </div>
+          </ul>
         )}
       </div>
     </>
@@ -34,5 +31,8 @@ export default ProjectDetail
 
 ProjectDetail.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.any.isRequired,
+  description: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
 }

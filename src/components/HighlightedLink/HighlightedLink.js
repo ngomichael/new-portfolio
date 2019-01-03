@@ -2,10 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './HighlightedLink.module.css'
 
-const HighlightedLink = ({ site, linkText, target }) => {
+const HighlightedLink = ({ site, target, children }) => {
   return (
-    <a href={site} target={target ? target : ''} className={styles.link}>
-      {linkText}
+    <a
+      href={site}
+      target={target}
+      rel="noopener noreferrer"
+      className={styles.link}
+    >
+      {children}
     </a>
   )
 }
@@ -13,7 +18,7 @@ const HighlightedLink = ({ site, linkText, target }) => {
 HighlightedLink.propTypes = {
   site: PropTypes.string.isRequired,
   linkText: PropTypes.string.isRequired,
-  target: PropTypes.string,
+  target: PropTypes.string.isRequired,
 }
 
 export default HighlightedLink

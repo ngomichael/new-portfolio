@@ -1,11 +1,10 @@
 import React from 'react'
-import react from '../icons/react-icon.svg'
-import redux from '../icons/redux-icon.svg'
-import reactRouter from '../icons/react-router-icon.svg'
 import Layout from '../components/layout'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
-import ufcHome from '../images/overview/ufcHome.jpg'
-import ufcStats from '../images/overview/ufcStats.jpg'
+import ufcHomeJPG from '../images/overview/ufcHome.jpg'
+import ufcHomeWebP from '../images/overview/ufcHome.webp'
+import ufcStatsJPG from '../images/overview/ufcStats.jpg'
+import ufcStatsWebP from '../images/overview/ufcStats.webp'
 
 import SEO from '../components/seo'
 
@@ -27,18 +26,19 @@ const overview = {
   timeline: "Sep '17 - Feb '18",
   type: 'Personal Project',
   imgs: [
-    { img: ufcHome, caption: 'Home page where a user chooses a fighter' },
     {
-      img: ufcStats,
+      img: ufcHomeWebP,
+      fallbackImg: ufcHomeJPG,
+      caption: 'Home page where a user chooses a fighter',
+    },
+    {
+      img: ufcStatsWebP,
+      fallbackImg: ufcStatsJPG,
       caption:
         'Statistics page where the fighters statistics and information are displayed',
     },
   ],
-  feTechnologies: [
-    { icon: react, width: '60', margin: '18', name: 'React' },
-    { icon: redux, name: 'Redux' },
-    { icon: reactRouter, name: 'React-Router' },
-  ],
+  feTechnologies: ['React', 'Redux', 'React-Router'],
   beTechnologies: [],
 }
 

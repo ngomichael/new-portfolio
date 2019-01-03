@@ -5,11 +5,15 @@ import ProjectDetail from '../ProjectDetail/ProjectDetail'
 
 const ProjectDetails = ({ overview }) => {
   return (
-    <div className={styles.projectDetailsContainer}>
-      <ProjectDetail title="Timeline" description={overview.timeline} />
-      <ProjectDetail title="Type" description={overview.type} />
-      <ProjectDetail title="Front-End" description={overview.feTechnologies} />
-      <ProjectDetail title="Back-End" description={overview.beTechnologies} />
+    <div className={styles.container}>
+      <ProjectDetail description={overview.timeline}>Timeline</ProjectDetail>
+      <ProjectDetail description={overview.type}>Type</ProjectDetail>
+      <ProjectDetail description={overview.feTechnologies}>
+        Front-End
+      </ProjectDetail>
+      <ProjectDetail description={overview.beTechnologies}>
+        Back-End
+      </ProjectDetail>
     </div>
   )
 }
@@ -17,5 +21,20 @@ const ProjectDetails = ({ overview }) => {
 export default ProjectDetails
 
 ProjectDetails.propTypes = {
-  overview: PropTypes.object.isRequired,
+  overview: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.arrayOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.node])
+    ),
+    timeline: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    imgs: PropTypes.arrayOf(
+      PropTypes.shape({
+        img: PropTypes.node.isRequired,
+        caption: PropTypes.string.isRequired,
+      })
+    ),
+    feTechnologies: PropTypes.arrayOf(PropTypes.string),
+    beTechnologies: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
 }

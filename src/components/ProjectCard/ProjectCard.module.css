@@ -1,33 +1,33 @@
 .project {
   position: relative;
-  border-radius: 7px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.18);
+  border-radius: var(--br-2);
+  box-shadow: var(--bs-2);
   overflow: hidden;
   width: 63vw;
   height: 40vw;
   min-width: 300px;
   min-height: 250px;
-  margin-top: 64px;
-  font-family: 'Open Sans', sans-serif;
-  animation: slideInFromLeft 400ms ease;
+  margin-top: var(--mt-8);
+  opacity: var(--opacity-0);
+  animation: slideInFromLeft 900ms ease forwards;
 }
 
 .images {
-  opacity: 0;
-  animation: fadeIn 300ms ease 400ms forwards;
+  position: 'relative';
+  overflow: 'hidden';
 }
 
 .laptop {
   position: relative;
   right: 66px;
-  top: 25px;
+  top: 20px;
   z-index: 1;
 }
 
 .screenshot {
   position: absolute;
   left: -78px;
-  top: 55px;
+  top: 50px;
   z-index: 1;
 }
 
@@ -44,10 +44,10 @@
     height: 50%;
     width: 100%;
     top: 100%;
-    padding-left: 32px;
-    opacity: 0.95;
+    padding-left: var(--pl-6);
+    opacity: 0.97;
     z-index: 10;
-    transition: all 250ms;
+    transition: top 250ms ease;
   }
 
   .project:hover .overlay {
@@ -56,17 +56,17 @@
 }
 
 .projectTitle {
-  color: rgb(235, 235, 235);
-  font-size: 24px;
-  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-5);
   letter-spacing: -0.025em;
-  padding-bottom: 8px;
+  padding-bottom: var(--pb-2);
 }
 
 .projectType {
-  color: rgb(235, 235, 235);
-  font-size: 20px;
-  font-weight: 400;
+  color: hsl(0, 0%, 95%);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-3);
 }
 
 @media (min-width: 767px) {
@@ -80,29 +80,31 @@
 
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-50px);
+    transform: translateX(0px);
+    opacity: var(--opacity-0);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(50px);
+    opacity: var(--opacity-4);
   }
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: var(--opacity-0);
   }
   100% {
-    opacity: 1;
+    opacity: var(--opacity-4);
   }
 }
 
 @keyframes slideInFromTop {
   0% {
-    opacity: 0;
+    opacity: var(--opacity-0);
     transform: translateY(-30px);
   }
   100% {
-    opacity: 1;
+    opacity: var(--opacity-4);
     transform: translateY(0);
   }
 }

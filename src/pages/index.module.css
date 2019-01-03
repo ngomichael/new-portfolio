@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 128px;
+  margin-bottom: var(--mb-10);
 }
 
 .introContainer {
@@ -11,14 +11,13 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  opacity: 0;
-  animation: slideInFromTop 400ms ease 400ms forwards;
+  opacity: var(--opacity-0);
+  animation: slideInFromTop 500ms ease 400ms forwards;
 }
 
 .title {
-  font-family: 'Open Sans', sans-serif;
   line-height: 1em;
-  font-size: 48px;
+  font-size: var(--fs-8);
   letter-spacing: -0.05em;
   text-align: center;
   color: hsl(220, 27%, 22%);
@@ -26,8 +25,7 @@
 }
 
 .description {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
+  font-size: var(--fs-5);
   line-height: 1.5em;
   text-align: center;
   color: hsl(228, 21%, 31%);
@@ -40,23 +38,24 @@
   flex-direction: column;
   align-items: center;
   width: 85%;
-  margin-top: 96px;
-  animation: slideInFromLeft 400ms ease;
+  margin-top: var(--mt-9);
+  opacity: var(--opacity-0);
+  animation: slideInFromLeft 600ms 700ms ease forwards;
 }
 
 .subtitle {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-5);
   color: hsl(228, 21%, 31%);
   letter-spacing: 2px;
-  margin-bottom: 8px;
+  margin-bottom: var(--mb-2);
 }
 
 .projectsContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transform: translateX(-50px);
 }
 
 @media (min-width: 767px) {
@@ -79,30 +78,32 @@
 
 @media (max-width: 376px) {
   .title {
-    font-size: 32px;
+    font-size: var(--fs-7);
   }
 
   .description {
-    font-size: 24px;
+    font-size: var(--fs-5);
   }
 }
 
 @keyframes slideInFromTop {
   0% {
-    opacity: 0;
+    opacity: var(--opacity-0);
     transform: translateY(-20px);
   }
   100% {
-    opacity: 1;
+    opacity: var(--opacity-4);
     transform: translateY(0);
   }
 }
 
 @keyframes slideInFromLeft {
   0% {
+    opacity: var(--opacity-0);
     transform: translateX(-50px);
   }
   100% {
-    transform: translateX(0);
+    opacity: var(--opacity-4);
+    transform: translateX(0px);
   }
 }

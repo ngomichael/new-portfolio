@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-top: 2px solid hsl(228, 14%, 80%);
+  border-top: var(--bw-2) solid hsl(228, 14%, 80%);
   height: 135px;
   width: 90%;
-  margin: 96px 0 0 6%;
+  margin: var(--mt-9) 0 0 6%;
 }
 
 .linksContainer {
@@ -23,21 +23,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.18);
+  border-radius: var(--br-circle);
+  box-shadow: var(--bs-4);
   background-color: hsla(214, 76%, 68%, 1);
   width: 50px;
   height: 50px;
-  transition: all 250ms;
+  transition: background-color 250ms ease, box-shadow 250ms ease,
+    transform 250ms ease;
 }
 
 .iconContainer:hover {
   background-color: hsl(214, 76%, 54%);
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.18);
+  box-shadow: var(--bs-3);
   transform: translateY(3px);
 }
 
 .icon {
-  color: hsl(228, 14%, 79%);
-  margin-bottom: 0;
+  margin-bottom: var(--mb-0);
 }
