@@ -11,9 +11,9 @@ const ProjectOverview = ({ overview }) => {
       <section className={styles.overviewContainer}>
         <h1 className={styles.projectName}>{overview.title}</h1>
         <ProjectDetails overview={overview} />
+
         <h2 className={styles.title}>Overview</h2>
         <p className={styles.description}>{overview.description}</p>
-
         <div className={styles.projectImagesContainer}>
           {overview.imgs.map(img => (
             <ProjectImage

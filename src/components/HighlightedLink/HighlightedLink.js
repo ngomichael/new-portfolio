@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './HighlightedLink.module.css'
 
-const HighlightedLink = ({ site, linkText, target }) => {
+const HighlightedLink = ({ site, target, children }) => {
   return (
     <a
       href={site}
@@ -10,7 +10,7 @@ const HighlightedLink = ({ site, linkText, target }) => {
       rel="noopener noreferrer"
       className={styles.link}
     >
-      {linkText}
+      {children}
     </a>
   )
 }

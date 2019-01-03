@@ -6,10 +6,14 @@ import ProjectDetail from '../ProjectDetail/ProjectDetail'
 const ProjectDetails = ({ overview }) => {
   return (
     <div className={styles.container}>
-      <ProjectDetail title="Timeline" description={overview.timeline} />
-      <ProjectDetail title="Type" description={overview.type} />
-      <ProjectDetail title="Front-End" description={overview.feTechnologies} />
-      <ProjectDetail title="Back-End" description={overview.beTechnologies} />
+      <ProjectDetail description={overview.timeline}>Timeline</ProjectDetail>
+      <ProjectDetail description={overview.type}>Type</ProjectDetail>
+      <ProjectDetail description={overview.feTechnologies}>
+        Front-End
+      </ProjectDetail>
+      <ProjectDetail description={overview.beTechnologies}>
+        Back-End
+      </ProjectDetail>
     </div>
   )
 }

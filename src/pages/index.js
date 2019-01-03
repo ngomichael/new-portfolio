@@ -80,19 +80,22 @@ const IndexPage = props => (
           Thanks for coming by! I'm{' '}
           <HighlightedLink
             site="https://www.linkedin.com/in/mhngo/"
-            linkText="Michael Ngo"
             target="_blank"
             rel="noopener noreferrer"
-          />
+          >
+            Michael Ngo
+          </HighlightedLink>
           , a senior at the University of Washington majoring in{' '}
           <HighlightedLink
             site="https://ischool.uw.edu/programs/informatics"
-            linkText="Informatics"
             target="_blank"
             rel="noopener noreferrer"
-          />
+          >
+            Informatics
+          </HighlightedLink>
         </p>
       </div>
+
       <div className={styles.projectsTextContainer}>
         <h2 className={styles.subtitle}>Projects</h2>
         <p className={styles.description}>

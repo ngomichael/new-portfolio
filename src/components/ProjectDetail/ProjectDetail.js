@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './ProjectDetail.module.css'
 
-const ProjectDetail = ({ title, description }) => {
+const ProjectDetail = ({ title, description, children }) => {
   return (
     <>
       <div className={styles.projectDetails}>
-        <p className={styles.title}>{title}</p>
+        <p className={styles.title}>{children}</p>
         {typeof description === 'string' ? (
           <p className={styles.description}>{description}</p>
         ) : (
