@@ -3,21 +3,18 @@ import PropTypes from 'prop-types'
 import ReactImageFallback from 'react-image-fallback'
 import styles from './ProjectImage.module.css'
 
-class ProjectImage extends Component {
-  render() {
-    const { img, fallbackImg, caption } = this.props
-    return (
-      <div className={styles.container}>
-        <ReactImageFallback
-          src={img}
-          fallbackImage={fallbackImg}
-          alt="Project Screenshot"
-          className={styles.screenshot}
-        />
-        <figcaption className={styles.caption}>{caption}</figcaption>
-      </div>
-    )
-  }
+const ProjectImage = ({ img, fallbackImg, caption }) => {
+  return (
+    <div className={styles.container}>
+      <ReactImageFallback
+        src={img}
+        fallbackImage={fallbackImg}
+        alt="Project Screenshot"
+        className={styles.screenshot}
+      />
+      <figcaption className={styles.caption}>{caption}</figcaption>
+    </div>
+  )
 }
 
 export default ProjectImage

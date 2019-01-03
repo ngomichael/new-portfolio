@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import githubIcon from '../../icons/github-icon.svg'
 import linkedinIcon from '../../icons/linkedin-icon.svg'
 import mediumIcon from '../../icons/medium-icon.png'
