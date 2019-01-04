@@ -22,7 +22,7 @@ const overview = {
   and I haven't stopped working with it since.`,
     <br />,
     <br />,
-    <h2>DOM</h2>,
+    <h2>DOM (Document Object Model)</h2>,
     `One of the biggest things I learned how to do was manipulate the DOM. Throughout
     my application I used document.getElementById or document.getElementByClassName to
     get access to the elements I needed. When I got the elements I needed, I added many 
@@ -49,7 +49,7 @@ const overview = {
     },
   ],
   feTechnologies: ['JavaScript', 'CSS', 'HTML'],
-  beTechnologies: [],
+  beTechnologies: 'None',
 }
 
 const Whiteboard = () => (

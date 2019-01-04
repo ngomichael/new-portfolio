@@ -67,7 +67,7 @@ const overview = {
     },
   ],
   feTechnologies: ['JavaScript', 'jQuery', 'CSS', 'HTML'],
-  beTechnologies: [],
+  beTechnologies: 'None',
 }
 
 const Spotify = () => (

@@ -79,7 +79,7 @@ const overview = {
     },
   ],
   feTechnologies: ['React', 'Redux', 'React-Router'],
-  beTechnologies: [],
+  beTechnologies: 'None',
 }
 
 const UFC = () => (
