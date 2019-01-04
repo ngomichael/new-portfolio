@@ -14,26 +14,33 @@
   animation: slideInFromTop 400ms ease 400ms forwards;
 }
 
-.overviewContainer {
+.descriptionContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 65%;
 }
 
 .title {
   font-size: var(--fs-7);
   width: 100%;
-  margin: var(--mt-6) var(--mr-0) var(--mb-5) var(--ml-0);
+  margin: var(--mt-6) var(--mr-0) var(--mb-4) var(--ml-0);
   color: hsl(228, 21%, 31%);
 }
 
 .description {
   font-size: var(--fs-4);
+  /* hyphens: auto; */
   line-height: 1.5em;
   width: 100%;
   color: hsl(201, 23%, 34%);
+}
+
+h2 {
+  color: hsl(228, 14%, 58%);
+  font-size: var(--fs-6);
+  margin: var(--mt-5) var(--mr-0) var(--mb-4) var(--ml-0);
 }
 
 .projectImagesContainer {
@@ -43,27 +50,6 @@
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: var(--mb-6);
-}
-
-.stackContainer {
-  display: flex;
-}
-
-.technologyContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: var(--mb-7);
-}
-
-.technologies {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 95%;
-  margin-top: var(--mt-2);
 }
 
 .homeLink {

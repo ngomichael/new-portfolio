@@ -10,7 +10,7 @@ const ProjectOverview = ({ overview }) => {
     <div className={styles.container}>
       <h1 className={styles.projectName}>{overview.title}</h1>
       <ProjectDetails overview={overview} />
-      <section className={styles.overviewContainer}>
+      <section className={styles.descriptionContainer}>
         <h2 className={styles.title}>Overview</h2>
         <p className={styles.description}>{overview.description}</p>
         <div className={styles.projectImagesContainer}>
@@ -22,6 +22,11 @@ const ProjectOverview = ({ overview }) => {
             />
           ))}
         </div>
+      </section>
+
+      <section className={styles.descriptionContainer}>
+        <h2 className={styles.title}>Technologies</h2>
+        <p className={styles.description}>{overview.techDescription}</p>
       </section>
 
       <Link to="/" className={styles.homeLink}>
@@ -37,6 +42,7 @@ ProjectOverview.propTypes = {
   overview: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.arrayOf(PropTypes.node),
+    techDescription: PropTypes.arrayOf(PropTypes.node),
     timeline: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     imgs: PropTypes.arrayOf(
