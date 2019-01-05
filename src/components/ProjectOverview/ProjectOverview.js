@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import ProjectImage from '../ProjectImage/ProjectImage'
@@ -10,8 +10,8 @@ const ProjectOverview = ({ overview }) => {
     <div className={styles.container}>
       <h1 className={styles.projectName}>{overview.title}</h1>
       <ProjectDetails overview={overview} />
-      <section className={styles.descriptionContainer}>
-        <h2 className={styles.title}>Overview</h2>
+      <section className={styles.sectionContainer}>
+        <h1 className={styles.title}>Overview</h1>
         <p className={styles.description}>{overview.description}</p>
         <div className={styles.projectImagesContainer}>
           {overview.imgs.map(img => (
@@ -24,9 +24,9 @@ const ProjectOverview = ({ overview }) => {
         </div>
       </section>
 
-      <section className={styles.descriptionContainer}>
+      <section className={styles.sectionContainer}>
         <h2 className={styles.title}>Technologies</h2>
-        <p className={styles.description}>{overview.techDescription}</p>
+        <span className={styles.description}>{overview.techDescription}</span>
       </section>
 
       <Link to="/" className={styles.homeLink}>
@@ -53,6 +53,9 @@ ProjectOverview.propTypes = {
       })
     ).isRequired,
     feTechnologies: PropTypes.arrayOf(PropTypes.string).isRequired,
-    beTechnologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    beTechnologies: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.string),
+      PropTypes.string,
+    ]).isRequired,
   }).isRequired,
 }

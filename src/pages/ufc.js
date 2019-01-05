@@ -24,7 +24,7 @@ const overview = {
   love for React and it has only grown ever since.`,
     <br />,
     <br />,
-    <h2>React</h2>,
+    <h3>React</h3>,
     `What I really enjoyed about React was the way that it makes me think about building apps.
     Understanding that within a feature there are many components that build on top of one another
     and that each component takes care of a small piece of the user interface was really easy for 
@@ -42,7 +42,7 @@ const overview = {
     gradually gotten better at.`,
     <br />,
     <br />,
-    <h2>Redux</h2>,
+    <h3>Redux</h3>,
     `After digging into React for a little while, I noticed that Redux was a popular library 
     among the React community. I looked into the use cases for it and saw the problem it was solving.
     One problem that I saw arising when creating this app was prop drilling. The process of getting data
@@ -82,8 +82,8 @@ const overview = {
   beTechnologies: 'None',
 }
 
-const UFC = () => (
-  <Layout>
+const UFC = props => (
+  <Layout location={props.location}>
     <SEO title="UFC" />
     <ProjectOverview overview={overview} />
   </Layout>

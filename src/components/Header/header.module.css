@@ -11,17 +11,18 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 50px;
-  width: 50px;
-  margin-top: var(--mt-5);
+  height: 55px;
+  width: 55px;
+  margin-top: var(--mt-4);
 }
 
 .linksContainer {
   display: flex;
   justify-content: space-around;
-  width: 250px;
+  width: 330px;
   height: 45px;
   margin-top: var(--mt-3);
+  margin-left: var(--ml-2);
 }
 
 .listItem {
@@ -53,4 +54,21 @@
 
 .blackText {
   color: hsl(220, 27%, 22%);
+}
+
+@media (max-width: 376px) {
+  .icon {
+    height: 45px;
+    width: 45px;
+    margin-top: var(--mt-5);
+  }
+
+  .linksContainer {
+    margin-top: var(--mt-4);
+    margin-left: var(--ml-3);
+  }
+
+  .link {
+    font-size: var(--fs-4);
+  }
 }

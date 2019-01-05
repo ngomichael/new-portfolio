@@ -21,7 +21,7 @@ const overview = {
   assignemnts were due on Tuesday) were worth it.`,
     <br />,
     <br />,
-    <h2>Go, Node, and Docker</h2>,
+    <h3>Go, Node, and Docker</h3>,
     `This class was the first time I really did anything along the lines of creating my own APIs and 
     learning server-side technologies. In this project, my group and I developed
     the authentication of our app in Go, our messaging service as a microservice using Node, and all
@@ -41,7 +41,7 @@ const overview = {
     us a while to figure out. In the end, we did get it working and two people were able to video chat with each other!`,
     <br />,
     <br />,
-    <h2>End-to-End Application</h2>,
+    <h3>End-to-End Application</h3>,
     `In addition to creating the servers for our project, we also had to implement the client.
     This is where we made the requests to the servers we created and displayed the information
     that was returned. This is the first time I feel that I have good grasp on using fetch
@@ -68,8 +68,8 @@ const overview = {
   beTechnologies: ['Go', 'Node', 'MySQL', 'MongoDB', 'Docker', 'AWS'],
 }
 
-const Hangouts = () => (
-  <Layout>
+const Hangouts = props => (
+  <Layout location={props.location}>
     <SEO title="Hangouts" />
     <ProjectOverview overview={overview} />
   </Layout>

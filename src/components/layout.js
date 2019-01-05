@@ -6,7 +6,7 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import styles from './layout.module.css'
 
-const Layout = ({ children, pathname }) => (
+const Layout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -19,7 +19,7 @@ const Layout = ({ children, pathname }) => (
     `}
     render={data => (
       <div className={styles.headerFooterContainer}>
-        <Header pathname={pathname} />
+        <Header location={location} />
         <div className={styles.mainContent}>{children}</div>
         <Footer />
       </div>

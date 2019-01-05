@@ -5,7 +5,7 @@
 }
 
 .projectName {
-  font-size: var(--fs-8);
+  font-size: var(--fs-9);
   text-align: center;
   letter-spacing: -0.05em;
   color: hsl(220, 27%, 22%);
@@ -14,7 +14,7 @@
   animation: slideInFromTop 400ms ease 400ms forwards;
 }
 
-.descriptionContainer {
+.sectionContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,6 +24,7 @@
 
 .title {
   font-size: var(--fs-7);
+  font-weight: var(--fw-5);
   width: 100%;
   margin: var(--mt-6) var(--mr-0) var(--mb-4) var(--ml-0);
   color: hsl(228, 21%, 31%);
@@ -31,15 +32,16 @@
 
 .description {
   font-size: var(--fs-4);
-  /* hyphens: auto; */
   line-height: 1.5em;
+  hyphens: auto;
   width: 100%;
   color: hsl(201, 23%, 34%);
 }
 
-h2 {
+h3 {
   color: hsl(228, 14%, 58%);
   font-size: var(--fs-6);
+  font-weight: var(--fw-4);
   margin: var(--mt-5) var(--mr-0) var(--mb-4) var(--ml-0);
 }
 

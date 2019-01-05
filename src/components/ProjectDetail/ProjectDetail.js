@@ -30,7 +30,7 @@ const ProjectDetail = ({ title, description, children }) => {
 export default ProjectDetail
 
 ProjectDetail.propTypes = {
-  title: PropTypes.string.isRequired,
+  // title: PropTypes.string.isRequired,
   description: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),

@@ -22,7 +22,7 @@ const overview = {
   and I haven't stopped working with it since.`,
     <br />,
     <br />,
-    <h2>DOM (Document Object Model)</h2>,
+    <h3>DOM (Document Object Model)</h3>,
     `One of the biggest things I learned how to do was manipulate the DOM. Throughout
     my application I used document.getElementById or document.getElementByClassName to
     get access to the elements I needed. When I got the elements I needed, I added many 
@@ -30,7 +30,7 @@ const overview = {
     respond based off of the user's actions and it was extremely exciting`,
     <br />,
     <br />,
-    <h2>DRY</h2>,
+    <h3>DRY</h3>,
     `DRY which stands for 'Don't repeat yourself is a principle that I learned early on. 
     When I started writing my event listeners for very similar elements I only ended up
     changing a few things and the rest of the code was the same. This is where learned to
@@ -52,8 +52,8 @@ const overview = {
   beTechnologies: 'None',
 }
 
-const Whiteboard = () => (
-  <Layout>
+const Whiteboard = props => (
+  <Layout location={props.location}>
     <SEO title="Whiteboard" />
     <ProjectOverview overview={overview} />
   </Layout>

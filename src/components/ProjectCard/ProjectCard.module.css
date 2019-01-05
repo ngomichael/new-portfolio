@@ -58,7 +58,7 @@
 
 .projectTitle {
   color: hsl(0, 0%, 95%);
-  font-size: var(--fs-5);
+  font-size: var(--fs-6);
   font-weight: var(--fw-5);
   letter-spacing: -0.025em;
   padding-bottom: var(--pb-2);

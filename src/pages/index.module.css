@@ -17,7 +17,7 @@
 
 .title {
   line-height: 1em;
-  font-size: var(--fs-8);
+  font-size: var(--fs-9);
   letter-spacing: -0.05em;
   text-align: center;
   color: hsl(220, 27%, 22%);
@@ -25,7 +25,7 @@
 }
 
 .description {
-  font-size: var(--fs-5);
+  font-size: var(--fs-6);
   line-height: 1.5em;
   text-align: center;
   color: hsl(228, 21%, 31%);
@@ -44,7 +44,7 @@
 }
 
 .subtitle {
-  font-size: var(--fs-7);
+  font-size: var(--fs-8);
   font-weight: var(--fw-5);
   color: hsl(228, 21%, 31%);
   letter-spacing: 2px;
@@ -77,11 +77,11 @@
 
 @media (max-width: 376px) {
   .title {
-    font-size: var(--fs-7);
+    font-size: var(--fs-8);
   }
 
   .description {
-    font-size: var(--fs-5);
+    font-size: var(--fs-6);
   }
 }
 

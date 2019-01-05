@@ -35,6 +35,9 @@ ProjectDetails.propTypes = {
       })
     ),
     feTechnologies: PropTypes.arrayOf(PropTypes.string),
-    beTechnologies: PropTypes.arrayOf(PropTypes.string),
+    beTechnologies: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.string),
+      PropTypes.string,
+    ]).isRequired,
   }).isRequired,
 }

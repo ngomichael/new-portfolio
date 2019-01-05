@@ -22,7 +22,12 @@ const ListLink = props => {
   )
 }
 
-const Header = ({ pathname }) => {
+const Header = ({ location }) => {
+  const navLinks = [
+    { text: 'Projects', to: '/' },
+    { text: 'About', to: '/about' },
+  ]
+
   return (
     <header className={styles.container}>
       <Link to="/">
@@ -31,9 +36,11 @@ const Header = ({ pathname }) => {
         </span>
       </Link>
       <ul className={styles.linksContainer}>
-        <ListLink to="/" currPath={pathname}>
-          Projects
-        </ListLink>
+        {navLinks.map(link => (
+          <ListLink key={link.to} to={link.to} currPath={location.pathname}>
+            {link.text}
+          </ListLink>
+        ))}
 
         <li className={styles.listItem}>
           <a
@@ -50,8 +57,8 @@ const Header = ({ pathname }) => {
   )
 }
 
-Header.propTypes = {
-  pathname: PropTypes.node,
-}
+// Header.propTypes = {
+//   location: PropTypes.node,
+// }
 
 export default Header

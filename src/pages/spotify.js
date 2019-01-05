@@ -26,7 +26,7 @@ const overview = {
   at that time I didn't know that I would be working with APIs and async data so often.`,
     <br />,
     <br />,
-    <h2>jQuery </h2>,
+    <h3>jQuery </h3>,
     `I took my first class that taught JavaScript at a community college and I wanted to put the
     skills I learned to use. I learned jQuery in this class which was the very first JavaScript 
     library that I learned up to that point. It was exciting adding something new to my web development toolbelt!
@@ -36,7 +36,7 @@ const overview = {
     `,
     <br />,
     <br />,
-    <h2>Spotify API and Asynchronous Data</h2>,
+    <h3>Spotify API and Asynchronous Data</h3>,
     `I believe up to this point I haven't had to work with with asynchronous behavior.
     My first time was when I started to make requests to the Spotify API. I used
     jQuery's ajax function to make GET requests to Spotify's API to get an artist's songs,
@@ -70,8 +70,8 @@ const overview = {
   beTechnologies: 'None',
 }
 
-const Spotify = () => (
-  <Layout>
+const Spotify = props => (
+  <Layout location={props.location}>
     <SEO title="Spotify" />
     <ProjectOverview overview={overview} />
   </Layout>

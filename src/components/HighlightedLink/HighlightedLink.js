@@ -17,7 +17,6 @@ const HighlightedLink = ({ site, target, children }) => {
 
 HighlightedLink.propTypes = {
   site: PropTypes.string.isRequired,
-  linkText: PropTypes.string.isRequired,
   target: PropTypes.string.isRequired,
 }
 
