@@ -11,7 +11,7 @@ const ProjectOverview = ({ overview }) => {
       <h1 className={styles.projectName}>{overview.title}</h1>
       <ProjectDetails overview={overview} />
       <section className={styles.sectionContainer}>
-        <h1 className={styles.title}>Overview</h1>
+        <h1 className={styles.sectionTitle}>Overview</h1>
         <p className={styles.description}>{overview.description}</p>
         <div className={styles.projectImagesContainer}>
           {overview.imgs.map(img => (
@@ -25,7 +25,7 @@ const ProjectOverview = ({ overview }) => {
       </section>
 
       <section className={styles.sectionContainer}>
-        <h2 className={styles.title}>Technologies</h2>
+        <h2 className={styles.sectionTitle}>Technologies</h2>
         <span className={styles.description}>{overview.techDescription}</span>
       </section>
 

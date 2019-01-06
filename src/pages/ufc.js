@@ -46,8 +46,10 @@ const overview = {
     `After digging into React for a little while, I noticed that Redux was a popular library 
     among the React community. I looked into the use cases for it and saw the problem it was solving.
     One problem that I saw arising when creating this app was prop drilling. The process of getting data
-    to different components would sometimes include passing props down many levels and using components as a way to pass props down
-    Even though in this app I was creating it didn't get to the point where it needed Redux just yet, I wanted to incorporate it into my app
+    to different components would sometimes include passing props down many levels and using components as a 
+    way to pass props down
+    Even though in this app I was creating it didn't get to the point where it needed Redux just yet, I 
+    wanted to incorporate it into my app
     to learn how to use it and to have the skills when I built an app that actually needed it. What I
     liked about Redux was how I could see the problem it was solving right away. Even though I was 
     just starting, I saw how useful Redux was.`,
@@ -57,10 +59,7 @@ const overview = {
     the parts worked together was the most difficult part. There are actions, action creators 
     reducers, and the store, but how did Redux modify state and where? When I got the basics of
     Redux incorporated into my app is when I started to better understand what was happening.
-    Let's say that one of my components needed access to a piece of the state and needed to modify
-    it based off of when a button was clicked. The clicked button would dispatch an action which is 
-    used by the reducer to figure out how to update the current state. Getting all of the small
-    pieces working together was what really helped me figure out how Redux operated.`,
+    Getting all of the small pieces working together was what really helped me figure out how Redux operated.`,
     ,
   ],
   timeline: "Sep '17 - Feb '18",
