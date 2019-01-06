@@ -25,7 +25,7 @@ const ListLink = props => {
 const Header = ({ location }) => {
   const navLinks = [
     { text: 'Projects', to: '/' },
-    { text: 'About', to: '/about' },
+    { text: 'About', to: '/about/' },
   ]
 
   return (
@@ -57,8 +57,8 @@ const Header = ({ location }) => {
   )
 }
 
-// Header.propTypes = {
-//   location: PropTypes.node,
-// }
+Header.propTypes = {
+  location: PropTypes.node,
+}
 
 export default Header
