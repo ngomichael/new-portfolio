@@ -20,3 +20,7 @@
   width: 240px;
   padding-bottom: var(--pb-1);
 }
+
+.technologies {
+  margin-block-end: 0;
+}
