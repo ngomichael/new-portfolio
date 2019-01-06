@@ -8,8 +8,8 @@ import HighlightedLink from '../components/HighlightedLink/HighlightedLink'
 
 const overview = {
   intro: [
-    `Hey again! I appreciate you visiting my site and getting to know me a little better. 
-    I've lived in Seattle, Washington my whole life and I am a graduating senior majoring in `,
+    `Hey again! I appreciate you visiting my site and wanting to get to know me a little more. 
+    I've lived in Seattle, Washington my whole life and I am currently a graduating senior majoring in `,
     <HighlightedLink
       site="https://ischool.uw.edu/programs/informatics"
       target="_blank"
@@ -18,7 +18,7 @@ const overview = {
       Informatics
     </HighlightedLink>,
     ` at the University of Washington (Seattle). 
-    I am actively searching for a full-time software developer role here in the 
+    I am actively searching for full-time software developer roles here in the 
     Seattle-Bellevue area, so please reach out through `,
     <HighlightedLink
       site="https://www.linkedin.com/in/mhngo/"
@@ -27,7 +27,11 @@ const overview = {
     >
       LinkedIn
     </HighlightedLink>,
-    ` or email me at michael_ngo@live.com! `,
+    ` or `,
+    <HighlightedLink site="mailto:michael_ngo@live.com">
+      email me
+    </HighlightedLink>,
+    `. `,
   ],
   hobbies: [
     `Today, you can find me watching shows on Netflix (I'm currently watching The Good Place and finally 
@@ -61,13 +65,17 @@ const overview = {
     >
       resume
     </HighlightedLink>,
-    ` if you want to learn more!`,
+    ` if you would like to learn more!`,
   ],
 }
 
-const About = props => (
+const About = () => (
   <Layout>
-    <SEO title="About Me" />
+    <SEO
+      title="About Me"
+      keywords={['michael', 'ngo', 'software', 'developer']}
+    />
+
     <AboutOverview overview={overview} />
   </Layout>
 )

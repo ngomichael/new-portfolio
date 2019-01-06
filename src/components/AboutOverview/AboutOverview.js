@@ -9,6 +9,7 @@ const AboutOverview = ({ overview }) => {
         <h1 className={styles.title}>About Me</h1>
         <span className={styles.description}>{overview.intro}</span>
       </section>
+
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Hobbies</h2>
         <span className={styles.description}>{overview.hobbies}</span>

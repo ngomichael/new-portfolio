@@ -18,23 +18,22 @@ const overview = {
     `My Online Whiteboard project is my very first project where I
   used more than 25 lines of JavaScript! I used this project as my first
   taste of JavaScript and this came with a ton of headaches and 
-  challenges, but it's like that sometimes. This jumpstarted my appreaction for JavaScript
-  and I haven't stopped working with it since.`,
+  challenges, but learning never comes easy. This project jump started my 
+  appreciation for JavaScript and I haven't stopped working with it since.`,
     <br />,
     <br />,
     <h3>DOM (Document Object Model)</h3>,
     `One of the biggest things I learned how to do was manipulate the DOM. Throughout
     my application I used document.getElementById or document.getElementByClassName to
-    get access to the elements I needed. When I got the elements I needed, I added many 
-    event listeners to them. This was the first way I learned how to use JavaScript to 
-    respond based off of the user's actions and it was extremely exciting`,
+    get access to the elements I needed and added event listeners to them. This was the first way 
+    I learned how to use JavaScript to respond based off of the user's actions and it was extremely exciting`,
     <br />,
     <br />,
-    <h3>DRY</h3>,
-    `DRY which stands for 'Don't repeat yourself is a principle that I learned early on. 
+    <h3>DRY (Don't Repeat Yourself)</h3>,
+    `DRY is a principle that I learned early on in my development career. 
     When I started writing my event listeners for very similar elements I only ended up
     changing a few things and the rest of the code was the same. This is where learned to
-    write functions so I didn't have to write the same thing over and over again. The 
+    write functions so I didn't have to write the same thing over and over. The 
     DRY principle is a good one to follow, but like a lot of other things, don't follow 
     it just to follow it, follow it when it makes sense to.`,
   ],
@@ -44,15 +43,14 @@ const overview = {
     {
       img: whiteboardHomeWebP,
       fallbackImg: whiteboardHomeJPG,
-      caption:
-        'Home page where a user can draw what they want on the whiteboard',
+      caption: 'Home page where a user can draw on the whiteboard',
     },
   ],
   feTechnologies: ['JavaScript', 'CSS', 'HTML'],
   beTechnologies: 'None',
 }
 
-const Whiteboard = props => (
+const Whiteboard = () => (
   <Layout>
     <SEO title="Whiteboard" />
     <ProjectOverview overview={overview} />

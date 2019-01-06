@@ -64,14 +64,14 @@ const projects = [
   },
 ]
 
-const IndexPage = props => (
+const IndexPage = () => (
   <Layout>
     <SEO
       title="Home"
       keywords={['michael', 'ngo', 'software', 'developer', '']}
     />
     <div className={styles.container}>
-      <div className={styles.introContainer}>
+      <section className={styles.introContainer}>
         <h1 className={styles.title}>
           Full-Stack Developer, Student & NBA Fan
         </h1>
@@ -94,20 +94,20 @@ const IndexPage = props => (
             Informatics
           </HighlightedLink>
         </p>
-      </div>
+      </section>
 
       <div className={styles.projectsTextContainer}>
         <h2 className={styles.subtitle}>Projects</h2>
         <p className={styles.description}>
-          Take a look at some of my most recent projects
+          Here are a few of my most recent projects
         </p>
       </div>
 
-      <div className={styles.projectsContainer}>
+      <section className={styles.projectsContainer}>
         {projects.map(project => (
           <ProjectCard key={project.title} projectInfo={project} />
         ))}
-      </div>
+      </section>
     </div>
   </Layout>
 )

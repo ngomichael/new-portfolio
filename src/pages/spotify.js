@@ -12,14 +12,14 @@ const overview = {
   description: [
     `Music is a huge part of my life and Spotify is probably my most used app.
   So why not make a project using Spotify's API? Spotify Artist Search is a web application
-  that allows you as a user, to search for an artist and see their photo, top 10 songs,
-  and their related artists. One of the features that I implemented to help users figure out 
-  if they liked an aritst is that when you hover over each shown song, it plays a snippet 
-  of the song. If you like the artist, you can go to one of their related artists, go through the 
+  that allows you, as a user, to search for an artist and see their photo, top 10 songs,
+  and their related artists. One of the features helps users figure out 
+  if they like an aritst or not by allowing them to hover over each shown song, which then my app plays a snippet 
+  of that song. If you like the artist, you can go to one of their related artists, go through the 
   same process, and find new artists and songs to listen to!`,
   ],
   techDescription: [
-    `Whenever I start a personal project I always try to choose a topic that I would be interested
+    `Whenever I start a personal project I always try to choose a topic that I would be interested in
   and a thing or two that I want to learn. This time it was Spotify and APIs. I
   learned how to interact with APIs and work with async data. I'm glad that I was exposed to this early, because
   at that time I didn't know that I would be working with APIs and async data so often.`,
@@ -29,8 +29,8 @@ const overview = {
     `I took my first class that taught JavaScript at a community college and I wanted to put the
     skills I learned to use. I learned jQuery in this class which was the very first JavaScript 
     library that I learned up to that point. It was exciting adding something new to my web development toolbelt!
-    This felt very familiar to me because just like using 'document.getElementById' I would use
-    '$('#className')' instead. jQuery was a little funny looking at first with all of the dollar signs,
+    This felt very familiar to me because just like using "document.getElementById" I would use
+    "$('#className')" instead. jQuery was a little funny looking at first with all of the dollar signs,
     but otherwise it was easy to use and understand.
     `,
     <br />,
@@ -69,7 +69,7 @@ const overview = {
   beTechnologies: 'None',
 }
 
-const Spotify = props => (
+const Spotify = () => (
   <Layout>
     <SEO title="Spotify" />
     <ProjectOverview overview={overview} />
