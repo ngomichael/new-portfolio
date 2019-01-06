@@ -27,7 +27,7 @@ const overview = {
     >
       LinkedIn
     </HighlightedLink>,
-    ` or email! `,
+    ` or email me at michael_ngo@live.com! `,
   ],
   hobbies: [
     `Today, you can find me watching shows on Netflix (I'm currently watching The Good Place and finally 

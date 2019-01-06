@@ -27,17 +27,14 @@ const overview = {
     the authentication of our app in Go, our messaging service as a microservice using Node, and all
     of our servers were deployed using Docker and AWS. We all worked together, but my main task
     was implementing authentication for the app. I utilized REDIS for storing session tokens and a MySQL
-    database to store users and both of these databases talked to our Go gateway server. I also worked 
-    a little bit with Node and I really liked working with it. I felt very comfortable with it 
-    and I was glad that I would be learning something that is used widely in the industry.`,
+    database to store users and both of these databases talked to our Go gateway server.`,
     <br />,
     <br />,
     `With all of these server-side technologies being so new and fresh, we ran into a few problems. 
     Running Docker containers and making sure those are always up and running and aren't down was 
     one of the biggest problems we faced. Creating a microservice and making sure that it gets forwarded the 
     correct request, returns the correct data we asked for, and it is still up were all things 
-    we needed to make sure of. Additionally, getting the video chat functioning was a big obstacle for us.
-    Learning how to use two new libraries and implementing some new functionality in our microservice took
+    we needed to make sure of. Additionally, learning how to use two new libraries took
     us a while to figure out. In the end, we did get it working and two people were able to video chat with each other!`,
     <br />,
     <br />,
@@ -45,8 +42,7 @@ const overview = {
     `In addition to creating the servers for our project, we also had to implement the client.
     This is where we made the requests to the servers we created and displayed the information
     that was returned. This is the first time I feel that I have good grasp on using fetch
-    to make asynchronous calls to APIs. I was never familiar with what a Bearer token was or why
-    the different headers were really needed. Through this class and project, I learned not only
+    to make asynchronous calls to APIs. Through this class and project, I learned not only
     server-side skills, but developed a deeper understanding of making API calls.`,
   ],
   timeline: "Nov '18 - Dec '18",
