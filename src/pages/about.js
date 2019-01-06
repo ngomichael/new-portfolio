@@ -59,7 +59,7 @@ const overview = {
     ` which is a directed research group at the 
     University of Washington. Take a look at my `,
     <HighlightedLink
-      site="https://drive.google.com/file/d/1PyJj4BOHLDTVCYRZOAfWJ72UqeNA6719/view?usp=sharing"
+      site="https://drive.google.com/file/d/1PyJj4BOHLDTVCYRZOAfWJ72UqeNA6719/view"
       target="_blank"
       rel="noopener noreferrer"
     >

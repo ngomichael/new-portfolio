@@ -42,7 +42,7 @@ const Header = ({ location }) => {
 
         <li className={styles.listItem}>
           <a
-            href="https://drive.google.com/file/d/1PyJj4BOHLDTVCYRZOAfWJ72UqeNA6719/view?usp=sharing"
+            href="https://drive.google.com/file/d/1PyJj4BOHLDTVCYRZOAfWJ72UqeNA6719/view"
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles.link} ${styles.grayText}`}
