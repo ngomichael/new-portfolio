@@ -5,7 +5,6 @@ import styles from './Header.module.css'
 import portfolioIcon from '../../images/website-slash-icon.png'
 
 const ListLink = props => {
-  console.log(props.location)
   return (
     <li className={styles.listItem}>
       <Link
