@@ -34,7 +34,7 @@ const overview = {
     `. `,
   ],
   hobbies: [
-    `Today, you can find me watching shows on Netflix (I'm currently watching The Good Place and finally 
+    `Today, you can find me watching shows on Netflix (Right now I'm watching The Good Place and finally 
     starting Game Of Thrones), keeping up with the NBA (Trust the Process), NFL, or the MLB (mostly just 
     the Mariners), weightlifting, or biking!`,
   ],
