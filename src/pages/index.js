@@ -65,7 +65,7 @@ const projects = [
 ]
 
 const IndexPage = props => (
-  <Layout location={props.location}>
+  <Layout>
     <SEO
       title="Home"
       keywords={['michael', 'ngo', 'software', 'developer', '']}

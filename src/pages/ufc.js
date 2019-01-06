@@ -79,7 +79,7 @@ const overview = {
 }
 
 const UFC = props => (
-  <Layout location={props.location}>
+  <Layout>
     <SEO title="UFC" />
     <ProjectOverview overview={overview} />
   </Layout>

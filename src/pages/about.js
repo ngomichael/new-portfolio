@@ -66,7 +66,7 @@ const overview = {
 }
 
 const About = props => (
-  <Layout location={props.location}>
+  <Layout>
     <SEO title="About Me" />
     <AboutOverview overview={overview} />
   </Layout>

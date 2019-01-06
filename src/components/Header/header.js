@@ -10,16 +10,12 @@ const ListLink = props => {
     <li className={styles.listItem}>
       <Link
         to={props.to}
-        className={
-          props.location.pathname === props.to
-            ? `${styles.link} ${styles.blackText}`
-            : `${styles.link} ${styles.grayText}`
-        }
+        className={`${styles.link} ${styles.grayText}`}
+        activeClassName={`${styles.link} ${styles.blackText} ${
+          styles.bottomBorder
+        }`}
       >
         {props.children}
-        {props.to === props.location.pathname && (
-          <div className={styles.bottomBorder} />
-        )}
       </Link>
     </li>
   )

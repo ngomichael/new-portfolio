@@ -30,11 +30,9 @@
 }
 
 .bottomBorder {
-  background-color: hsl(214, 76%, 54%);
-  border-radius: var(--br-1);
-  height: 4px;
+  border-bottom: 3px solid hsl(214, 76%, 54%);
+  padding-bottom: var(--pb-1);
   margin-top: var(--mt-1);
-  width: 50%;
 }
 
 .link {

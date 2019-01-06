@@ -53,7 +53,7 @@ const overview = {
 }
 
 const Whiteboard = props => (
-  <Layout location={props.location}>
+  <Layout>
     <SEO title="Whiteboard" />
     <ProjectOverview overview={overview} />
   </Layout>

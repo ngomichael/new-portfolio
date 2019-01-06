@@ -65,7 +65,7 @@ const overview = {
 }
 
 const Hangouts = props => (
-  <Layout location={props.location}>
+  <Layout>
     <SEO title="Hangouts" />
     <ProjectOverview overview={overview} />
   </Layout>

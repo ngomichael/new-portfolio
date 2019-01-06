@@ -70,7 +70,7 @@ const overview = {
 }
 
 const Spotify = props => (
-  <Layout location={props.location}>
+  <Layout>
     <SEO title="Spotify" />
     <ProjectOverview overview={overview} />
   </Layout>
