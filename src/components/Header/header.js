@@ -5,18 +5,21 @@ import styles from './Header.module.css'
 import portfolioIcon from '../../images/website-slash-icon.png'
 
 const ListLink = props => {
+  console.log(props.location)
   return (
     <li className={styles.listItem}>
       <Link
         to={props.to}
         className={
-          props.currPath === props.to
+          props.location.pathname === props.to
             ? `${styles.link} ${styles.blackText}`
             : `${styles.link} ${styles.grayText}`
         }
       >
         {props.children}
-        {props.to === props.currPath && <div className={styles.bottomBorder} />}
+        {props.to === props.location.pathname && (
+          <div className={styles.bottomBorder} />
+        )}
       </Link>
     </li>
   )
@@ -37,7 +40,7 @@ const Header = ({ location }) => {
       </Link>
       <ul className={styles.linksContainer}>
         {navLinks.map(link => (
-          <ListLink key={link.to} to={link.to} currPath={location.pathname}>
+          <ListLink key={link.to} to={link.to} location={location}>
             {link.text}
           </ListLink>
         ))}
