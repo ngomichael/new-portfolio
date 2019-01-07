@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import whiteboardHomeJPG from '../images/overview/whiteboardHome.jpg'
 import whiteboardHomeWebP from '../images/overview/whiteboardHome.webp'
 import ProjectOverview from '../components/ProjectOverview/ProjectOverview'
+import CodeSnippet from '../components/CodeSnippet/CodeSnippet'
 
 import SEO from '../components/seo'
 
@@ -24,7 +25,11 @@ const overview = {
     <br />,
     <h3>DOM (Document Object Model)</h3>,
     `One of the biggest things I learned how to do was manipulate the DOM. Throughout
-    my application I used document.getElementById or document.getElementByClassName to
+    my application I used `,
+    <CodeSnippet>document.getElementById</CodeSnippet>,
+    ` or `,
+    <CodeSnippet>document.getElementByClassName</CodeSnippet>,
+    ` to
     get access to the elements I needed and added event listeners to them. This was the first way 
     I learned how to use JavaScript to respond based off of the user's actions and it was extremely exciting`,
     <br />,
@@ -35,7 +40,7 @@ const overview = {
     changing a few things and the rest of the code was the same. This is where learned to
     write functions so I didn't have to write the same thing over and over. The 
     DRY principle is a good one to follow, but like a lot of other things, don't follow 
-    it just to follow it, follow it when it makes sense to.`,
+    it just to follow it, follow it when it improves readability, reduces complexity, etc.`,
   ],
   timeline: "Dec '16 - March '17",
   type: 'Personal Project',

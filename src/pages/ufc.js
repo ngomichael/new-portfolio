@@ -16,14 +16,14 @@ const overview = {
   pound for pound fighters and as a user, you pick a fighter you want to know more about. Once you 
   pick a fighter the application routes you to another page where you are able to see 6 different statistics for
   that fighter, where they're from, and their record.`,
-  ],
-  techDescription: [
+    <br />,
+    <br />,
     `In my rankings of my favorite projects, this is definitely up there. I just learned so much at
   the end of this project and had so much fun immersing myself in different technologies.
   The most notable 3 were React, Redux, and React-Router. This project is what really started my 
   love for React and it has only grown ever since.`,
-    <br />,
-    <br />,
+  ],
+  techDescription: [
     <h3>React</h3>,
     `What I really enjoyed about React was the way that it makes me think about building apps.
     Understanding that within a feature there are many components that build on top of one another

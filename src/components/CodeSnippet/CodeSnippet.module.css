@@ -1,0 +1,7 @@
+.background {
+  background-color: hsla(50, 100%, 70%, 0.4);
+  border-radius: var(--br-1);
+  font-family: 'Oswald';
+  font-size: var(--fs-4);
+  padding: var(--p-1);
+}

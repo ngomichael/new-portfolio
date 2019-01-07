@@ -6,10 +6,17 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import HighlightedLink from '../components/HighlightedLink/HighlightedLink'
 
+const bold = {
+  color: 'black',
+  fontWeight: '600',
+}
+
 const overview = {
   intro: [
     `Hey again! I appreciate you visiting my site and wanting to get to know me a little more. 
-    I've lived in Seattle, Washington my whole life and I am currently a graduating senior majoring in `,
+    I've lived in Seattle, Washington my whole life and I am currently a `,
+    <span style={bold}>graduating senior</span>,
+    ` majoring in `,
     <HighlightedLink
       site="https://ischool.uw.edu/programs/informatics"
       target="_blank"
@@ -17,9 +24,14 @@ const overview = {
     >
       Informatics
     </HighlightedLink>,
-    ` at the University of Washington (Seattle). 
-    I am actively searching for full-time software developer roles here in the 
-    Seattle-Bellevue area, so please reach out through `,
+    ` at the `,
+    <span style={bold}>University of Washington (Seattle)</span>,
+    `. 
+    I am actively searching for `,
+    <span style={bold}>
+      full-time software developer roles in the Seattle-Bellevue area
+    </span>,
+    ` so please reach out through `,
     <HighlightedLink
       site="https://www.linkedin.com/in/mhngo/"
       target="_blank"
@@ -47,8 +59,12 @@ const overview = {
     >
       Limeade
     </HighlightedLink>,
-    ` as a front-end software engineer. Most 
-    recently, I was a software developer for `,
+    ` as a `,
+    <span style={bold}>front-end software engineer</span>,
+    `. Most 
+    recently, I was a `,
+    <span style={bold}>software developer</span>,
+    ` for `,
     <HighlightedLink
       site="https://www.mealmatchup.org/"
       target="_blank"

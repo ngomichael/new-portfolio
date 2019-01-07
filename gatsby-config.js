@@ -34,6 +34,8 @@ module.exports = {
           {
             family: `Open Sans`,
             variants: [`400`, `600`, `700`],
+            family: `Oswald`,
+            variants: [`400`, `600`, `700`],
           },
         ],
       },

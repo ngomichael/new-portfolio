@@ -96,7 +96,7 @@ const IndexPage = () => (
         </p>
       </section>
 
-      <div className={styles.projectsTextContainer}>
+      <div className={styles.projectsTextContainer} id="projects">
         <h2 className={styles.subtitle}>Projects</h2>
         <p className={styles.description}>
           Here are a few of my most recent projects
