@@ -15,7 +15,7 @@ const overview = {
   intro: [
     `Hey again! I appreciate you visiting my site and wanting to get to know me a little more. 
     I've lived in Seattle, Washington my whole life and I am currently a `,
-    <span style={bold}>graduating senior</span>,
+    <span style={bold}>graduating senior ( June 2019)</span>,
     ` majoring in `,
     <HighlightedLink
       site="https://ischool.uw.edu/programs/informatics"
@@ -51,7 +51,7 @@ const overview = {
     the Mariners), weightlifting, or biking!`,
   ],
   experience: [
-    `In summer 2018 I interned in Bellevue, Washington at `,
+    `In Summer 2018 I interned in Bellevue, Washington at `,
     <HighlightedLink
       site="https://www.limeade.com/"
       target="_blank"
