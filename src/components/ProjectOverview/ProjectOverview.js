@@ -29,7 +29,7 @@ const ProjectOverview = ({ overview }) => {
         <span className={styles.description}>{overview.techDescription}</span>
       </section>
 
-      <Link to="/" className={styles.homeLink}>
+      <Link to="/#projects" className={styles.homeLink}>
         Go back to projects
       </Link>
     </div>
